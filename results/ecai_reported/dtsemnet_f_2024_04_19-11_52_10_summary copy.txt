@@ -1,0 +1,17 @@
+{'dataset': 'census', 'model': 'dtsemnet', 'simulations': 10, 'output_prefix': 'f', 'verbose': True, 'gpu': True}
+
+python -m cro_dt.dtsemnet_train --dataset census --model dtsemnet --simulations 10 --output_prefix f --verbose True --gpu True
+
+---
+
+
+--------------------------------------------------
+
+DATASET: Census1990
+Num Total Samples: 1573302
+10 simulations executed.
+Average in-sample multivariate accuracy: 0.4712 ± 0.0007
+Average test multivariate accuracy: 0.4697 ± 0.0007
+
+Best test multivariate accuracy: 0.4709
+Average elapsed time: 6229.4738 ± 3067.9559

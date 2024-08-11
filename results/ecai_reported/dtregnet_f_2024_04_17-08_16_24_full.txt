@@ -1,0 +1,100 @@
+{'dataset': 'ctslice', 'model': 'dtregnet', 'simulations': 10, 'output_prefix': 'f', 'should_normalize_dataset': True, 'verbose': True, 'gpu': False}
+
+python -m cro_dt.reg_train_linear --dataset ctslice --model dtregnet --simulations 10 --output_prefix f --should_normalize_dataset True --verbose True --gpu False
+
+---
+
+
+--------------------------------------------------
+
+DATASET: CT Slice
+In-sample:
+        Multivariate accuracy: 1.0964955594211023
+Test:
+        Multivariate accuracy: 1.5903810370077456
+Elapsed time: 355.06526877498254
+
+
+--------
+
+In-sample:
+        Multivariate accuracy: 1.068072536175102
+Test:
+        Multivariate accuracy: 1.645455145042184
+Elapsed time: 348.99005469912663
+
+
+--------
+
+In-sample:
+        Multivariate accuracy: 1.0616455788709336
+Test:
+        Multivariate accuracy: 1.408023997864768
+Elapsed time: 359.1527414340526
+
+
+--------
+
+In-sample:
+        Multivariate accuracy: 1.1159946161013194
+Test:
+        Multivariate accuracy: 1.6151509466038834
+Elapsed time: 361.1650492688641
+
+
+--------
+
+In-sample:
+        Multivariate accuracy: 1.1912368733034044
+Test:
+        Multivariate accuracy: 1.7379801452827923
+Elapsed time: 340.6813808879815
+
+
+--------
+
+In-sample:
+        Multivariate accuracy: 1.2000318852575103
+Test:
+        Multivariate accuracy: 1.9112574990837154
+Elapsed time: 362.00551955541596
+
+
+--------
+
+In-sample:
+        Multivariate accuracy: 1.0995421676068489
+Test:
+        Multivariate accuracy: 1.5999166591721985
+Elapsed time: 359.9362006080337
+
+
+--------
+
+In-sample:
+        Multivariate accuracy: 1.1661556398164528
+Test:
+        Multivariate accuracy: 1.8937900006570911
+Elapsed time: 362.8449547048658
+
+
+--------
+
+In-sample:
+        Multivariate accuracy: 1.0778457757437685
+Test:
+        Multivariate accuracy: 1.5457326979779302
+Elapsed time: 362.7526806681417
+
+
+--------
+
+In-sample:
+        Multivariate accuracy: 1.1213617994110348
+Test:
+        Multivariate accuracy: 1.674320232321807
+Elapsed time: 358.43413842469454
+
+
+--------
+

@@ -1,0 +1,17 @@
+{'dataset': 'satimages', 'model': 'dtsemnet', 'simulations': 10, 'output_prefix': 'test', 'verbose': True, 'gpu': True}
+
+python -m cro_dt.dtsemnet_train --dataset satimages --model dtsemnet --simulations 10 --output_prefix test --verbose True --gpu True
+
+---
+
+
+--------------------------------------------------
+
+DATASET: satimages
+Num Total Samples: 3104
+10 simulations executed.
+Average in-sample multivariate accuracy: 0.9530 ± 0.0062
+Average test multivariate accuracy: 0.8755 ± 0.0059
+
+Best test multivariate accuracy: 0.8830
+Average elapsed time: 41.4186 ± 9.6420

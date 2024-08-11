@@ -1,0 +1,320 @@
+import sys
+sys.path.append(".")
+
+import csv
+import pdb
+import os
+
+import numpy as np
+import pandas as pd
+import gzip
+import pickle
+from sklearn.model_selection import train_test_split
+from sklearn.preprocessing import StandardScaler, MinMaxScaler
+
+
+
+from sklearn.datasets import load_svmlight_file
+
+
+config_AB = {
+    "code": "abalone",
+    "name": "Abalone",
+    "filepath": "datasets/abalone.data",
+    "n_attributes": 10,
+    "attributes": ['Sex', 'Length', 'Diameter', 'Height', 'Whole weight', 'Shucked weight', 'Viscera weight', 'Shell weight', 'Rings'],
+    "n_classes": 1,
+    "classes": [],
+    "use_L1": True,
+    "lamda_L1": 5e-4,
+    "grad_clip": False,
+    "over_param": [8],
+    "reg_hidden": 12,
+    "nseed": 5,
+    "tseed": 1,
+    "test_split": 0.4,
+    "val_split": 0.2,
+    "depth": 5,
+    
+    "epochs": 80,
+    "batch_size": 32,
+    "learning_rate": 0.005,
+    "lr_scheduler": True,
+    "lr_scheduler_gamma": 0.95
+
+}
+
+config_AL = {
+    "code": "ailerons",
+    "name": "Ailerons",
+    "filepath": "datasets/ailerons/",
+    "n_attributes": 40,
+    "attributes": ['climbRate', 'Sgz', 'p', 'q', 'curPitch', 'curRoll', 'absRoll', 'diffClb', 'diffRollRate', 'diffDiffClb', 'SeTime1', 'SeTime2', 'SeTime3', 'SeTime4', 'SeTime5', 'SeTime6', 'SeTime7', 'SeTime8', 'SeTime9', 'SeTime10', 'SeTime11', 'SeTime12', 'SeTime13', 'SeTime14', 'diffSeTime1', 'diffSeTime2', 'diffSeTime3', 'diffSeTime4', 'diffSeTime5', 'diffSeTime6', 'diffSeTime7', 'diffSeTime8', 'diffSeTime9', 'diffSeTime10', 'diffSeTime11', 'diffSeTime12', 'diffSeTime13', 'diffSeTime14', 'alpha', 'Se', 'goal'],
+    "n_classes": 1,
+    "classes": [],
+    "use_L1": True,
+    "lamda_L1": 5e-4,
+    "over_param": [],
+    "reg_hidden": 0,
+    "nseed": 1,
+    "tseed": 1,
+    "grad_clip": True,
+    "test_split": None,
+    "val_split": 0.2,
+    "depth": 5,
+    
+    "epochs": 100,
+    "batch_size": 32,
+    "learning_rate": 0.1,
+    "lr_scheduler": True,
+    "lr_scheduler_gamma": 0.90
+}
+
+config_PB = {
+    "code": "pdb_bind",
+    "name": "PDB Bind",
+    "filepath": "datasets/pdb_bind/",
+    "n_attributes": 2052,
+    "attributes": [],
+    "n_classes": 1,
+    "classes": [],
+    "use_L1": True,
+    "lamda_L1": 1e-2,
+    "nseed": 1,
+    "over_param": [],
+    "reg_hidden": 0,
+    "tseed": None,
+    "grad_clip": False,
+    "test_split": None,
+    "val_split": None,
+    "depth": 2,
+    
+    "epochs": 100,
+    "batch_size": 256,
+    "learning_rate": 0.01,
+    "lr_scheduler": True,
+    "lr_scheduler_gamma": 0.95
+}
+
+config_YR = {
+    "code": "year",
+    "name": "Year Prediction",
+    "filepath": "datasets/year/",
+    "n_attributes": 90,
+    "attributes": [],
+    "n_classes": 1,
+    "classes": [],
+    "use_L1": True,
+    "lamda_L1": 1e-4,
+    "gamma_L1": 1e-4,
+    "over_param": [6],
+    "reg_hidden": 32,
+    "grad_clip": False,
+    "nseed": 1,
+    "tseed": 1,
+    "test_split": None,
+    "val_split": 0.2,
+    "depth": 6,
+    
+    "epochs": 40,
+    "batch_size": 128,
+    "learning_rate": 0.001,
+    "lr_scheduler": True,
+    "lr_scheduler_gamma": 0.90
+}
+
+config_CA = {
+    "code": "cpu_active",
+    "name": "CPU Active",
+    "filepath": "datasets/cpu_active/",
+    "n_attributes": 21,
+    "attributes": ['time', 'lread', 'lwrite', 'scall', 'sread', 'swrite', 'fork', 'exec', 'rchar', 'wchar', 'pgout', 'ppgout', 'pgfree', 'pgscan', 'atch', 'pgin', 'ppgin', 'pflt', 'vflt', 'runqsz', 'runocc', 'freemem', 'freeswap', 'usr', 'sys', 'wio', 'idle'],
+    "n_classes": 0,
+    "classes": [],
+    "use_L1": True,
+    "lamda_L1": 2e-4,
+    "over_param": [4],
+    "reg_hidden": 0,
+    "nseed": 5,
+    "tseed": 1,
+    "grad_clip": False,
+    "test_split": 0.4,
+    "val_split": 0.2,
+    "depth": 5,
+    
+    "epochs": 80,
+    "batch_size": 128,
+    "learning_rate": 0.01,
+    "lr_scheduler": True,
+    "lr_scheduler_gamma": 0.95
+    # seeds: 1,2,3,4,5
+}
+
+config_CS = {
+    "code": "ctslice",
+    "name": "CT Slice",
+    "filepath": "datasets/ctslice/",
+    "n_attributes": 384,
+    "attributes": [],
+    "n_classes": 1,
+    "classes": [],
+    "use_L1": False,
+    "lamda_L1": 1e-5,
+    "nseed":5,
+    "tseed": None,
+    "grad_clip": False,
+    "over_param": [32, 16],
+    "reg_hidden": 64,
+    "test_split": 0.2,
+    "val_split": 0.2,
+    "depth": 5,
+    
+    "epochs": 50,
+    "batch_size": 128,
+    "learning_rate": 0.001,
+    "lr_scheduler": True,
+    "lr_scheduler_gamma": 0.90
+
+}
+
+config_MS = {
+    "code": "ms",
+    "name": "microsoft",
+    "filepath": "datasets/ms/",
+    "n_attributes": 136,
+    "attributes": [],
+    "n_classes": 1,
+    "classes": [],
+    "use_L1": False,
+    "lamda_L1": 1e-5,
+    "nseed":1,
+    "tseed": None,
+    "grad_clip": False,
+    "over_param": [],
+    "reg_hidden": 64,
+    "test_split": 0.2,
+    "val_split": 0.2,
+    "depth": 5,
+    
+    "epochs": 20,
+    "batch_size": 256,
+    "learning_rate": 0.001,
+    "lr_scheduler": True,
+    "lr_scheduler_gamma": 0.90
+}
+
+
+real_dataset_list = ["abalone", "ailerons", "cpu_active", "pdb_bind", "year", "ctslice", "ms"]
+
+def load_pklgz(filename):
+    print("... loading", filename)
+    with gzip.open(filename, 'rb') as fp:
+        obj = pickle.load(fp)
+    return obj
+
+def get_config(dataset_code):
+    for config in [config_AB, config_AL, config_CA, config_PB, config_YR, config_CS, config_MS]:
+
+        if config["code"] == dataset_code:
+            return config
+
+    raise Exception(f"Invalid dataset code {dataset_code}.")
+
+
+def load_dataset(config, standardize=True, seed=1):
+    if config["code"] == "abalone":
+        npz = np.load(f"datasets/abalone/abalone{config['tseed']-1}.npz")
+        X = npz["X_train"]
+        y = npz["y_train"]
+        X_train, X_val, y_train, y_val = train_test_split(X, y, test_size=config["val_split"], random_state=1)
+        X_test = npz["X_test"]
+        y_test = npz["y_test"]
+
+    elif config["code"] == "ailerons":
+        #==== Convert categorical to one hot
+        ailerons_data = pd.read_csv(f"{config['filepath']}ailerons.data", names=config["attributes"])
+        ailerons_test = pd.read_csv(f"{config['filepath']}ailerons.test", names=config["attributes"])
+        
+        X = np.array(ailerons_data.iloc[:, :-1], dtype=np.float32)
+        y = np.array(ailerons_data.iloc[:, -1], dtype=np.float32) * 1e4 #info: scale y to be in the same range as x
+
+        X_train, X_val, y_train, y_val = train_test_split(X, y, test_size=config["val_split"], random_state=1)
+
+        X_test = np.array(ailerons_test.iloc[:, :-1], dtype=np.float32)
+        y_test = np.array(ailerons_test.iloc[:, -1], dtype=np.float32) * 1e4
+        
+    
+    elif config["code"] == "cpu_active":
+        cactv_data = pd.read_csv(f"{config['filepath']}comp.data", header=None, sep=' ')
+        
+        X = cactv_data.iloc[:, 1:22].values
+        y = cactv_data.iloc[:, 23].values
+
+        X = X.astype(float)
+        y = y.astype(float)
+
+        X, X_test, y, y_test = train_test_split(X, y, test_size=config["test_split"], random_state=config["tseed"])#data_config["tseed"])    
+        X_train, X_val, y_train, y_val = train_test_split(X, y, test_size=config["val_split"], random_state=config["tseed"])
+        
+
+    elif config["code"] == "pdb_bind":
+        X_train, y_train, X_val, y_val, X_test, y_test = load_pklgz(f"{config['filepath']}PDBbind.pkl.gz")
+        
+    elif config["code"] == "year":
+        X = np.load(f"{config['filepath']}year-train-x.npy").astype(np.float32)
+        y = np.load(f"{config['filepath']}year-train-y.npy").astype(np.float32)
+        X_test = np.load(f"{config['filepath']}year-test-x.npy").astype(np.float32)
+        y_test = np.load(f"{config['filepath']}year-test-y.npy").astype(np.float32)
+        X_train, X_val, y_train, y_val = train_test_split(X, y, test_size=config["val_split"], random_state=1)
+    
+    elif config["code"] == "ctslice":
+        df = pd.read_csv(f'{config["filepath"]}/slice_localization_data.csv')
+        df=df.drop("patientId",axis=1)
+        y=df["reference"].values
+        X=df.drop("reference",axis=1).values
+        
+
+        X, X_test, y, y_test = train_test_split(X, y, test_size=config["test_split"], random_state=config["tseed"])#data_config["tseed"])    
+        X_train, X_val, y_train, y_val = train_test_split(X, y, test_size=config["val_split"], random_state=config["tseed"])
+        
+    elif config["code"] == "ms":
+        if not os.path.exists(f"{config['filepath']}ms.npz"):
+            X_train, y_train, _ = load_svmlight_file(config['filepath'] + "train.txt" , dtype=np.float32, query_id=True)
+            X_train = X_train.toarray()
+
+            X_vali, y_vali, _ = load_svmlight_file(config['filepath'] + "vali.txt" , dtype=np.float32, query_id=True)
+            X_vali = X_vali.toarray()
+
+            X_test, y_test, _ = load_svmlight_file(config['filepath'] + "test.txt" , dtype=np.float32, query_id=True)
+            X_test = X_test.toarray()
+            
+            np.savez_compressed(f"{config['filepath']}ms.npz",
+                        X_train=X_train, y_train=y_train,
+                        X_vali=X_vali, y_vali=y_vali,
+                        X_test=X_test, y_test=y_test)
+        
+        data = np.load(f"{config['filepath']}ms.npz")
+        X_train, y_train = data['X_train'], data['y_train']
+        X_val, y_val = data['X_vali'], data['y_vali']
+        X_test, y_test = data['X_test'], data['y_test']
+
+    
+    if standardize:
+        from sklearn.preprocessing import MaxAbsScaler
+
+        scaler_x = StandardScaler().fit(X_train)
+        X_train = scaler_x.transform(X_train)
+        X_val = scaler_x.transform(X_val)
+        X_test = scaler_x.transform(X_test)
+
+        #MinMaxScaler()
+        scaler_y = StandardScaler().fit(y_train.reshape(-1,1))
+        y_train = scaler_y.transform(y_train.reshape(-1,1)).reshape(-1)
+        y_val = scaler_y.transform(y_val.reshape(-1,1)).reshape(-1) 
+        y_test = scaler_y.transform(y_test.reshape(-1,1)).reshape(-1)
+    
+    return X_train, y_train, X_val, y_val, X_test, y_test, scaler_y
+
+
+if __name__ == "__main__":
+    pdb.set_trace()

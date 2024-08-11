@@ -1,0 +1,17 @@
+{'dataset': 'banknote', 'model': 'dtsemnet', 'depth': 3, 'simulations': 100, 'output_prefix': 'bank', 'should_normalize_dataset': True, 'verbose': True}
+
+python -m cro_dt.dtsemnet_train --dataset banknote --model dtsemnet --depth 3 --simulations 100 --output_prefix bank --should_normalize_dataset True --verbose True
+
+---
+
+
+--------------------------------------------------
+
+DATASET: Banknote authentication
+Num Total Samples: 1372
+100 simulations executed.
+Average in-sample multivariate accuracy: 0.999 ± 0.003
+Average test multivariate accuracy: 0.998 ± 0.004
+
+Best test multivariate accuracy: 1.000
+Average elapsed time: 0.428 ± 0.060

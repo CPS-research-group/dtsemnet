@@ -1,0 +1,17 @@
+{'dataset': 'drybean', 'model': 'dgt', 'depth': 4, 'simulations': 10, 'output_prefix': 'time', 'should_normalize_dataset': True, 'verbose': True}
+
+python -m cro_dt.dtsemnet_train --dataset drybean --model dgt --depth 4 --simulations 10 --output_prefix time --should_normalize_dataset True --verbose True
+
+---
+
+
+--------------------------------------------------
+
+DATASET: Drybeans
+Num Total Samples: 13611
+10 simulations executed.
+Average in-sample multivariate accuracy: 0.895 ± 0.012
+Average test multivariate accuracy: 0.892 ± 0.011
+
+Best test multivariate accuracy: 0.909
+Average elapsed time: 3.796 ± 0.047

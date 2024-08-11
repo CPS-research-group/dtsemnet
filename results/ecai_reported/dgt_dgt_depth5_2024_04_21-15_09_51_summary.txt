@@ -1,0 +1,147 @@
+{'dataset': 'all', 'model': 'dgt', 'depth': 5, 'simulations': 100, 'output_prefix': 'dgt', 'should_normalize_dataset': True, 'verbose': True}
+
+python -m cro_dt.dtsemnet_train --dataset all --model dgt --depth 5 --simulations 100 --output_prefix dgt --should_normalize_dataset True --verbose True
+
+---
+
+
+--------------------------------------------------
+
+DATASET: Breast cancer
+Num Total Samples: 683
+100 simulations executed.
+Average in-sample multivariate accuracy: 0.972 ± 0.007
+Average test multivariate accuracy: 0.972 ± 0.012
+
+Best test multivariate accuracy: 0.994
+Average elapsed time: 7.075 ± 0.750
+--------------------------------------------------
+
+DATASET: Car evaluation
+Num Total Samples: 1728
+100 simulations executed.
+Average in-sample multivariate accuracy: 0.971 ± 0.013
+Average test multivariate accuracy: 0.944 ± 0.017
+
+Best test multivariate accuracy: 0.977
+Average elapsed time: 18.570 ± 1.534
+--------------------------------------------------
+
+DATASET: Banknote authentication
+Num Total Samples: 1372
+100 simulations executed.
+Average in-sample multivariate accuracy: 1.000 ± 0.001
+Average test multivariate accuracy: 0.999 ± 0.002
+
+Best test multivariate accuracy: 1.000
+Average elapsed time: 18.152 ± 0.568
+--------------------------------------------------
+
+DATASET: Balance scale
+Num Total Samples: 625
+100 simulations executed.
+Average in-sample multivariate accuracy: 0.895 ± 0.010
+Average test multivariate accuracy: 0.889 ± 0.017
+
+Best test multivariate accuracy: 0.923
+Average elapsed time: 2.744 ± 0.105
+--------------------------------------------------
+
+DATASET: Acute inflammations 1
+Num Total Samples: 120
+100 simulations executed.
+Average in-sample multivariate accuracy: 1.000 ± 0.000
+Average test multivariate accuracy: 0.999 ± 0.010
+
+Best test multivariate accuracy: 1.000
+Average elapsed time: 0.417 ± 0.038
+--------------------------------------------------
+
+DATASET: Acute inflammations 2
+Num Total Samples: 120
+100 simulations executed.
+Average in-sample multivariate accuracy: 1.000 ± 0.000
+Average test multivariate accuracy: 0.999 ± 0.007
+
+Best test multivariate accuracy: 1.000
+Average elapsed time: 0.614 ± 0.050
+--------------------------------------------------
+
+DATASET: Blood transfusion
+Num Total Samples: 748
+100 simulations executed.
+Average in-sample multivariate accuracy: 0.800 ± 0.016
+Average test multivariate accuracy: 0.780 ± 0.023
+
+Best test multivariate accuracy: 0.829
+Average elapsed time: 7.158 ± 0.873
+--------------------------------------------------
+
+DATASET: Climate model crashes
+Num Total Samples: 540
+100 simulations executed.
+Average in-sample multivariate accuracy: 0.995 ± 0.004
+Average test multivariate accuracy: 0.920 ± 0.024
+
+Best test multivariate accuracy: 0.970
+Average elapsed time: 5.076 ± 0.724
+--------------------------------------------------
+
+DATASET: Connectionist bench sonar
+Num Total Samples: 208
+100 simulations executed.
+Average in-sample multivariate accuracy: 0.999 ± 0.002
+Average test multivariate accuracy: 0.809 ± 0.047
+
+Best test multivariate accuracy: 0.942
+Average elapsed time: 2.946 ± 0.397
+--------------------------------------------------
+
+DATASET: Optical recognition
+Num Total Samples: 3823
+100 simulations executed.
+Average in-sample multivariate accuracy: 0.970 ± 0.006
+Average test multivariate accuracy: 0.930 ± 0.010
+
+Best test multivariate accuracy: 0.957
+Average elapsed time: 52.695 ± 3.448
+--------------------------------------------------
+
+DATASET: Drybeans
+Num Total Samples: 13611
+100 simulations executed.
+Average in-sample multivariate accuracy: 0.899 ± 0.011
+Average test multivariate accuracy: 0.896 ± 0.012
+
+Best test multivariate accuracy: 0.919
+Average elapsed time: 111.764 ± 50.195
+--------------------------------------------------
+
+DATASET: Avila bible
+Num Total Samples: 10430
+100 simulations executed.
+Average in-sample multivariate accuracy: 0.609 ± 0.017
+Average test multivariate accuracy: 0.600 ± 0.017
+
+Best test multivariate accuracy: 0.650
+Average elapsed time: 43.612 ± 32.351
+--------------------------------------------------
+
+DATASET: Wine quality red
+Num Total Samples: 1599
+100 simulations executed.
+Average in-sample multivariate accuracy: 0.673 ± 0.020
+Average test multivariate accuracy: 0.567 ± 0.024
+
+Best test multivariate accuracy: 0.618
+Average elapsed time: 1.128 ± 0.076
+--------------------------------------------------
+
+DATASET: Wine quality white
+Num Total Samples: 4898
+100 simulations executed.
+Average in-sample multivariate accuracy: 0.563 ± 0.013
+Average test multivariate accuracy: 0.520 ± 0.016
+
+Best test multivariate accuracy: 0.558
+Average elapsed time: 3.219 ± 0.273

@@ -1,0 +1,100 @@
+{'dataset': 'pendigits', 'model': 'dtsemnet', 'simulations': 10, 'output_prefix': 'pendigits', 'verbose': True, 'gpu': True}
+
+python -m cro_dt.dtsemnet_train --dataset pendigits --model dtsemnet --simulations 10 --output_prefix pendigits --verbose True --gpu True
+
+---
+
+
+--------------------------------------------------
+
+DATASET: pendigits
+In-sample:
+        Multivariate accuracy: 0.9996663886572144
+Test:
+        Multivariate accuracy: 0.9708404802744426
+Elapsed time: 115.56050618001609
+
+
+--------
+
+In-sample:
+        Multivariate accuracy: 0.9994995829858215
+Test:
+        Multivariate accuracy: 0.9671240708976558
+Elapsed time: 114.60049851099029
+
+
+--------
+
+In-sample:
+        Multivariate accuracy: 0.9996663886572144
+Test:
+        Multivariate accuracy: 0.9771297884505432
+Elapsed time: 109.85369294398697
+
+
+--------
+
+In-sample:
+        Multivariate accuracy: 0.9994995829858215
+Test:
+        Multivariate accuracy: 0.9654088050314465
+Elapsed time: 112.45816940799705
+
+
+--------
+
+In-sample:
+        Multivariate accuracy: 0.9989991659716431
+Test:
+        Multivariate accuracy: 0.9699828473413379
+Elapsed time: 115.54409341199789
+
+
+--------
+
+In-sample:
+        Multivariate accuracy: 0.9993327773144287
+Test:
+        Multivariate accuracy: 0.9705546026300743
+Elapsed time: 117.08237192899105
+
+
+--------
+
+In-sample:
+        Multivariate accuracy: 0.9993327773144287
+Test:
+        Multivariate accuracy: 0.9714122355631789
+Elapsed time: 114.15278057998512
+
+
+--------
+
+In-sample:
+        Multivariate accuracy: 0.9989991659716431
+Test:
+        Multivariate accuracy: 0.9694110920526015
+Elapsed time: 114.11300495898467
+
+
+--------
+
+In-sample:
+        Multivariate accuracy: 0.9988323603002502
+Test:
+        Multivariate accuracy: 0.9671240708976558
+Elapsed time: 115.23948520800332
+
+
+--------
+
+In-sample:
+        Multivariate accuracy: 0.9993327773144287
+Test:
+        Multivariate accuracy: 0.9734133790737565
+Elapsed time: 115.98653809001553
+
+
+--------
+

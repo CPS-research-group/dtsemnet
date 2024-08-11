@@ -1,0 +1,100 @@
+{'dataset': 'connect', 'model': 'dtsemnet', 'simulations': 10, 'output_prefix': 'connect', 'verbose': True, 'gpu': True}
+
+python -m cro_dt.dtsemnet_train --dataset connect --model dtsemnet --simulations 10 --output_prefix connect --verbose True --gpu True
+
+---
+
+
+--------------------------------------------------
+
+DATASET: Connect4
+In-sample:
+        Multivariate accuracy: 0.8569710426496439
+Test:
+        Multivariate accuracy: 0.8237862640615748
+Elapsed time: 352.67104174601263
+
+
+--------
+
+In-sample:
+        Multivariate accuracy: 0.8558377278194097
+Test:
+        Multivariate accuracy: 0.8146832445233866
+Elapsed time: 352.85135591300786
+
+
+--------
+
+In-sample:
+        Multivariate accuracy: 0.8562309186788787
+Test:
+        Multivariate accuracy: 0.8146832445233866
+Elapsed time: 353.52670996499364
+
+
+--------
+
+In-sample:
+        Multivariate accuracy: 0.8592376723101119
+Test:
+        Multivariate accuracy: 0.8185316755476614
+Elapsed time: 350.1150543700205
+
+
+--------
+
+In-sample:
+        Multivariate accuracy: 0.8613192709778889
+Test:
+        Multivariate accuracy: 0.8225281231497927
+Elapsed time: 350.9933096150053
+
+
+--------
+
+In-sample:
+        Multivariate accuracy: 0.8586131927097789
+Test:
+        Multivariate accuracy: 0.8195677915926584
+Elapsed time: 350.83322906598914
+
+
+--------
+
+In-sample:
+        Multivariate accuracy: 0.8619206217041354
+Test:
+        Multivariate accuracy: 0.8249703966844286
+Elapsed time: 352.96878795698285
+
+
+--------
+
+In-sample:
+        Multivariate accuracy: 0.8524840410768804
+Test:
+        Multivariate accuracy: 0.8162374185908822
+Elapsed time: 352.0478593230073
+
+
+--------
+
+In-sample:
+        Multivariate accuracy: 0.865459339439356
+Test:
+        Multivariate accuracy: 0.8255624629958556
+Elapsed time: 352.85760332399514
+
+
+--------
+
+In-sample:
+        Multivariate accuracy: 0.8578730687390138
+Test:
+        Multivariate accuracy: 0.8225281231497927
+Elapsed time: 352.6234615499852
+
+
+--------
+

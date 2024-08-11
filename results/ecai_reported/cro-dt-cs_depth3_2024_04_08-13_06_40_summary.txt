@@ -1,0 +1,19 @@
+{'dataset': 'letter', 'cro_config': 'configs/nds.json', 'simulations': 10, 'depth': 8, 'initial_pop': 'None', 'univariate': False, 'alpha': 1.0, 'should_normalize_rows': False, 'should_cart_init': True, 'should_normalize_dataset': False, 'should_normalize_penalty': False, 'should_get_best_from_validation': False, 'should_apply_exponential': False, 'should_use_threshold': False, 'threshold': 0.05, 'should_save_reports': False, 'start_from': 0, 'evaluation_scheme': 'matrix', 'output_prefix': 'cro-dt-cs_depth3', 'verbose': True}
+
+python -m cro_dt.cro_dt --dataset letter --cro_config configs/nds.json --simulations 10 --depth 8 --initial_pop None --univariate False --alpha 1.0 --should_normalize_rows False --should_cart_init True --should_normalize_dataset False --should_normalize_penalty False --should_get_best_from_validation False --should_apply_exponential False --should_use_threshold False --threshold 0.05 --should_save_reports False --start_from 0 --evaluation_scheme matrix --output_prefix cro-dt-cs_depth3 --verbose True
+
+---
+
+{'general': {'popSize': 100, 'rho': 0.8, 'Fb': 0.98, 'Fd': 0.2, 'Pd': 0.1, 'k': 4, 'K': 20, 'group_subs': True, 'stop_cond': 'neval', 'time_limit': 4000.0, 'Ngen': 4000, 'Neval': 10000.0, 'fit_target': 1000, 'verbose': True, 'v_timer': 1, 'dynamic': True, 'dyn_method': 'success', 'dyn_metric': 'avg', 'dyn_steps': 100, 'prob_amp': 0.01}, 'substrates_real': [{'name': 'DE/rand/1', 'params': {'F': 0.7, 'Cr': 0.8}}, {'name': 'DE/best/1', 'params': {'F': 0.7, 'Cr': 0.8}}, {'name': 'DE/rand/2', 'params': {'F': 0.7, 'Cr': 0.8}}, {'name': 'DE/best/2', 'params': {'F': 0.7, 'Cr': 0.8}}, {'name': 'DE/current-to-rand/1', 'params': {'F': 0.7, 'Cr': 0.8}}, {'name': 'DE/current-to-best/1', 'params': {'F': 0.7, 'Cr': 0.8}}, {'name': 'DE/current-to-pbest/1', 'params': {'F': 0.7, 'Cr': 0.8}}]}
+--------------------------------------------------
+
+DATASET: LETTER
+10 simulations executed.
+Average in-sample multivariate accuracy: 0.352 ± 0.019
+Average in-sample univariate accuracy: 0.352 ± 0.019
+Average test multivariate accuracy: 0.339 ± 0.020
+Average test univariate accuracy: 0.339 ± 0.020
+
+Best test multivariate accuracy: 0.382
+Best test univariate accuracy: 0.382
+Average elapsed time: 624.081 ± 55.864

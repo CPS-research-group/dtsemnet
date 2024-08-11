@@ -1,0 +1,100 @@
+{'dataset': 'satimages', 'model': 'dtsemnet', 'simulations': 10, 'output_prefix': 'test', 'verbose': True, 'gpu': True}
+
+python -m cro_dt.dtsemnet_train --dataset satimages --model dtsemnet --simulations 10 --output_prefix test --verbose True --gpu True
+
+---
+
+
+--------------------------------------------------
+
+DATASET: satimages
+In-sample:
+        Multivariate accuracy: 0.9519974226804123
+Test:
+        Multivariate accuracy: 0.877
+Elapsed time: 24.383465476013953
+
+
+--------
+
+In-sample:
+        Multivariate accuracy: 0.9632731958762887
+Test:
+        Multivariate accuracy: 0.882
+Elapsed time: 27.80698539200239
+
+
+--------
+
+In-sample:
+        Multivariate accuracy: 0.9548969072164949
+Test:
+        Multivariate accuracy: 0.867
+Elapsed time: 47.487187698017806
+
+
+--------
+
+In-sample:
+        Multivariate accuracy: 0.9552190721649485
+Test:
+        Multivariate accuracy: 0.8685
+Elapsed time: 47.78286003600806
+
+
+--------
+
+In-sample:
+        Multivariate accuracy: 0.9552190721649485
+Test:
+        Multivariate accuracy: 0.8815
+Elapsed time: 47.50930073999916
+
+
+--------
+
+In-sample:
+        Multivariate accuracy: 0.9484536082474226
+Test:
+        Multivariate accuracy: 0.883
+Elapsed time: 47.763753496983554
+
+
+--------
+
+In-sample:
+        Multivariate accuracy: 0.9394329896907216
+Test:
+        Multivariate accuracy: 0.8665
+Elapsed time: 47.95407717200578
+
+
+--------
+
+In-sample:
+        Multivariate accuracy: 0.9523195876288659
+Test:
+        Multivariate accuracy: 0.876
+Elapsed time: 47.87353476899443
+
+
+--------
+
+In-sample:
+        Multivariate accuracy: 0.9494201030927835
+Test:
+        Multivariate accuracy: 0.874
+Elapsed time: 28.088195103016915
+
+
+--------
+
+In-sample:
+        Multivariate accuracy: 0.959729381443299
+Test:
+        Multivariate accuracy: 0.879
+Elapsed time: 47.53707464397303
+
+
+--------
+

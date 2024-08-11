@@ -1,0 +1,17 @@
+{'dataset': 'pendigits', 'model': 'dtsemnet', 'simulations': 10, 'output_prefix': 'pendigits', 'verbose': True, 'gpu': True}
+
+python -m cro_dt.dtsemnet_train --dataset pendigits --model dtsemnet --simulations 10 --output_prefix pendigits --verbose True --gpu True
+
+---
+
+
+--------------------------------------------------
+
+DATASET: pendigits
+Num Total Samples: 5995
+10 simulations executed.
+Average in-sample multivariate accuracy: 0.9993 ± 0.0003
+Average test multivariate accuracy: 0.9702 ± 0.0032
+
+Best test multivariate accuracy: 0.9771
+Average elapsed time: 114.4591 ± 1.9406

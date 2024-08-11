@@ -1,0 +1,100 @@
+{'dataset': 'ms', 'model': 'dgt', 'simulations': 10, 'output_prefix': 'f', 'should_normalize_dataset': True, 'verbose': True, 'gpu': True}
+
+python -m cro_dt.reg_train_linear --dataset ms --model dgt --simulations 10 --output_prefix f --should_normalize_dataset True --verbose True --gpu True
+
+---
+
+
+--------------------------------------------------
+
+DATASET: microsoft
+In-sample:
+        Multivariate accuracy: 0.7492360583006901
+Test:
+        Multivariate accuracy: 0.7665652178124504
+Elapsed time: 401.7389378277585
+
+
+--------
+
+In-sample:
+        Multivariate accuracy: 0.7497973829355917
+Test:
+        Multivariate accuracy: 0.7663630232493785
+Elapsed time: 402.463850049302
+
+
+--------
+
+In-sample:
+        Multivariate accuracy: 0.749885852550052
+Test:
+        Multivariate accuracy: 0.7661136989059627
+Elapsed time: 415.9544921810739
+
+
+--------
+
+In-sample:
+        Multivariate accuracy: 0.7491982446032085
+Test:
+        Multivariate accuracy: 0.7660509962220632
+Elapsed time: 414.3697491851635
+
+
+--------
+
+In-sample:
+        Multivariate accuracy: 0.749237245149356
+Test:
+        Multivariate accuracy: 0.7658845664322839
+Elapsed time: 433.52413395792246
+
+
+--------
+
+In-sample:
+        Multivariate accuracy: 0.7488219461357922
+Test:
+        Multivariate accuracy: 0.7660209308926489
+Elapsed time: 432.5212435810827
+
+
+--------
+
+In-sample:
+        Multivariate accuracy: 0.7487506608654413
+Test:
+        Multivariate accuracy: 0.7660870139465825
+Elapsed time: 403.93730361387134
+
+
+--------
+
+In-sample:
+        Multivariate accuracy: 0.7483686401377309
+Test:
+        Multivariate accuracy: 0.7650229114387823
+Elapsed time: 408.6418517520651
+
+
+--------
+
+In-sample:
+        Multivariate accuracy: 0.7489633259317147
+Test:
+        Multivariate accuracy: 0.7661739055423783
+Elapsed time: 441.3694197512232
+
+
+--------
+
+In-sample:
+        Multivariate accuracy: 0.7489694727609987
+Test:
+        Multivariate accuracy: 0.7650315793028312
+Elapsed time: 448.73050859803334
+
+
+--------
+

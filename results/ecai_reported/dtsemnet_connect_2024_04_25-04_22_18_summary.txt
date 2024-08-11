@@ -1,0 +1,17 @@
+{'dataset': 'connect', 'model': 'dtsemnet', 'simulations': 10, 'output_prefix': 'connect', 'verbose': True, 'gpu': True}
+
+python -m cro_dt.dtsemnet_train --dataset connect --model dtsemnet --simulations 10 --output_prefix connect --verbose True --gpu True
+
+---
+
+
+--------------------------------------------------
+
+DATASET: Connect4
+Num Total Samples: 43236
+10 simulations executed.
+Average in-sample multivariate accuracy: 0.8586 ± 0.0035
+Average test multivariate accuracy: 0.8203 ± 0.0039
+
+Best test multivariate accuracy: 0.8256
+Average elapsed time: 352.1488 ± 1.0619

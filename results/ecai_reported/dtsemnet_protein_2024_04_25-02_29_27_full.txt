@@ -1,0 +1,100 @@
+{'dataset': 'protein', 'model': 'dtsemnet', 'simulations': 10, 'output_prefix': 'protein', 'verbose': True, 'gpu': True}
+
+python -m cro_dt.dtsemnet_train --dataset protein --model dtsemnet --simulations 10 --output_prefix protein --verbose True --gpu True
+
+---
+
+
+--------------------------------------------------
+
+DATASET: protein
+In-sample:
+        Multivariate accuracy: 0.6986236992279289
+Test:
+        Multivariate accuracy: 0.6856970246186377
+Elapsed time: 35.85958183501498
+
+
+--------
+
+In-sample:
+        Multivariate accuracy: 0.6984222893588452
+Test:
+        Multivariate accuracy: 0.6884156471832049
+Elapsed time: 37.25430534398765
+
+
+--------
+
+In-sample:
+        Multivariate accuracy: 0.7107754279959718
+Test:
+        Multivariate accuracy: 0.6823742637063888
+Elapsed time: 41.11229559901403
+
+
+--------
+
+In-sample:
+        Multivariate accuracy: 0.6974823766364552
+Test:
+        Multivariate accuracy: 0.6840356441625132
+Elapsed time: 32.354566857015016
+
+
+--------
+
+In-sample:
+        Multivariate accuracy: 0.6969452836522323
+Test:
+        Multivariate accuracy: 0.6846397825101949
+Elapsed time: 30.977897010016022
+
+
+--------
+
+In-sample:
+        Multivariate accuracy: 0.6992950654582074
+Test:
+        Multivariate accuracy: 0.6885666817701254
+Elapsed time: 74.39382387598744
+
+
+--------
+
+In-sample:
+        Multivariate accuracy: 0.6974823766364552
+Test:
+        Multivariate accuracy: 0.6896239238785682
+Elapsed time: 69.4865766169969
+
+
+--------
+
+In-sample:
+        Multivariate accuracy: 0.6964753272910372
+Test:
+        Multivariate accuracy: 0.6884156471832049
+Elapsed time: 37.74262765300227
+
+
+--------
+
+In-sample:
+        Multivariate accuracy: 0.698556562604901
+Test:
+        Multivariate accuracy: 0.6866032321401601
+Elapsed time: 38.75135906500509
+
+
+--------
+
+In-sample:
+        Multivariate accuracy: 0.6996307485733467
+Test:
+        Multivariate accuracy: 0.6875094396616825
+Elapsed time: 33.64724374600337
+
+
+--------
+

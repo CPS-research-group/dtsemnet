@@ -1,0 +1,17 @@
+{'dataset': 'protein', 'model': 'dtsemnet', 'simulations': 10, 'output_prefix': 'protein', 'verbose': True, 'gpu': True}
+
+python -m cro_dt.dtsemnet_train --dataset protein --model dtsemnet --simulations 10 --output_prefix protein --verbose True --gpu True
+
+---
+
+
+--------------------------------------------------
+
+DATASET: protein
+Num Total Samples: 14895
+10 simulations executed.
+Average in-sample multivariate accuracy: 0.6994 ± 0.0039
+Average test multivariate accuracy: 0.6866 ± 0.0022
+
+Best test multivariate accuracy: 0.6896
+Average elapsed time: 43.1580 ± 14.7154

@@ -1,0 +1,17 @@
+{'dataset': 'avila', 'model': 'dgt', 'depth': 4, 'simulations': 100, 'output_prefix': 'avila', 'should_normalize_dataset': True, 'verbose': True}
+
+python -m cro_dt.dtsemnet_train --dataset avila --model dgt --depth 4 --simulations 100 --output_prefix avila --should_normalize_dataset True --verbose True
+
+---
+
+
+--------------------------------------------------
+
+DATASET: Avila bible
+Num Total Samples: 10430
+100 simulations executed.
+Average in-sample multivariate accuracy: 0.607 ± 0.019
+Average test multivariate accuracy: 0.597 ± 0.018
+
+Best test multivariate accuracy: 0.635
+Average elapsed time: 6.694 ± 0.182

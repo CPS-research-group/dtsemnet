@@ -1,0 +1,17 @@
+{'dataset': 'climate', 'model': 'dgt', 'depth': 3, 'simulations': 100, 'output_prefix': 'time', 'should_normalize_dataset': True, 'verbose': True}
+
+python -m cro_dt.dtsemnet_train --dataset climate --model dgt --depth 3 --simulations 100 --output_prefix time --should_normalize_dataset True --verbose True
+
+---
+
+
+--------------------------------------------------
+
+DATASET: Climate model crashes
+Num Total Samples: 540
+100 simulations executed.
+Average in-sample multivariate accuracy: 0.969 ± 0.013
+Average test multivariate accuracy: 0.924 ± 0.026
+
+Best test multivariate accuracy: 0.963
+Average elapsed time: 0.099 ± 0.010

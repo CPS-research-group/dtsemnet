@@ -1,0 +1,100 @@
+{'dataset': 'mnist', 'model': 'dtsemnet', 'simulations': 10, 'output_prefix': 'f', 'verbose': True, 'gpu': True}
+
+python -m cro_dt.dtsemnet_train --dataset mnist --model dtsemnet --simulations 10 --output_prefix f --verbose True --gpu True
+
+---
+
+
+--------------------------------------------------
+
+DATASET: MNIST
+In-sample:
+        Multivariate accuracy: 0.9842
+Test:
+        Multivariate accuracy: 0.9578
+Elapsed time: 1386.260413505137
+
+
+--------
+
+In-sample:
+        Multivariate accuracy: 0.98725
+Test:
+        Multivariate accuracy: 0.9573
+Elapsed time: 1365.813254789915
+
+
+--------
+
+In-sample:
+        Multivariate accuracy: 0.9845833333333334
+Test:
+        Multivariate accuracy: 0.9565
+Elapsed time: 1381.1929407091811
+
+
+--------
+
+In-sample:
+        Multivariate accuracy: 0.9856
+Test:
+        Multivariate accuracy: 0.9601
+Elapsed time: 1403.4543938520364
+
+
+--------
+
+In-sample:
+        Multivariate accuracy: 0.9865166666666667
+Test:
+        Multivariate accuracy: 0.9583
+Elapsed time: 1387.6658385549672
+
+
+--------
+
+In-sample:
+        Multivariate accuracy: 0.9847
+Test:
+        Multivariate accuracy: 0.9596
+Elapsed time: 1389.3743896279484
+
+
+--------
+
+In-sample:
+        Multivariate accuracy: 0.9851
+Test:
+        Multivariate accuracy: 0.9558
+Elapsed time: 1392.523000922054
+
+
+--------
+
+In-sample:
+        Multivariate accuracy: 0.9867666666666667
+Test:
+        Multivariate accuracy: 0.9583
+Elapsed time: 1381.1941612623632
+
+
+--------
+
+In-sample:
+        Multivariate accuracy: 0.9868833333333333
+Test:
+        Multivariate accuracy: 0.9573
+Elapsed time: 1387.8120271801017
+
+
+--------
+
+In-sample:
+        Multivariate accuracy: 0.9860166666666667
+Test:
+        Multivariate accuracy: 0.9568
+Elapsed time: 1380.1455861972645
+
+
+--------
+

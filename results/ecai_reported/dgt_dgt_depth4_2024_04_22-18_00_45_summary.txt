@@ -1,0 +1,17 @@
+{'dataset': 'optical', 'model': 'dgt', 'depth': 4, 'simulations': 100, 'output_prefix': 'dgt', 'should_normalize_dataset': True, 'verbose': True}
+
+python -m cro_dt.dtsemnet_train --dataset optical --model dgt --depth 4 --simulations 100 --output_prefix dgt --should_normalize_dataset True --verbose True
+
+---
+
+
+--------------------------------------------------
+
+DATASET: Optical recognition
+Num Total Samples: 3823
+100 simulations executed.
+Average in-sample multivariate accuracy: 0.957 ± 0.009
+Average test multivariate accuracy: 0.919 ± 0.010
+
+Best test multivariate accuracy: 0.944
+Average elapsed time: 1.506 ± 0.060

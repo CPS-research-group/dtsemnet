@@ -1,0 +1,19 @@
+{'dataset': 'mnist', 'model': 'dtsemnet', 'simulations': 1, 'output_prefix': 'dtsement', 'verbose': True, 'gpu': True}
+
+python -m large_dataset.dtsemnet_train --dataset mnist --model dtsemnet --simulations 1 --output_prefix dtsement --verbose True --gpu True
+
+---
+
+
+--------------------------------------------------
+
+DATASET: MNIST
+In-sample:
+        Multivariate accuracy: 0.98845
+Test:
+        Multivariate accuracy: 0.9641
+Elapsed time: 467.2555771309999
+
+
+--------
+

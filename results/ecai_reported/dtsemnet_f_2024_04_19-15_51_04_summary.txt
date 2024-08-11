@@ -1,0 +1,17 @@
+{'dataset': 'mnist', 'model': 'dtsemnet', 'simulations': 10, 'output_prefix': 'f', 'verbose': True, 'gpu': True}
+
+python -m cro_dt.dtsemnet_train --dataset mnist --model dtsemnet --simulations 10 --output_prefix f --verbose True --gpu True
+
+---
+
+
+--------------------------------------------------
+
+DATASET: MNIST
+Num Total Samples: 60000
+10 simulations executed.
+Average in-sample multivariate accuracy: 0.9858 ± 0.0010
+Average test multivariate accuracy: 0.9578 ± 0.0013
+
+Best test multivariate accuracy: 0.9601
+Average elapsed time: 1385.5436 ± 9.2229

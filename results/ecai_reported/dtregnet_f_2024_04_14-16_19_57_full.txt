@@ -1,0 +1,472 @@
+{'dataset': 'abalone', 'model': 'dtregnet', 'simulations': 10, 'output_prefix': 'f', 'should_normalize_dataset': True, 'verbose': True, 'gpu': True}
+
+python -m cro_dt.reg_train_linear --dataset abalone --model dtregnet --simulations 10 --output_prefix f --should_normalize_dataset True --verbose True --gpu True
+
+---
+
+
+--------------------------------------------------
+
+DATASET: Abalone
+In-sample:
+        Multivariate accuracy: 2.0582284932928343
+Test:
+        Multivariate accuracy: 2.0849605357981185
+Elapsed time: 22.861584019847214
+
+
+--------
+
+In-sample:
+        Multivariate accuracy: 2.0586594706192556
+Test:
+        Multivariate accuracy: 2.1242259520639286
+Elapsed time: 21.61969793587923
+
+
+--------
+
+In-sample:
+        Multivariate accuracy: 2.06962440798154
+Test:
+        Multivariate accuracy: 2.1369387127634876
+Elapsed time: 21.658602245151997
+
+
+--------
+
+In-sample:
+        Multivariate accuracy: 2.0516354603269678
+Test:
+        Multivariate accuracy: 2.092511504889806
+Elapsed time: 21.461064722854644
+
+
+--------
+
+In-sample:
+        Multivariate accuracy: 2.0614325023677553
+Test:
+        Multivariate accuracy: 2.0935537659141903
+Elapsed time: 21.445324085652828
+
+
+--------
+
+In-sample:
+        Multivariate accuracy: 2.0570896417763036
+Test:
+        Multivariate accuracy: 2.103304421354974
+Elapsed time: 21.71096045896411
+
+
+--------
+
+In-sample:
+        Multivariate accuracy: 2.080667572239266
+Test:
+        Multivariate accuracy: 2.2098318020089804
+Elapsed time: 21.448687902186066
+
+
+--------
+
+In-sample:
+        Multivariate accuracy: 2.0432427465706073
+Test:
+        Multivariate accuracy: 2.0980061685793294
+Elapsed time: 21.30666693020612
+
+
+--------
+
+In-sample:
+        Multivariate accuracy: 2.037190537270342
+Test:
+        Multivariate accuracy: 2.086802915786665
+Elapsed time: 21.25544572621584
+
+
+--------
+
+In-sample:
+        Multivariate accuracy: 2.0757607473661053
+Test:
+        Multivariate accuracy: 2.1236131704223493
+Elapsed time: 21.37494120420888
+
+
+--------
+
+--------------------------------------------------
+
+DATASET: Abalone
+In-sample:
+        Multivariate accuracy: 2.042275783066037
+Test:
+        Multivariate accuracy: 2.1169020691168376
+Elapsed time: 21.681806386914104
+
+
+--------
+
+In-sample:
+        Multivariate accuracy: 2.05979064926829
+Test:
+        Multivariate accuracy: 2.1275973539297404
+Elapsed time: 21.66451843921095
+
+
+--------
+
+In-sample:
+        Multivariate accuracy: 2.0687926446144584
+Test:
+        Multivariate accuracy: 2.1385584217772213
+Elapsed time: 21.746721664909273
+
+
+--------
+
+In-sample:
+        Multivariate accuracy: 2.070873478977122
+Test:
+        Multivariate accuracy: 2.131205091544211
+Elapsed time: 21.34449421102181
+
+
+--------
+
+In-sample:
+        Multivariate accuracy: 2.06606677895939
+Test:
+        Multivariate accuracy: 2.134279685197892
+Elapsed time: 21.45705033093691
+
+
+--------
+
+In-sample:
+        Multivariate accuracy: 2.057651337073641
+Test:
+        Multivariate accuracy: 2.1285100720885364
+Elapsed time: 21.447494935709983
+
+
+--------
+
+In-sample:
+        Multivariate accuracy: 2.0501860916925168
+Test:
+        Multivariate accuracy: 2.112071158255779
+Elapsed time: 21.360714694019407
+
+
+--------
+
+In-sample:
+        Multivariate accuracy: 2.036379906612375
+Test:
+        Multivariate accuracy: 2.151232735984912
+Elapsed time: 21.513951985165477
+
+
+--------
+
+In-sample:
+        Multivariate accuracy: 2.0726718175058467
+Test:
+        Multivariate accuracy: 2.1334246339100447
+Elapsed time: 21.211748368106782
+
+
+--------
+
+In-sample:
+        Multivariate accuracy: 2.057771101719253
+Test:
+        Multivariate accuracy: 2.124005569146374
+Elapsed time: 21.263542974367738
+
+
+--------
+
+--------------------------------------------------
+
+DATASET: Abalone
+In-sample:
+        Multivariate accuracy: 2.015492157344264
+Test:
+        Multivariate accuracy: 2.188436604868035
+Elapsed time: 21.487886174116284
+
+
+--------
+
+In-sample:
+        Multivariate accuracy: 2.058340768679586
+Test:
+        Multivariate accuracy: 2.1884934186309386
+Elapsed time: 21.609319402836263
+
+
+--------
+
+In-sample:
+        Multivariate accuracy: 2.0133621477246355
+Test:
+        Multivariate accuracy: 2.178528116880878
+Elapsed time: 21.63510766904801
+
+
+--------
+
+In-sample:
+        Multivariate accuracy: 2.044042893033662
+Test:
+        Multivariate accuracy: 2.238685661328513
+Elapsed time: 21.3926347149536
+
+
+--------
+
+In-sample:
+        Multivariate accuracy: 2.0259472500585387
+Test:
+        Multivariate accuracy: 2.208240353778062
+Elapsed time: 21.42676431965083
+
+
+--------
+
+In-sample:
+        Multivariate accuracy: 2.0158195562845673
+Test:
+        Multivariate accuracy: 2.186324035239545
+Elapsed time: 21.526389356236905
+
+
+--------
+
+In-sample:
+        Multivariate accuracy: 2.0356709705901004
+Test:
+        Multivariate accuracy: 2.178960044207315
+Elapsed time: 21.653776715975255
+
+
+--------
+
+In-sample:
+        Multivariate accuracy: 2.031644063521167
+Test:
+        Multivariate accuracy: 2.163546369918162
+Elapsed time: 22.00094452686608
+
+
+--------
+
+In-sample:
+        Multivariate accuracy: 2.044508260635504
+Test:
+        Multivariate accuracy: 2.173735629036257
+Elapsed time: 21.033676838036627
+
+
+--------
+
+In-sample:
+        Multivariate accuracy: 2.0612132793898064
+Test:
+        Multivariate accuracy: 2.1593469869967854
+Elapsed time: 21.542554150801152
+
+
+--------
+
+--------------------------------------------------
+
+DATASET: Abalone
+In-sample:
+        Multivariate accuracy: 2.088997021181108
+Test:
+        Multivariate accuracy: 2.1262840940619814
+Elapsed time: 21.75120043195784
+
+
+--------
+
+In-sample:
+        Multivariate accuracy: 2.0797055038337158
+Test:
+        Multivariate accuracy: 2.1370407881353364
+Elapsed time: 21.664568776730448
+
+
+--------
+
+In-sample:
+        Multivariate accuracy: 2.087371313998548
+Test:
+        Multivariate accuracy: 2.1363512572916745
+Elapsed time: 21.69081148132682
+
+
+--------
+
+In-sample:
+        Multivariate accuracy: 2.0983073172188917
+Test:
+        Multivariate accuracy: 2.1370445483539786
+Elapsed time: 21.433938573114574
+
+
+--------
+
+In-sample:
+        Multivariate accuracy: 2.071386965856332
+Test:
+        Multivariate accuracy: 2.1228077829559173
+Elapsed time: 21.431282601319253
+
+
+--------
+
+In-sample:
+        Multivariate accuracy: 2.107832750058255
+Test:
+        Multivariate accuracy: 2.129052409536309
+Elapsed time: 21.882480236236006
+
+
+--------
+
+In-sample:
+        Multivariate accuracy: 2.0816200665937354
+Test:
+        Multivariate accuracy: 2.1214408702015524
+Elapsed time: 21.839375608135015
+
+
+--------
+
+In-sample:
+        Multivariate accuracy: 2.0872689534594473
+Test:
+        Multivariate accuracy: 2.130714662079341
+Elapsed time: 21.780597682110965
+
+
+--------
+
+In-sample:
+        Multivariate accuracy: 2.089668126417245
+Test:
+        Multivariate accuracy: 2.1286616275183055
+Elapsed time: 21.847753833048046
+
+
+--------
+
+In-sample:
+        Multivariate accuracy: 2.0994804954381707
+Test:
+        Multivariate accuracy: 2.122709152915628
+Elapsed time: 21.47812848817557
+
+
+--------
+
+--------------------------------------------------
+
+DATASET: Abalone
+In-sample:
+        Multivariate accuracy: 2.0679346185737177
+Test:
+        Multivariate accuracy: 2.156387816608921
+Elapsed time: 21.559908198658377
+
+
+--------
+
+In-sample:
+        Multivariate accuracy: 2.0674103381210194
+Test:
+        Multivariate accuracy: 2.106941066194855
+Elapsed time: 21.42512506013736
+
+
+--------
+
+In-sample:
+        Multivariate accuracy: 2.0609079814569378
+Test:
+        Multivariate accuracy: 2.1140828049945037
+Elapsed time: 21.439789498224854
+
+
+--------
+
+In-sample:
+        Multivariate accuracy: 2.073102651512371
+Test:
+        Multivariate accuracy: 2.1201903659516113
+Elapsed time: 21.45646141283214
+
+
+--------
+
+In-sample:
+        Multivariate accuracy: 2.069817716144856
+Test:
+        Multivariate accuracy: 2.08815849814501
+Elapsed time: 21.49417684227228
+
+
+--------
+
+In-sample:
+        Multivariate accuracy: 2.0663597807825367
+Test:
+        Multivariate accuracy: 2.1080574921619957
+Elapsed time: 21.541129753924906
+
+
+--------
+
+In-sample:
+        Multivariate accuracy: 2.055550107372334
+Test:
+        Multivariate accuracy: 2.1197802367405574
+Elapsed time: 21.559013868682086
+
+
+--------
+
+In-sample:
+        Multivariate accuracy: 2.0418022917505625
+Test:
+        Multivariate accuracy: 2.0951153135750884
+Elapsed time: 21.706095318775624
+
+
+--------
+
+In-sample:
+        Multivariate accuracy: 2.0593977857850745
+Test:
+        Multivariate accuracy: 2.1556144660945904
+Elapsed time: 21.093624609988183
+
+
+--------
+
+In-sample:
+        Multivariate accuracy: 2.058644746886315
+Test:
+        Multivariate accuracy: 2.123503225238602
+Elapsed time: 21.55634961789474
+
+
+--------
+

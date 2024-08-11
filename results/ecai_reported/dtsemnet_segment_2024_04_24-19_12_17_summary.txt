@@ -1,0 +1,17 @@
+{'dataset': 'segment', 'model': 'dtsemnet', 'simulations': 10, 'output_prefix': 'segment', 'verbose': True, 'gpu': True}
+
+python -m cro_dt.dtsemnet_train --dataset segment --model dtsemnet --simulations 10 --output_prefix segment --verbose True --gpu True
+
+---
+
+
+--------------------------------------------------
+
+DATASET: segment
+Num Total Samples: 1478
+10 simulations executed.
+Average in-sample multivariate accuracy: 0.9817 ± 0.0037
+Average test multivariate accuracy: 0.9610 ± 0.0053
+
+Best test multivariate accuracy: 0.9697
+Average elapsed time: 2.9897 ± 0.3995

@@ -1,0 +1,17 @@
+{'dataset': 'mnist', 'model': 'dtsemnet', 'simulations': 1, 'output_prefix': 'dtsement', 'verbose': True, 'gpu': True}
+
+python -m large_dataset.dtsemnet_train --dataset mnist --model dtsemnet --simulations 1 --output_prefix dtsement --verbose True --gpu True
+
+---
+
+
+--------------------------------------------------
+
+DATASET: MNIST
+Num Total Samples: 60000
+1 simulations executed.
+Average in-sample multivariate accuracy: 0.9885 ± 0.0000
+Average test multivariate accuracy: 0.9641 ± 0.0000
+
+Best test multivariate accuracy: 0.9641
+Average elapsed time: 467.2556 ± 0.0000

@@ -1,0 +1,55 @@
+{'dataset': 'census', 'model': 'dtsemnet', 'simulations': 10, 'output_prefix': 'f', 'verbose': True, 'gpu': True}
+
+python -m cro_dt.dtsemnet_train --dataset census --model dtsemnet --simulations 10 --output_prefix f --verbose True --gpu True
+
+---
+
+
+--------------------------------------------------
+
+DATASET: Census1990
+In-sample:
+        Multivariate accuracy: 0.47144858393366307
+Test:
+        Multivariate accuracy: 0.47003500407804627
+Elapsed time: 4448.447194298729
+
+
+--------
+
+In-sample:
+        Multivariate accuracy: 0.471121882512067
+Test:
+        Multivariate accuracy: 0.46987839082937904
+Elapsed time: 4387.414673482068
+
+
+--------
+
+In-sample:
+        Multivariate accuracy: 0.47012207446504234
+Test:
+        Multivariate accuracy: 0.4685441273082657
+Elapsed time: 4432.369386503007
+
+
+--------
+
+In-sample:
+        Multivariate accuracy: 0.4703966562045939
+Test:
+        Multivariate accuracy: 0.4691258336604584
+Elapsed time: 4281.829267411958
+
+
+--------
+
+In-sample:
+        Multivariate accuracy: 0.472169360999986
+Test:
+        Multivariate accuracy: 0.4709258690509847
+Elapsed time: 4567.92476070812
+
+
+--------
+

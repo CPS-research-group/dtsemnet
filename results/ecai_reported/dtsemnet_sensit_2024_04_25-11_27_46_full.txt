@@ -1,0 +1,100 @@
+{'dataset': 'sensit', 'model': 'dtsemnet', 'simulations': 10, 'output_prefix': 'sensit', 'verbose': True, 'gpu': True}
+
+python -m cro_dt.dtsemnet_train --dataset sensit --model dtsemnet --simulations 10 --output_prefix sensit --verbose True --gpu True
+
+---
+
+
+--------------------------------------------------
+
+DATASET: SensIT
+In-sample:
+        Multivariate accuracy: 0.8534840940086904
+Test:
+        Multivariate accuracy: 0.8438467394062421
+Elapsed time: 1631.6898931739852
+
+
+--------
+
+In-sample:
+        Multivariate accuracy: 0.8502806939642868
+Test:
+        Multivariate accuracy: 0.8443034762750571
+Elapsed time: 1630.5510061800014
+
+
+--------
+
+In-sample:
+        Multivariate accuracy: 0.8510260395191728
+Test:
+        Multivariate accuracy: 0.842019791930982
+Elapsed time: 1631.0762047430035
+
+
+--------
+
+In-sample:
+        Multivariate accuracy: 0.8510577563512957
+Test:
+        Multivariate accuracy: 0.8417153006851052
+Elapsed time: 1635.7806486699847
+
+
+--------
+
+In-sample:
+        Multivariate accuracy: 0.8523422880522693
+Test:
+        Multivariate accuracy: 0.844404973357016
+Elapsed time: 1646.2382750790275
+
+
+--------
+
+In-sample:
+        Multivariate accuracy: 0.8530400583589711
+Test:
+        Multivariate accuracy: 0.842476528799797
+Elapsed time: 1668.41585247498
+
+
+--------
+
+In-sample:
+        Multivariate accuracy: 0.8533730850962605
+Test:
+        Multivariate accuracy: 0.8436437452423243
+Elapsed time: 1687.1432049450232
+
+
+--------
+
+In-sample:
+        Multivariate accuracy: 0.8499000919788131
+Test:
+        Multivariate accuracy: 0.8409540725704135
+Elapsed time: 1647.2056210460141
+
+
+--------
+
+In-sample:
+        Multivariate accuracy: 0.851739668241936
+Test:
+        Multivariate accuracy: 0.8427810200456737
+Elapsed time: 1642.1327748680487
+
+
+--------
+
+In-sample:
+        Multivariate accuracy: 0.8514859335849535
+Test:
+        Multivariate accuracy: 0.8426287744227353
+Elapsed time: 1641.4839532859623
+
+
+--------
+

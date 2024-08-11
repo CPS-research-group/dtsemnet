@@ -1,0 +1,100 @@
+{'dataset': 'drybean', 'model': 'dgt', 'depth': 4, 'simulations': 10, 'output_prefix': 'time', 'should_normalize_dataset': True, 'verbose': True}
+
+python -m cro_dt.dtsemnet_train --dataset drybean --model dgt --depth 4 --simulations 10 --output_prefix time --should_normalize_dataset True --verbose True
+
+---
+
+
+--------------------------------------------------
+
+DATASET: Drybeans
+In-sample:
+        Multivariate accuracy: 0.8792064658339457
+Test:
+        Multivariate accuracy: 0.8853952394945637
+Elapsed time: 3.8855375410057604
+
+
+--------
+
+In-sample:
+        Multivariate accuracy: 0.8975753122703894
+Test:
+        Multivariate accuracy: 0.89068468997943
+Elapsed time: 3.873659690027125
+
+
+--------
+
+In-sample:
+        Multivariate accuracy: 0.8896399706098457
+Test:
+        Multivariate accuracy: 0.8754040552453717
+Elapsed time: 3.767821724002715
+
+
+--------
+
+In-sample:
+        Multivariate accuracy: 0.8737692872887582
+Test:
+        Multivariate accuracy: 0.8830443726124009
+Elapsed time: 3.7970194569788873
+
+
+--------
+
+In-sample:
+        Multivariate accuracy: 0.8971344599559148
+Test:
+        Multivariate accuracy: 0.891566265060241
+Elapsed time: 3.7839847250143066
+
+
+--------
+
+In-sample:
+        Multivariate accuracy: 0.9102130786186627
+Test:
+        Multivariate accuracy: 0.9094916250367323
+Elapsed time: 3.795872009010054
+
+
+--------
+
+In-sample:
+        Multivariate accuracy: 0.9093313739897134
+Test:
+        Multivariate accuracy: 0.9071407581545695
+Elapsed time: 3.7575477340142243
+
+
+--------
+
+In-sample:
+        Multivariate accuracy: 0.8874357090374725
+Test:
+        Multivariate accuracy: 0.8765794886864531
+Elapsed time: 3.764238835021388
+
+
+--------
+
+In-sample:
+        Multivariate accuracy: 0.9059515062454078
+Test:
+        Multivariate accuracy: 0.8942109903026741
+Elapsed time: 3.800929452991113
+
+
+--------
+
+In-sample:
+        Multivariate accuracy: 0.8959588537839823
+Test:
+        Multivariate accuracy: 0.9036144578313253
+Elapsed time: 3.729304065986071
+
+
+--------
+

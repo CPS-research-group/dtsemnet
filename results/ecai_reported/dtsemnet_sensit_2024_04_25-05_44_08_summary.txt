@@ -1,0 +1,17 @@
+{'dataset': 'sensit', 'model': 'dtsemnet', 'simulations': 10, 'output_prefix': 'sensit', 'verbose': True, 'gpu': True}
+
+python -m cro_dt.dtsemnet_train --dataset sensit --model dtsemnet --simulations 10 --output_prefix sensit --verbose True --gpu True
+
+---
+
+
+--------------------------------------------------
+
+DATASET: SensIT
+Num Total Samples: 63058
+10 simulations executed.
+Average in-sample multivariate accuracy: 0.8511 ± 0.0016
+Average test multivariate accuracy: 0.8424 ± 0.0011
+
+Best test multivariate accuracy: 0.8449
+Average elapsed time: 1200.6486 ± 0.5780

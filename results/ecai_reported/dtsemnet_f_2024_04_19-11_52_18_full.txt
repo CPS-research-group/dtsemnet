@@ -1,0 +1,100 @@
+{'dataset': 'forest', 'model': 'dtsemnet', 'simulations': 10, 'output_prefix': 'f', 'verbose': True, 'gpu': True}
+
+python -m cro_dt.dtsemnet_train --dataset forest --model dtsemnet --simulations 10 --output_prefix f --verbose True --gpu True
+
+---
+
+
+--------------------------------------------------
+
+DATASET: ForestCover
+In-sample:
+        Multivariate accuracy: 0.8115703501709036
+Test:
+        Multivariate accuracy: 0.8090152577816407
+Elapsed time: 2583.24426579196
+
+
+--------
+
+In-sample:
+        Multivariate accuracy: 0.8205821211412221
+Test:
+        Multivariate accuracy: 0.8175950706952488
+Elapsed time: 2646.5448635569774
+
+
+--------
+
+In-sample:
+        Multivariate accuracy: 0.8181402566109179
+Test:
+        Multivariate accuracy: 0.8145658890045868
+Elapsed time: 2634.526197708212
+
+
+--------
+
+In-sample:
+        Multivariate accuracy: 0.8261650625122698
+Test:
+        Multivariate accuracy: 0.8236792509659819
+Elapsed time: 2590.9298880379647
+
+
+--------
+
+In-sample:
+        Multivariate accuracy: 0.8269772245036265
+Test:
+        Multivariate accuracy: 0.8265191088009776
+Elapsed time: 2702.375810150057
+
+
+--------
+
+In-sample:
+        Multivariate accuracy: 0.8238711082784048
+Test:
+        Multivariate accuracy: 0.820710308683941
+Elapsed time: 2600.1242648921907
+
+
+--------
+
+In-sample:
+        Multivariate accuracy: 0.8225103335511649
+Test:
+        Multivariate accuracy: 0.8223970121253323
+Elapsed time: 2585.5060421340168
+
+
+--------
+
+In-sample:
+        Multivariate accuracy: 0.8256944388417817
+Test:
+        Multivariate accuracy: 0.8236276171871638
+Elapsed time: 2592.3596118451096
+
+
+--------
+
+In-sample:
+        Multivariate accuracy: 0.8199124908900703
+Test:
+        Multivariate accuracy: 0.8192731685068372
+Elapsed time: 2616.123055686243
+
+
+--------
+
+In-sample:
+        Multivariate accuracy: 0.8252103687807082
+Test:
+        Multivariate accuracy: 0.8238685748216483
+Elapsed time: 2586.9863012321293
+
+
+--------
+

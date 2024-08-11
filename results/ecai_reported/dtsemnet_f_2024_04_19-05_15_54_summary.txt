@@ -1,0 +1,17 @@
+{'dataset': 'forest', 'model': 'dtsemnet', 'simulations': 10, 'output_prefix': 'f', 'verbose': True, 'gpu': True}
+
+python -m cro_dt.dtsemnet_train --dataset forest --model dtsemnet --simulations 10 --output_prefix f --verbose True --gpu True
+
+---
+
+
+--------------------------------------------------
+
+DATASET: ForestCover
+Num Total Samples: 371847
+10 simulations executed.
+Average in-sample multivariate accuracy: 0.822 ± 0.0040
+Average test multivariate accuracy: 0.820 ± 0.0042
+
+Best test multivariate accuracy: 0.826
+Average elapsed time: 1925.446 ± 11.062

@@ -1,0 +1,100 @@
+{'dataset': 'ailerons', 'model': 'dtregnet', 'simulations': 10, 'output_prefix': 'f', 'should_normalize_dataset': True, 'verbose': True, 'gpu': False}
+
+python -m cro_dt.reg_train_linear --dataset ailerons --model dtregnet --simulations 10 --output_prefix f --should_normalize_dataset True --verbose True --gpu False
+
+---
+
+
+--------------------------------------------------
+
+DATASET: Ailerons
+In-sample:
+        Multivariate accuracy: 1.6097722219029078
+Test:
+        Multivariate accuracy: 1.6704544531612995
+Elapsed time: 56.50604794314131
+
+
+--------
+
+In-sample:
+        Multivariate accuracy: 1.59860366515295
+Test:
+        Multivariate accuracy: 1.6542115260198311
+Elapsed time: 56.121387699153274
+
+
+--------
+
+In-sample:
+        Multivariate accuracy: 1.6182316374776553
+Test:
+        Multivariate accuracy: 1.6734861553656715
+Elapsed time: 56.18679238110781
+
+
+--------
+
+In-sample:
+        Multivariate accuracy: 1.6085177485047737
+Test:
+        Multivariate accuracy: 1.6631852679031043
+Elapsed time: 56.06619441695511
+
+
+--------
+
+In-sample:
+        Multivariate accuracy: 1.620610632887023
+Test:
+        Multivariate accuracy: 1.6605842589612139
+Elapsed time: 56.13774181995541
+
+
+--------
+
+In-sample:
+        Multivariate accuracy: 1.614935436333039
+Test:
+        Multivariate accuracy: 1.6540998248806216
+Elapsed time: 56.087862982880324
+
+
+--------
+
+In-sample:
+        Multivariate accuracy: 1.6231549580814781
+Test:
+        Multivariate accuracy: 1.6644535606066517
+Elapsed time: 56.075676765758544
+
+
+--------
+
+In-sample:
+        Multivariate accuracy: 1.6128760407764202
+Test:
+        Multivariate accuracy: 1.6628503477447527
+Elapsed time: 56.05224527604878
+
+
+--------
+
+In-sample:
+        Multivariate accuracy: 1.6081155800986986
+Test:
+        Multivariate accuracy: 1.6596018079667998
+Elapsed time: 56.043230581097305
+
+
+--------
+
+In-sample:
+        Multivariate accuracy: 1.6149152949008432
+Test:
+        Multivariate accuracy: 1.6639509151718155
+Elapsed time: 56.103026246186346
+
+
+--------
+

@@ -1,0 +1,910 @@
+{'dataset': 'climate', 'model': 'dgt', 'depth': 4, 'simulations': 100, 'output_prefix': 'time', 'should_normalize_dataset': True, 'verbose': True}
+
+python -m cro_dt.dtsemnet_train --dataset climate --model dgt --depth 4 --simulations 100 --output_prefix time --should_normalize_dataset True --verbose True
+
+---
+
+
+--------------------------------------------------
+
+DATASET: Climate model crashes
+In-sample:
+        Multivariate accuracy: 0.937037037037037
+Test:
+        Multivariate accuracy: 0.9407407407407408
+Elapsed time: 0.12577562796650454
+
+
+--------
+
+In-sample:
+        Multivariate accuracy: 0.9629629629629629
+Test:
+        Multivariate accuracy: 0.9629629629629629
+Elapsed time: 0.10303881397703663
+
+
+--------
+
+In-sample:
+        Multivariate accuracy: 0.9777777777777777
+Test:
+        Multivariate accuracy: 0.8814814814814815
+Elapsed time: 0.09496263798791915
+
+
+--------
+
+In-sample:
+        Multivariate accuracy: 0.9518518518518518
+Test:
+        Multivariate accuracy: 0.9111111111111111
+Elapsed time: 0.0958962439908646
+
+
+--------
+
+In-sample:
+        Multivariate accuracy: 0.9407407407407408
+Test:
+        Multivariate accuracy: 0.9333333333333333
+Elapsed time: 0.09669253299944103
+
+
+--------
+
+In-sample:
+        Multivariate accuracy: 0.9518518518518518
+Test:
+        Multivariate accuracy: 0.9333333333333333
+Elapsed time: 0.09675311896717176
+
+
+--------
+
+In-sample:
+        Multivariate accuracy: 0.9740740740740741
+Test:
+        Multivariate accuracy: 0.9185185185185185
+Elapsed time: 0.09630385099444538
+
+
+--------
+
+In-sample:
+        Multivariate accuracy: 0.9518518518518518
+Test:
+        Multivariate accuracy: 0.9333333333333333
+Elapsed time: 0.09621395397698507
+
+
+--------
+
+In-sample:
+        Multivariate accuracy: 0.9629629629629629
+Test:
+        Multivariate accuracy: 0.8962962962962963
+Elapsed time: 0.09652286401251331
+
+
+--------
+
+In-sample:
+        Multivariate accuracy: 0.9592592592592593
+Test:
+        Multivariate accuracy: 0.9037037037037037
+Elapsed time: 0.09627831098623574
+
+
+--------
+
+In-sample:
+        Multivariate accuracy: 0.9629629629629629
+Test:
+        Multivariate accuracy: 0.9185185185185185
+Elapsed time: 0.09602209902368486
+
+
+--------
+
+In-sample:
+        Multivariate accuracy: 0.9518518518518518
+Test:
+        Multivariate accuracy: 0.9333333333333333
+Elapsed time: 0.14252872997894883
+
+
+--------
+
+In-sample:
+        Multivariate accuracy: 0.9555555555555556
+Test:
+        Multivariate accuracy: 0.9555555555555556
+Elapsed time: 0.09676265896996483
+
+
+--------
+
+In-sample:
+        Multivariate accuracy: 0.9518518518518518
+Test:
+        Multivariate accuracy: 0.9111111111111111
+Elapsed time: 0.09635189798427746
+
+
+--------
+
+In-sample:
+        Multivariate accuracy: 0.9629629629629629
+Test:
+        Multivariate accuracy: 0.9333333333333333
+Elapsed time: 0.0972168690059334
+
+
+--------
+
+In-sample:
+        Multivariate accuracy: 0.9629629629629629
+Test:
+        Multivariate accuracy: 0.9629629629629629
+Elapsed time: 0.09652943297987804
+
+
+--------
+
+In-sample:
+        Multivariate accuracy: 0.9518518518518518
+Test:
+        Multivariate accuracy: 0.8888888888888888
+Elapsed time: 0.09636415296699852
+
+
+--------
+
+In-sample:
+        Multivariate accuracy: 0.9333333333333333
+Test:
+        Multivariate accuracy: 0.8962962962962963
+Elapsed time: 0.09610999497817829
+
+
+--------
+
+In-sample:
+        Multivariate accuracy: 0.9407407407407408
+Test:
+        Multivariate accuracy: 0.9111111111111111
+Elapsed time: 0.09669474797556177
+
+
+--------
+
+In-sample:
+        Multivariate accuracy: 0.9444444444444444
+Test:
+        Multivariate accuracy: 0.8962962962962963
+Elapsed time: 0.09598354704212397
+
+
+--------
+
+In-sample:
+        Multivariate accuracy: 0.9814814814814815
+Test:
+        Multivariate accuracy: 0.9111111111111111
+Elapsed time: 0.09632185398368165
+
+
+--------
+
+In-sample:
+        Multivariate accuracy: 0.9555555555555556
+Test:
+        Multivariate accuracy: 0.9259259259259259
+Elapsed time: 0.09589127800427377
+
+
+--------
+
+In-sample:
+        Multivariate accuracy: 0.9703703703703703
+Test:
+        Multivariate accuracy: 0.9407407407407408
+Elapsed time: 0.09694957704050466
+
+
+--------
+
+In-sample:
+        Multivariate accuracy: 0.937037037037037
+Test:
+        Multivariate accuracy: 0.8814814814814815
+Elapsed time: 0.09653600299498066
+
+
+--------
+
+In-sample:
+        Multivariate accuracy: 0.9740740740740741
+Test:
+        Multivariate accuracy: 0.9703703703703703
+Elapsed time: 0.09675978100858629
+
+
+--------
+
+In-sample:
+        Multivariate accuracy: 0.9444444444444444
+Test:
+        Multivariate accuracy: 0.9333333333333333
+Elapsed time: 0.0965618760092184
+
+
+--------
+
+In-sample:
+        Multivariate accuracy: 0.9888888888888889
+Test:
+        Multivariate accuracy: 0.9481481481481482
+Elapsed time: 0.09692737297154963
+
+
+--------
+
+In-sample:
+        Multivariate accuracy: 0.9333333333333333
+Test:
+        Multivariate accuracy: 0.9333333333333333
+Elapsed time: 0.09583955199923366
+
+
+--------
+
+In-sample:
+        Multivariate accuracy: 0.9518518518518518
+Test:
+        Multivariate accuracy: 0.9629629629629629
+Elapsed time: 0.09692268195794895
+
+
+--------
+
+In-sample:
+        Multivariate accuracy: 0.9259259259259259
+Test:
+        Multivariate accuracy: 0.8962962962962963
+Elapsed time: 0.09783779096323997
+
+
+--------
+
+In-sample:
+        Multivariate accuracy: 0.9333333333333333
+Test:
+        Multivariate accuracy: 0.8814814814814815
+Elapsed time: 0.09756270697107539
+
+
+--------
+
+In-sample:
+        Multivariate accuracy: 0.9740740740740741
+Test:
+        Multivariate accuracy: 0.9333333333333333
+Elapsed time: 0.09759539098013192
+
+
+--------
+
+In-sample:
+        Multivariate accuracy: 0.9629629629629629
+Test:
+        Multivariate accuracy: 0.9407407407407408
+Elapsed time: 0.14369790197815746
+
+
+--------
+
+In-sample:
+        Multivariate accuracy: 0.9592592592592593
+Test:
+        Multivariate accuracy: 0.9333333333333333
+Elapsed time: 0.09762255003442988
+
+
+--------
+
+In-sample:
+        Multivariate accuracy: 0.9555555555555556
+Test:
+        Multivariate accuracy: 0.9037037037037037
+Elapsed time: 0.09942092001438141
+
+
+--------
+
+In-sample:
+        Multivariate accuracy: 0.9629629629629629
+Test:
+        Multivariate accuracy: 0.8962962962962963
+Elapsed time: 0.09860990900779143
+
+
+--------
+
+In-sample:
+        Multivariate accuracy: 0.9666666666666667
+Test:
+        Multivariate accuracy: 0.9481481481481482
+Elapsed time: 0.1198362759896554
+
+
+--------
+
+In-sample:
+        Multivariate accuracy: 0.9740740740740741
+Test:
+        Multivariate accuracy: 0.9407407407407408
+Elapsed time: 0.11512716597644612
+
+
+--------
+
+In-sample:
+        Multivariate accuracy: 0.9703703703703703
+Test:
+        Multivariate accuracy: 0.9185185185185185
+Elapsed time: 0.11482341098599136
+
+
+--------
+
+In-sample:
+        Multivariate accuracy: 0.9555555555555556
+Test:
+        Multivariate accuracy: 0.9333333333333333
+Elapsed time: 0.11519597697770223
+
+
+--------
+
+In-sample:
+        Multivariate accuracy: 0.9814814814814815
+Test:
+        Multivariate accuracy: 0.9407407407407408
+Elapsed time: 0.09541196102509275
+
+
+--------
+
+In-sample:
+        Multivariate accuracy: 0.9481481481481482
+Test:
+        Multivariate accuracy: 0.9259259259259259
+Elapsed time: 0.09585548297036439
+
+
+--------
+
+In-sample:
+        Multivariate accuracy: 0.9814814814814815
+Test:
+        Multivariate accuracy: 0.9555555555555556
+Elapsed time: 0.0970217669964768
+
+
+--------
+
+In-sample:
+        Multivariate accuracy: 0.9555555555555556
+Test:
+        Multivariate accuracy: 0.9037037037037037
+Elapsed time: 0.0969793790136464
+
+
+--------
+
+In-sample:
+        Multivariate accuracy: 0.9333333333333333
+Test:
+        Multivariate accuracy: 0.9111111111111111
+Elapsed time: 0.09654552000574768
+
+
+--------
+
+In-sample:
+        Multivariate accuracy: 0.9407407407407408
+Test:
+        Multivariate accuracy: 0.9555555555555556
+Elapsed time: 0.09767177200410515
+
+
+--------
+
+In-sample:
+        Multivariate accuracy: 0.9333333333333333
+Test:
+        Multivariate accuracy: 0.9259259259259259
+Elapsed time: 0.09789425897179171
+
+
+--------
+
+In-sample:
+        Multivariate accuracy: 0.9518518518518518
+Test:
+        Multivariate accuracy: 0.8962962962962963
+Elapsed time: 0.0965776649536565
+
+
+--------
+
+In-sample:
+        Multivariate accuracy: 0.9629629629629629
+Test:
+        Multivariate accuracy: 0.9407407407407408
+Elapsed time: 0.09585021395469084
+
+
+--------
+
+In-sample:
+        Multivariate accuracy: 0.9555555555555556
+Test:
+        Multivariate accuracy: 0.8666666666666667
+Elapsed time: 0.09647625399520621
+
+
+--------
+
+In-sample:
+        Multivariate accuracy: 0.9407407407407408
+Test:
+        Multivariate accuracy: 0.8740740740740741
+Elapsed time: 0.09512681199703366
+
+
+--------
+
+In-sample:
+        Multivariate accuracy: 0.9148148148148149
+Test:
+        Multivariate accuracy: 0.9259259259259259
+Elapsed time: 0.09511470200959593
+
+
+--------
+
+In-sample:
+        Multivariate accuracy: 0.9740740740740741
+Test:
+        Multivariate accuracy: 0.9481481481481482
+Elapsed time: 0.09508681501029059
+
+
+--------
+
+In-sample:
+        Multivariate accuracy: 0.9666666666666667
+Test:
+        Multivariate accuracy: 0.9629629629629629
+Elapsed time: 0.14166522398591042
+
+
+--------
+
+In-sample:
+        Multivariate accuracy: 0.9444444444444444
+Test:
+        Multivariate accuracy: 0.9333333333333333
+Elapsed time: 0.09560461097862571
+
+
+--------
+
+In-sample:
+        Multivariate accuracy: 0.9148148148148149
+Test:
+        Multivariate accuracy: 0.9185185185185185
+Elapsed time: 0.09641205298248678
+
+
+--------
+
+In-sample:
+        Multivariate accuracy: 0.9296296296296296
+Test:
+        Multivariate accuracy: 0.8592592592592593
+Elapsed time: 0.09653653099667281
+
+
+--------
+
+In-sample:
+        Multivariate accuracy: 0.9407407407407408
+Test:
+        Multivariate accuracy: 0.9259259259259259
+Elapsed time: 0.09670860599726439
+
+
+--------
+
+In-sample:
+        Multivariate accuracy: 0.9703703703703703
+Test:
+        Multivariate accuracy: 0.9481481481481482
+Elapsed time: 0.09620374900987372
+
+
+--------
+
+In-sample:
+        Multivariate accuracy: 0.9629629629629629
+Test:
+        Multivariate accuracy: 0.8962962962962963
+Elapsed time: 0.09633707400644198
+
+
+--------
+
+In-sample:
+        Multivariate accuracy: 0.9555555555555556
+Test:
+        Multivariate accuracy: 0.9259259259259259
+Elapsed time: 0.09617803001310676
+
+
+--------
+
+In-sample:
+        Multivariate accuracy: 0.9444444444444444
+Test:
+        Multivariate accuracy: 0.9259259259259259
+Elapsed time: 0.09595854597864673
+
+
+--------
+
+In-sample:
+        Multivariate accuracy: 0.9629629629629629
+Test:
+        Multivariate accuracy: 0.9111111111111111
+Elapsed time: 0.09594143799040467
+
+
+--------
+
+In-sample:
+        Multivariate accuracy: 0.9444444444444444
+Test:
+        Multivariate accuracy: 0.9333333333333333
+Elapsed time: 0.09578335995320231
+
+
+--------
+
+In-sample:
+        Multivariate accuracy: 0.9703703703703703
+Test:
+        Multivariate accuracy: 0.9259259259259259
+Elapsed time: 0.09628240199526772
+
+
+--------
+
+In-sample:
+        Multivariate accuracy: 0.9592592592592593
+Test:
+        Multivariate accuracy: 0.9629629629629629
+Elapsed time: 0.09664025204256177
+
+
+--------
+
+In-sample:
+        Multivariate accuracy: 0.9444444444444444
+Test:
+        Multivariate accuracy: 0.9111111111111111
+Elapsed time: 0.09646250598598272
+
+
+--------
+
+In-sample:
+        Multivariate accuracy: 0.9814814814814815
+Test:
+        Multivariate accuracy: 0.9555555555555556
+Elapsed time: 0.09671262500341982
+
+
+--------
+
+In-sample:
+        Multivariate accuracy: 0.9592592592592593
+Test:
+        Multivariate accuracy: 0.9259259259259259
+Elapsed time: 0.09693217999301851
+
+
+--------
+
+In-sample:
+        Multivariate accuracy: 0.9629629629629629
+Test:
+        Multivariate accuracy: 0.9259259259259259
+Elapsed time: 0.09772976796375588
+
+
+--------
+
+In-sample:
+        Multivariate accuracy: 0.9148148148148149
+Test:
+        Multivariate accuracy: 0.9185185185185185
+Elapsed time: 0.0972736079711467
+
+
+--------
+
+In-sample:
+        Multivariate accuracy: 0.9666666666666667
+Test:
+        Multivariate accuracy: 0.9111111111111111
+Elapsed time: 0.09757529699709266
+
+
+--------
+
+In-sample:
+        Multivariate accuracy: 0.9666666666666667
+Test:
+        Multivariate accuracy: 0.9555555555555556
+Elapsed time: 0.09809644799679518
+
+
+--------
+
+In-sample:
+        Multivariate accuracy: 0.9629629629629629
+Test:
+        Multivariate accuracy: 0.9259259259259259
+Elapsed time: 0.09748797601787373
+
+
+--------
+
+In-sample:
+        Multivariate accuracy: 0.9444444444444444
+Test:
+        Multivariate accuracy: 0.9555555555555556
+Elapsed time: 0.09779822995187715
+
+
+--------
+
+In-sample:
+        Multivariate accuracy: 0.9740740740740741
+Test:
+        Multivariate accuracy: 0.9111111111111111
+Elapsed time: 0.14374866103753448
+
+
+--------
+
+In-sample:
+        Multivariate accuracy: 0.9259259259259259
+Test:
+        Multivariate accuracy: 0.8962962962962963
+Elapsed time: 0.09697461500763893
+
+
+--------
+
+In-sample:
+        Multivariate accuracy: 0.9
+Test:
+        Multivariate accuracy: 0.9111111111111111
+Elapsed time: 0.0970802940428257
+
+
+--------
+
+In-sample:
+        Multivariate accuracy: 0.9407407407407408
+Test:
+        Multivariate accuracy: 0.9111111111111111
+Elapsed time: 0.0978251009946689
+
+
+--------
+
+In-sample:
+        Multivariate accuracy: 0.9592592592592593
+Test:
+        Multivariate accuracy: 0.9333333333333333
+Elapsed time: 0.09902289003366604
+
+
+--------
+
+In-sample:
+        Multivariate accuracy: 0.9592592592592593
+Test:
+        Multivariate accuracy: 0.9259259259259259
+Elapsed time: 0.09630689496407285
+
+
+--------
+
+In-sample:
+        Multivariate accuracy: 0.9555555555555556
+Test:
+        Multivariate accuracy: 0.9111111111111111
+Elapsed time: 0.0961888279998675
+
+
+--------
+
+In-sample:
+        Multivariate accuracy: 0.9444444444444444
+Test:
+        Multivariate accuracy: 0.9407407407407408
+Elapsed time: 0.09580906399060041
+
+
+--------
+
+In-sample:
+        Multivariate accuracy: 0.9222222222222223
+Test:
+        Multivariate accuracy: 0.9481481481481482
+Elapsed time: 0.09643487498397008
+
+
+--------
+
+In-sample:
+        Multivariate accuracy: 0.9444444444444444
+Test:
+        Multivariate accuracy: 0.8888888888888888
+Elapsed time: 0.09650634496938437
+
+
+--------
+
+In-sample:
+        Multivariate accuracy: 0.9444444444444444
+Test:
+        Multivariate accuracy: 0.9703703703703703
+Elapsed time: 0.09710985596757382
+
+
+--------
+
+In-sample:
+        Multivariate accuracy: 0.9518518518518518
+Test:
+        Multivariate accuracy: 0.9407407407407408
+Elapsed time: 0.09755458100698888
+
+
+--------
+
+In-sample:
+        Multivariate accuracy: 0.9555555555555556
+Test:
+        Multivariate accuracy: 0.9037037037037037
+Elapsed time: 0.0969841760233976
+
+
+--------
+
+In-sample:
+        Multivariate accuracy: 0.9666666666666667
+Test:
+        Multivariate accuracy: 0.8888888888888888
+Elapsed time: 0.09721311699831858
+
+
+--------
+
+In-sample:
+        Multivariate accuracy: 0.9666666666666667
+Test:
+        Multivariate accuracy: 0.8592592592592593
+Elapsed time: 0.0966967370477505
+
+
+--------
+
+In-sample:
+        Multivariate accuracy: 0.9259259259259259
+Test:
+        Multivariate accuracy: 0.9407407407407408
+Elapsed time: 0.09731374401599169
+
+
+--------
+
+In-sample:
+        Multivariate accuracy: 0.9703703703703703
+Test:
+        Multivariate accuracy: 0.8814814814814815
+Elapsed time: 0.09774102602386847
+
+
+--------
+
+In-sample:
+        Multivariate accuracy: 0.9481481481481482
+Test:
+        Multivariate accuracy: 0.9333333333333333
+Elapsed time: 0.09599542699288577
+
+
+--------
+
+In-sample:
+        Multivariate accuracy: 0.9666666666666667
+Test:
+        Multivariate accuracy: 0.9407407407407408
+Elapsed time: 0.10439614596543834
+
+
+--------
+
+In-sample:
+        Multivariate accuracy: 0.9666666666666667
+Test:
+        Multivariate accuracy: 0.9037037037037037
+Elapsed time: 0.09689351101405919
+
+
+--------
+
+In-sample:
+        Multivariate accuracy: 0.9814814814814815
+Test:
+        Multivariate accuracy: 0.8888888888888888
+Elapsed time: 0.09788722801022232
+
+
+--------
+
+In-sample:
+        Multivariate accuracy: 0.9518518518518518
+Test:
+        Multivariate accuracy: 0.9333333333333333
+Elapsed time: 0.14547118899645284
+
+
+--------
+
+In-sample:
+        Multivariate accuracy: 0.9629629629629629
+Test:
+        Multivariate accuracy: 0.9481481481481482
+Elapsed time: 0.09733570500975475
+
+
+--------
+
+In-sample:
+        Multivariate accuracy: 0.9555555555555556
+Test:
+        Multivariate accuracy: 0.9333333333333333
+Elapsed time: 0.09724643302615732
+
+
+--------
+
+In-sample:
+        Multivariate accuracy: 0.9740740740740741
+Test:
+        Multivariate accuracy: 0.9037037037037037
+Elapsed time: 0.11566096905153245
+
+
+--------
+
