@@ -29,7 +29,7 @@ Regression: [abalone, ailerons, cpu_active, pdb_bind, year, ctslice, ms]
 Please install conda environment using `environment.yml`. In case, there is an error in PyTorch installation, please install the same version manually.
 
 
-## To run code for small classification dataset
+## To run code for classification dataset with **SMALL DTs**
 python -m src.net_train --model dtsemnet --dataset car --depth 4 -s 1 --output_prefix dtsement --verbose True 
 
     - replace `dtsemnet` with `dgt` for DGT evaluation
@@ -37,7 +37,7 @@ python -m src.net_train --model dtsemnet --dataset car --depth 4 -s 1 --output_p
     - s: Number of simulations for averaging
     - depth: Height of the DT
 
-## To run code for large classification dataset
+## To run code for classification dataset with **LARGE DTS**
 python -m src.net_train2 --model dtsemnet --dataset mnist -s 1 --output_prefix dtsement --verbose True -g
 
     - Height is included in the configuration file, no need to specify
