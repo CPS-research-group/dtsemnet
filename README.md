@@ -1,9 +1,10 @@
 # DTSemNet
 Welcome to the official implementation of the DTSemNet architecture, as proposed in the paper:
 “Vanilla Gradient Descent for Oblique Decision Trees,” ECAI-2024.
+[[Paper]]() [[Website]](https://cps-research-group.github.io/dtsemnet)
 
 ## Overview
-DTSemNet is a novel invertible encoding of Oblique Decision Trees (ODT) as Neural Network (NN) facilitating the training of ODT using vanilla gradient descent. This repository contains all the necessary files and scripts to replicate the experiments and results presented in the paper. We have reused some parts of code from [CRO-DT](https://github.com/vgarciasc/CRO-DT), [DGT](https://github.com/microsoft/DGT) and [ICCT](https://github.com/vgarciasc/CRO-DT)
+DTSemNet is a novel invertible encoding of Oblique Decision Trees (ODT) as a Neural Network (NN) facilitating the training of ODT using vanilla gradient descent. This repository contains all the necessary files and scripts to replicate the experiments and results presented in the paper. We have reused some parts of code from [CRO-DT](https://github.com/vgarciasc/CRO-DT), [DGT](https://github.com/microsoft/DGT) and [ICCT](https://github.com/vgarciasc/CRO-DT)
 
 ## Repository Structure
 - src/dtsemnet.py: Core implementation of the DTSemNet model.
@@ -26,32 +27,44 @@ Regression: [abalone, ailerons, cpu_active, pdb_bind, year, ctslice, ms]
 **Due to size constraints, not all datasets are included. Some datasets like MNIST can be auto-downloaded.**
 
 ## Installation
-Please install conda environment using `environment.yml`. In case, there is an error in PyTorch installation, please install the same version manually.
+Please install conda environment using `environment.yml`. In case, there is an error in PyTorch installation, please install the same version manually. 
+```bash
+conda env create -f environment.yml
+conda activate dtsemnet
+```
+
+Also, install the packages in `src' directory:
+```bash
+python -m pip install -e .
+```
 
 
-## To run code for classification dataset with **SMALL DTs**
-python -m src.net_train --model dtsemnet --dataset car --depth 4 -s 1 --output_prefix dtsement --verbose True 
+## Execute Code for Classification Dataset with **Small DTs**
+python -m src.net_train --model dtsemnet --dataset all --depth 4 -s 1 --output_prefix dtsement --verbose True 
 
     - replace `dtsemnet` with `dgt` for DGT evaluation
     - For time computation restrict number of cores to 8, use `taskset -cpa 0-7`
-    - s: Number of simulations for averaging
+    - s: Number of simulations for averaging (100 for small DTs and 10 for large DTs)
     - depth: Height of the DT
+    - dataset: Use appropriate dataset name. `all' to evaluate all datasets
+    - output_prefix: helps in managing the name of the log file
 
-## To run code for classification dataset with **LARGE DTS**
+## Execute Code for Classification Dataset with **Large DTs**
 python -m src.net_train2 --model dtsemnet --dataset mnist -s 1 --output_prefix dtsement --verbose True -g
 
-    - Height is included in the configuration file, no need to specify
+    - Height is included in the configuration file, there is no need to specify
+    - model: `dtsemnet' or `dgt'
+    - dataset: use appropriate name of the dataset
     - add `-g` for GPU operation
 
 ## DTSemNet-Regression
-Use the following terminal command for regression datasets ["abalone", "ailerons", "cpu_active", "pdb_bind", "year", "ctslice", "ms", "yahoo"]. Use `--model dtregnet` for 
+Use the following terminal command for regression datasets ["abalone", "ailerons", "cpu_active", "pdb_bind", "year", "ctslice", "ms"].
 
-Ailerons:
 ```bash
 python -m src.reg_train_linear --model dtregnet --dataset ailerons -s 1 --output_prefix ailerons --verbose True -g
 ```
 
-python -m src.reg_train_linear --model dtregnet --dataset abalone -s 10 --output_prefix abalone --verbose True -g
+    - Use `--model dtregnet` for for DTSemNet-regression
 
 
 ##
