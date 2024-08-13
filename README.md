@@ -40,7 +40,9 @@ python -m pip install -e .
 
 
 ## Execute Code for Classification Dataset with **Small DTs**
-python -m src.net_train --model dtsemnet --dataset all --depth 4 -s 1 --output_prefix dtsement --verbose True 
+```bash
+python -m src.net_train --model dtsemnet --dataset all --depth 4 -s 1 --output_prefix dtsement --verbose True
+```
 
     - replace `dtsemnet` with `dgt` for DGT evaluation
     - For time computation restrict number of cores to 8, use `taskset -cpa 0-7`
@@ -50,8 +52,9 @@ python -m src.net_train --model dtsemnet --dataset all --depth 4 -s 1 --output_p
     - output_prefix: helps in managing the name of the log file
 
 ## Execute Code for Classification Dataset with **Large DTs**
+```bash
 python -m src.net_train2 --model dtsemnet --dataset mnist -s 1 --output_prefix dtsement --verbose True -g
-
+```
     - Height is included in the configuration file, there is no need to specify
     - model: `dtsemnet' or `dgt'
     - dataset: use appropriate name of the dataset
