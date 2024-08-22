@@ -1,10 +1,10 @@
-# DTSemNet
+# DTSemNet <img width="100" alt="portfolio_view" align="right" src="resources/descartes_logo.jpg">
 Welcome to the official implementation of the DTSemNet architecture, as proposed in the paper:
 “Vanilla Gradient Descent for Oblique Decision Trees,” ECAI-2024.
 [[Paper]]() [[Website]](https://cps-research-group.github.io/dtsemnet)
 
 ## Overview
-DTSemNet is a novel invertible encoding of Oblique Decision Trees (ODT) as a Neural Network (NN) facilitating the training of ODT using vanilla gradient descent. This repository contains all the necessary files and scripts to replicate the experiments and results presented in the paper. We have reused some parts of code from [CRO-DT](https://github.com/vgarciasc/CRO-DT), [DGT](https://github.com/microsoft/DGT) and [ICCT](https://github.com/vgarciasc/CRO-DT)
+DTSemNet is a novel invertible encoding of Oblique Decision Trees (ODT) as a Neural Network (NN) facilitating the training of ODT using vanilla gradient descent. This repository contains all the necessary files and scripts to replicate the experiments and results presented in the paper. We have reused some parts of code from [CRO-DT](https://github.com/vgarciasc/CRO-DT), [DGT](https://github.com/microsoft/DGT) and [ICCT](https://github.com/vgarciasc/CRO-DT).
 
 ## Repository Structure
 - src/dtsemnet.py: Core implementation of the DTSemNet model.
