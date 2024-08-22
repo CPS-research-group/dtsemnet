@@ -1,4 +1,8 @@
-# DTSemNet <img width="100" alt="portfolio_view" align="right" src="resources/descartes_logo.jpg">
+DTSemNet <img width="100" alt="portfolio_view" align="right" src="docs/resources/descartes_logo.jpg">
+========
+
+![High Level](docs/resources/arch.png)
+
 Welcome to the official implementation of the DTSemNet architecture, as proposed in the paper:
 “Vanilla Gradient Descent for Oblique Decision Trees,” ECAI-2024.
 [[Paper]]() [[Website]](https://cps-research-group.github.io/dtsemnet)
