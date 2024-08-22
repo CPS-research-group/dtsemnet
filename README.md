@@ -1,11 +1,11 @@
-DTSemNet <img width="100" alt="portfolio_view" align="right" src="docs/resources/descartes_logo.jpg">
+DTSemNet <img width="150" alt="portfolio_view" align="right" src="docs/resources/descartes_logo.jpg">
 ========
-
-![High Level](docs/resources/arch.png)
 
 Welcome to the official implementation of the DTSemNet architecture, as proposed in the paper:
 “Vanilla Gradient Descent for Oblique Decision Trees,” ECAI-2024.
-[[Paper]]() [[Website]](https://cps-research-group.github.io/dtsemnet)
+[[Paper]](https://arxiv.org/pdf/2408.09135) [[Website]](https://cps-research-group.github.io/dtsemnet)
+
+![High Level](docs/resources/arch.png)
 
 ## Overview
 DTSemNet is a novel invertible encoding of Oblique Decision Trees (ODT) as a Neural Network (NN) facilitating the training of ODT using vanilla gradient descent. This repository contains all the necessary files and scripts to replicate the experiments and results presented in the paper. We have reused some parts of code from [CRO-DT](https://github.com/vgarciasc/CRO-DT), [DGT](https://github.com/microsoft/DGT) and [ICCT](https://github.com/vgarciasc/CRO-DT).
@@ -20,15 +20,35 @@ DTSemNet is a novel invertible encoding of Oblique Decision Trees (ODT) as a Neu
 
 
 ## Datasets
-This repository supports several datasets:
 
-Classification (small): [breast_cancer,car,banknote,balance,acute−1,acute−2,transfusion,climate,sonar,optical,drybean,avila,wine−red,wine−white]
+### Classification (Small)
+Included in the `datasets' directory: [breast_cancer,car,banknote,balance,acute−1,acute−2,transfusion,climate,sonar,optical,drybean,avila,wine−red,wine−white]
 
-Classification (large): [mnist, letter, connect, segment, satimages, pendigits, protein, sensit]
+**Due to size constraints, the following datasets are included. It needs to be downloaded to `datasets' directory.**
 
-Regression: [abalone, ailerons, cpu_active, pdb_bind, year, ctslice, ms]
+### Classification (Large)
+| Dataset Name   | Download Link |
+|----------------|---------------|
+| mnist          | PyTorch Auto-Download |
+| letter         | [Download](https://www.csie.ntu.edu.tw/~cjlin/libsvmtools/datasets/multiclass/letter.scale) |
+| connect        | [Download](https://www.csie.ntu.edu.tw/~cjlin/libsvmtools/datasets/multiclass/connect-4) |
+| segment        | [Download](https://www.csie.ntu.edu.tw/~cjlin/libsvmtools/datasets/multiclass/segment.scale) |
+| satimages      | [Download](https://www.csie.ntu.edu.tw/~cjlin/libsvmtools/datasets/multiclass/satimage.scale) |
+| pendigits      | [Download](https://www.csie.ntu.edu.tw/~cjlin/libsvmtools/datasets/multiclass/pendigits) |
+| protein        | [Download](https://www.csie.ntu.edu.tw/~cjlin/libsvmtools/datasets/multiclass/protein.bz2) |
+| sensit         | [Download](https://www.csie.ntu.edu.tw/~cjlin/libsvmtools/datasets/multiclass/vehicle/combined.bz2) |
 
-**Due to size constraints, not all datasets are included. Some datasets like MNIST can be auto-downloaded.**
+### Regression
+| Dataset Name   | Download Link |
+|----------------|---------------|
+| abalone        | [Download](https://github.com/microsoft/DGT/tree/main/datasets/abalone) |
+| ailerons       | [Download](https://www.dcc.fc.up.pt/~ltorgo/Regression/DataSets.html) |
+| cpu_active     | [Download](https://www.cs.toronto.edu/~delve/data/comp-activ/desc.html) |
+| pdb_bind       | [Download](http://www.pdbbind.org.cn/) |
+| year           | [Download](https://archive.ics.uci.edu/ml/datasets/YearPredictionMSD) |
+| ctslice        | [Download](https://archive.ics.uci.edu/dataset/206/relative+location+of+ct+slices+on+axial+axis) |
+| ms             | [Download](https://www.microsoft.com/en-us/research/project/mslr/) |
+
 
 ## Installation
 Please install conda environment using `environment.yml`. In case, there is an error in PyTorch installation, please install the same version manually. 
@@ -75,8 +95,9 @@ python -m src.reg_train_linear --model dtregnet --dataset ailerons -s 1 --output
 
 
 ##
+
 If you find DTSemNet useful in your research, please cite our work:
 
-> **Subrat Panda, Blaise Genest, Arvind Easwaran, and Ponnuthurai Suganthan**, *"Vanilla Gradient Descent for Oblique Decision Trees,"* European Conference on Artificial Intelligence (ECAI), 2024. [Link to paper](#)
+> **Subrat Panda, Blaise Genest, Arvind Easwaran, and Ponnuthurai Suganthan**, *"Vanilla Gradient Descent for Oblique Decision Trees,"* European Conference on Artificial Intelligence (ECAI), 2024. [Link to paper](https://arxiv.org/pdf/2408.09135)
 
 
