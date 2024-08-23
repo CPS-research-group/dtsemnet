@@ -24,7 +24,7 @@ DTSemNet is a novel invertible encoding of Oblique Decision Trees (ODT) as a Neu
 ### Classification (Small)
 Included in the `datasets' directory: [breast_cancer,car,banknote,balance,acute−1,acute−2,transfusion,climate,sonar,optical,drybean,avila,wine−red,wine−white]
 
-**Due to size constraints, the following datasets are included. It needs to be downloaded to `datasets' directory.**
+**Due to size constraints, the following datasets are not included. It needs to be downloaded to `datasets' directory.**
 
 ### Classification (Large)
 | Dataset Name   | Download Link |
