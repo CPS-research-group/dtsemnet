@@ -94,7 +94,7 @@ python -m src.reg_train_linear --model dtregnet --dataset ailerons -s 1 --output
     - Use `--model dtregnet` for for DTSemNet-regression
 
 ## RL Experiments
-- Please switch to branch rl_d (discrete states) or rl_c (continuous states) for the RL experiments.
+- Please switch to branch rl_d (discrete action: PPO) or rl_c (continuous action: SAC) for the RL experiments.
 - The branches are standalone, so you have to follow respective README files and do the environment installation for RL experiment.
 
 
