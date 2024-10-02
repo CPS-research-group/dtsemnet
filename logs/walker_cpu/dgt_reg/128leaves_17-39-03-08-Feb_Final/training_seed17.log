@@ -1,0 +1,32 @@
+08-02-24 03:39[root]INFO | Training on env: walker
+08-02-24 03:39[root]INFO | Agent Type: dgt_reg
+08-02-24 03:39[root]INFO | Log Directory: ./logs/walker_cpu/dgt_reg/128leaves_17-39-03-08-Feb_Final/
+08-02-24 03:39[root]INFO | GPU?: False
+08-02-24 03:39[root]INFO | Num Leaves: 128
+08-02-24 03:39[root]INFO | DGT Reg Policy
+08-02-24 03:39[root]INFO | Value Net Size: [256, 256]
+08-02-24 03:39[root]INFO | [START]======> Training Started for Seed [17]: 2024-02-08 03:39:43
+08-02-24 03:39[root]INFO | actor: DGTregActor(
+  (features_extractor): FlattenExtractor(
+    (flatten): Flatten(start_dim=1, end_dim=-1)
+  )
+  (drnet): DGTreg(
+    (_and_act_fn): Softmax(dim=-1)
+    (_predicate_l): Sequential(
+      (0): Linear(in_features=24, out_features=127, bias=True)
+    )
+    (_and_l): XLinear(
+      (_l): Linear(in_features=127, out_features=128, bias=False)
+    )
+    (_or_l): ModuleList(
+      (0-3): 4 x Linear(in_features=128, out_features=24, bias=True)
+    )
+  )
+)
+08-02-24 03:39[icct.rl_helpers.eval_callback]INFO | (Train) Episode: 0, Avg Reward: -99.49971721507609, Best: -99.49971721507609
+08-02-24 03:39[icct.rl_helpers.eval_callback]INFO | (Eval ) num_timesteps=1500, Reward=-46.61 +/- 6.09, EpLength: 1600.00 +/- 0.00
+08-02-24 03:39[icct.rl_helpers.eval_callback]INFO | (Save ) Storing Best Model: New best mean reward!
+08-02-24 03:39[icct.rl_helpers.eval_callback]INFO | (Eval ) num_timesteps=3000, Reward=-43.63 +/- 5.27, EpLength: 1600.00 +/- 0.00
+08-02-24 03:39[icct.rl_helpers.eval_callback]INFO | (Save ) Storing Best Model: New best mean reward!
+08-02-24 03:40[icct.rl_helpers.eval_callback]INFO | (Eval ) num_timesteps=4500, Reward=-45.52 +/- 5.91, EpLength: 1600.00 +/- 0.00
+08-02-24 03:40[icct.rl_helpers.eval_callback]INFO | (Eval ) num_timesteps=6000, Reward=-47.20 +/- 3.22, EpLength: 1600.00 +/- 0.00

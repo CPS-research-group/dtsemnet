@@ -1,0 +1,40 @@
+08-02-24 03:39[root]INFO | Training on env: walker
+08-02-24 03:39[root]INFO | Agent Type: dgt_reg
+08-02-24 03:39[root]INFO | Log Directory: ./logs/walker_cpu/dgt_reg/128leaves_17-39-03-08-Feb_Final/
+08-02-24 03:39[root]INFO | GPU?: False
+08-02-24 03:39[root]INFO | Num Leaves: 128
+08-02-24 03:39[root]INFO | DGT Reg Policy
+08-02-24 03:39[root]INFO | Value Net Size: [256, 256]
+08-02-24 03:39[root]INFO | [START]======> Training Started for Seed [19]: 2024-02-08 03:39:43
+08-02-24 03:39[root]INFO | actor: DGTregActor(
+  (features_extractor): FlattenExtractor(
+    (flatten): Flatten(start_dim=1, end_dim=-1)
+  )
+  (drnet): DGTreg(
+    (_and_act_fn): Softmax(dim=-1)
+    (_predicate_l): Sequential(
+      (0): Linear(in_features=24, out_features=127, bias=True)
+    )
+    (_and_l): XLinear(
+      (_l): Linear(in_features=127, out_features=128, bias=False)
+    )
+    (_or_l): ModuleList(
+      (0-3): 4 x Linear(in_features=128, out_features=24, bias=True)
+    )
+  )
+)
+08-02-24 03:39[icct.rl_helpers.eval_callback]INFO | (Eval ) num_timesteps=1500, Reward=-97.29 +/- 0.78, EpLength: 87.00 +/- 6.29
+08-02-24 03:39[icct.rl_helpers.eval_callback]INFO | (Save ) Storing Best Model: New best mean reward!
+08-02-24 03:39[icct.rl_helpers.eval_callback]INFO | (Train) Episode: 0, Avg Reward: -81.48007772336132, Best: -81.48007772336132
+08-02-24 03:39[icct.rl_helpers.eval_callback]INFO | (Eval ) num_timesteps=3000, Reward=-96.95 +/- 0.72, EpLength: 90.80 +/- 1.47
+08-02-24 03:39[icct.rl_helpers.eval_callback]INFO | (Save ) Storing Best Model: New best mean reward!
+08-02-24 03:39[icct.rl_helpers.eval_callback]INFO | (Eval ) num_timesteps=4500, Reward=-96.52 +/- 0.64, EpLength: 91.20 +/- 2.40
+08-02-24 03:39[icct.rl_helpers.eval_callback]INFO | (Save ) Storing Best Model: New best mean reward!
+08-02-24 03:39[icct.rl_helpers.eval_callback]INFO | (Eval ) num_timesteps=6000, Reward=-96.78 +/- 0.51, EpLength: 90.80 +/- 1.47
+08-02-24 03:39[icct.rl_helpers.eval_callback]INFO | (Eval ) num_timesteps=7500, Reward=-96.48 +/- 0.45, EpLength: 91.80 +/- 1.94
+08-02-24 03:39[icct.rl_helpers.eval_callback]INFO | (Save ) Storing Best Model: New best mean reward!
+08-02-24 03:39[icct.rl_helpers.eval_callback]INFO | (Eval ) num_timesteps=9000, Reward=-97.23 +/- 0.52, EpLength: 89.00 +/- 2.76
+08-02-24 03:40[icct.rl_helpers.eval_callback]INFO | (Eval ) num_timesteps=10500, Reward=-21.57 +/- 1.20, EpLength: 1600.00 +/- 0.00
+08-02-24 03:40[icct.rl_helpers.eval_callback]INFO | (Save ) Storing Best Model: New best mean reward!
+08-02-24 03:40[icct.rl_helpers.eval_callback]INFO | (Eval ) num_timesteps=12000, Reward=-112.79 +/- 0.36, EpLength: 37.60 +/- 0.49
+08-02-24 03:40[icct.rl_helpers.eval_callback]INFO | (Train) Episode: 20, Avg Reward: -102.8408202681788, Best: -80.80399220532308

@@ -1,0 +1,30 @@
+29-09-24 15:05[root]INFO | Training on env: walker
+29-09-24 15:05[root]INFO | Agent Type: drnet
+29-09-24 15:05[root]INFO | Log Directory: ./logs/walker_cpu/drnet/16test/
+29-09-24 15:05[root]INFO | GPU?: False
+29-09-24 15:05[root]INFO | Num Leaves: 16
+29-09-24 15:05[root]INFO | DTRegNet Policy
+29-09-24 15:05[root]INFO | Value Net Size: [512, 512]
+29-09-24 15:05[root]INFO | [START]======> Training Started for Seed [11]: 2024-09-29 15:05:56
+29-09-24 15:05[root]INFO | actor: DTRegNetActor(
+  (features_extractor): FlattenExtractor(
+    (flatten): Flatten(start_dim=1, end_dim=-1)
+  )
+  (drnet): DTSemNetReg(
+    (linear1): Linear(in_features=24, out_features=15, bias=True)
+    (reluP): ReLU()
+    (reluM): ReLU()
+    (linear2): Linear(in_features=30, out_features=16, bias=False)
+    (mpool): MaxPoolLayer()
+    (softmax): Softmax(dim=-1)
+    (ste): STE()
+    (regression_layer_action): Linear(in_features=16, out_features=96, bias=True)
+  )
+)
+29-09-24 15:05[icct.rl_helpers.eval_callback]INFO | (Train) Episode: 0, Avg Reward: -99.30097461934201, Best: -99.30097461934201
+29-09-24 15:05[icct.rl_helpers.eval_callback]INFO | (Train) Episode: 10, Avg Reward: -99.08666697374628, Best: -93.3321059687114
+29-09-24 15:06[icct.rl_helpers.eval_callback]INFO | (Train) Episode: 20, Avg Reward: -99.52594647715566, Best: -93.3321059687114
+29-09-24 15:07[icct.rl_helpers.eval_callback]INFO | (Train) Episode: 30, Avg Reward: -98.99128373468223, Best: -93.3321059687114
+29-09-24 15:08[icct.rl_helpers.eval_callback]INFO | (Eval ) num_timesteps=20000, Reward=-149.42 +/- 30.60, EpLength: 665.80 +/- 362.63
+29-09-24 15:08[icct.rl_helpers.eval_callback]INFO | (Save ) Storing Best Model: New best mean reward!
+29-09-24 15:08[icct.rl_helpers.eval_callback]INFO | (Train) Episode: 40, Avg Reward: -98.43194247429086, Best: -93.3321059687114

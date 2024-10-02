@@ -1,0 +1,23 @@
+21-02-24 13:09[root]INFO | Training on env: walker
+21-02-24 13:09[root]INFO | Agent Type: mlp
+21-02-24 13:09[root]INFO | Log Directory: ./logs/walker_cpu/mlp/32leaves_34-07-13-21-Feb_I/
+21-02-24 13:09[root]INFO | GPU?: False
+21-02-24 13:09[root]INFO | Num Leaves: 32
+21-02-24 13:09[root]INFO | MLP Size: [110, 110]
+21-02-24 13:09[root]INFO | Value Net Size: [512, 512]
+21-02-24 13:09[root]INFO | [START]======> Training Started for Seed [20]: 2024-02-21 13:09:10
+21-02-24 13:09[root]INFO | actor: Actor(
+  (features_extractor): FlattenExtractor(
+    (flatten): Flatten(start_dim=1, end_dim=-1)
+  )
+  (latent_pi): Sequential(
+    (0): Linear(in_features=24, out_features=110, bias=True)
+    (1): ReLU()
+    (2): Linear(in_features=110, out_features=110, bias=True)
+    (3): ReLU()
+  )
+  (mu): Linear(in_features=110, out_features=4, bias=True)
+  (log_std): Linear(in_features=110, out_features=4, bias=True)
+)
+21-02-24 13:09[icct.rl_helpers.eval_callback]INFO | (Train) Episode: 0, Avg Reward: -102.75833576265723, Best: -102.75833576265723
+21-02-24 13:09[icct.rl_helpers.eval_callback]INFO | (Train) Episode: 20, Avg Reward: -107.04915119363613, Best: -102.03100619181835

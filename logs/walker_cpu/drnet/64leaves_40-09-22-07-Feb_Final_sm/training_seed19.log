@@ -1,0 +1,118 @@
+07-02-24 22:10[root]INFO | Training on env: walker
+07-02-24 22:10[root]INFO | Agent Type: drnet
+07-02-24 22:10[root]INFO | Log Directory: ./logs/walker_cpu/drnet/64leaves_40-09-22-07-Feb_Final_sm/
+07-02-24 22:10[root]INFO | GPU?: False
+07-02-24 22:10[root]INFO | Num Leaves: 64
+07-02-24 22:10[root]INFO | DTRegNet Policy
+07-02-24 22:10[root]INFO | Value Net Size: [512, 512]
+07-02-24 22:10[root]INFO | [START]======> Training Started for Seed [19]: 2024-02-07 22:10:25
+07-02-24 22:10[root]INFO | actor: DTRegNetActor(
+  (features_extractor): FlattenExtractor(
+    (flatten): Flatten(start_dim=1, end_dim=-1)
+  )
+  (drnet): DTSemNetReg(
+    (linear1): Linear(in_features=24, out_features=63, bias=True)
+    (reluP): ReLU()
+    (reluM): ReLU()
+    (linear2): Linear(in_features=126, out_features=64, bias=False)
+    (mpool): MaxPoolLayer()
+    (softmax): Softmax(dim=-1)
+    (ste): STE()
+    (regression_layer_action): Linear(in_features=64, out_features=96, bias=True)
+  )
+)
+07-02-24 22:10[icct.rl_helpers.eval_callback]INFO | (Train) Episode: 0, Avg Reward: -81.48007772336132, Best: -81.48007772336132
+07-02-24 22:11[icct.rl_helpers.eval_callback]INFO | (Train) Episode: 20, Avg Reward: -106.43799540829626, Best: -80.80399220532308
+07-02-24 22:13[icct.rl_helpers.eval_callback]INFO | (Eval ) num_timesteps=20000, Reward=-100.35 +/- 0.19, EpLength: 64.60 +/- 0.80
+07-02-24 22:13[icct.rl_helpers.eval_callback]INFO | (Save ) Storing Best Model: New best mean reward!
+07-02-24 22:13[icct.rl_helpers.eval_callback]INFO | (Train) Episode: 40, Avg Reward: -107.41692776272929, Best: -80.80399220532308
+07-02-24 22:13[icct.rl_helpers.eval_callback]INFO | (Train) Episode: 60, Avg Reward: -105.08733148636817, Best: -80.80399220532308
+07-02-24 22:16[icct.rl_helpers.eval_callback]INFO | (Train) Episode: 80, Avg Reward: -103.09962177413578, Best: -80.80399220532308
+07-02-24 22:19[icct.rl_helpers.eval_callback]INFO | (Eval ) num_timesteps=40000, Reward=-113.95 +/- 1.54, EpLength: 47.60 +/- 1.62
+07-02-24 22:21[icct.rl_helpers.eval_callback]INFO | (Train) Episode: 100, Avg Reward: -96.92044174438108, Best: -80.80399220532308
+07-02-24 22:25[icct.rl_helpers.eval_callback]INFO | (Eval ) num_timesteps=60000, Reward=111.38 +/- 141.73, EpLength: 740.80 +/- 364.41
+07-02-24 22:25[icct.rl_helpers.eval_callback]INFO | (Save ) Storing Best Model: New best mean reward!
+07-02-24 22:27[icct.rl_helpers.eval_callback]INFO | (Train) Episode: 120, Avg Reward: -74.60413387768625, Best: -74.60413387768625
+07-02-24 22:31[icct.rl_helpers.eval_callback]INFO | (Eval ) num_timesteps=80000, Reward=301.54 +/- 0.84, EpLength: 972.40 +/- 15.29
+07-02-24 22:31[icct.rl_helpers.eval_callback]INFO | (Save ) Storing Best Model: New best mean reward!
+07-02-24 22:34[icct.rl_helpers.eval_callback]INFO | (Train) Episode: 140, Avg Reward: -3.795757125243026, Best: -3.795757125243026
+07-02-24 22:37[icct.rl_helpers.eval_callback]INFO | (Eval ) num_timesteps=100000, Reward=208.76 +/- 108.67, EpLength: 800.60 +/- 166.87
+07-02-24 22:39[icct.rl_helpers.eval_callback]INFO | (Train) Episode: 160, Avg Reward: 71.11012496312615, Best: 71.11012496312615
+07-02-24 22:42[icct.rl_helpers.eval_callback]INFO | (Eval ) num_timesteps=120000, Reward=215.54 +/- 129.95, EpLength: 788.80 +/- 260.99
+07-02-24 22:44[icct.rl_helpers.eval_callback]INFO | (Train) Episode: 180, Avg Reward: 141.5610630041044, Best: 141.5610630041044
+07-02-24 22:48[icct.rl_helpers.eval_callback]INFO | (Eval ) num_timesteps=140000, Reward=312.45 +/- 0.64, EpLength: 918.80 +/- 10.15
+07-02-24 22:48[icct.rl_helpers.eval_callback]INFO | (Save ) Storing Best Model: New best mean reward!
+07-02-24 22:48[icct.rl_helpers.eval_callback]INFO | (Train) Episode: 200, Avg Reward: 211.23640711453456, Best: 211.23640711453456
+07-02-24 22:52[icct.rl_helpers.eval_callback]INFO | (Train) Episode: 220, Avg Reward: 271.4335313426185, Best: 271.4335313426185
+07-02-24 22:53[icct.rl_helpers.eval_callback]INFO | (Eval ) num_timesteps=160000, Reward=311.61 +/- 0.33, EpLength: 832.00 +/- 3.74
+07-02-24 22:57[icct.rl_helpers.eval_callback]INFO | (Train) Episode: 240, Avg Reward: 280.73890347613184, Best: 280.73890347613184
+07-02-24 22:58[icct.rl_helpers.eval_callback]INFO | (Eval ) num_timesteps=180000, Reward=283.82 +/- 53.20, EpLength: 866.20 +/- 14.97
+07-02-24 23:01[icct.rl_helpers.eval_callback]INFO | (Train) Episode: 260, Avg Reward: 285.9198088841009, Best: 285.9198088841009
+07-02-24 23:04[icct.rl_helpers.eval_callback]INFO | (Eval ) num_timesteps=200000, Reward=314.81 +/- 0.34, EpLength: 805.20 +/- 4.31
+07-02-24 23:04[icct.rl_helpers.eval_callback]INFO | (Save ) Storing Best Model: New best mean reward!
+07-02-24 23:06[icct.rl_helpers.eval_callback]INFO | (Train) Episode: 280, Avg Reward: 288.45716096794143, Best: 291.26605465299156
+07-02-24 23:09[icct.rl_helpers.eval_callback]INFO | (Eval ) num_timesteps=220000, Reward=254.37 +/- 124.01, EpLength: 710.20 +/- 178.25
+07-02-24 23:10[icct.rl_helpers.eval_callback]INFO | (Train) Episode: 300, Avg Reward: 292.99275696511273, Best: 292.99275696511273
+07-02-24 23:11[icct.rl_helpers.eval_callback]INFO | (Train) Episode: 320, Avg Reward: 218.4342588285026, Best: 292.99275696511273
+07-02-24 23:15[icct.rl_helpers.eval_callback]INFO | (Eval ) num_timesteps=240000, Reward=316.37 +/- 0.35, EpLength: 817.40 +/- 8.71
+07-02-24 23:15[icct.rl_helpers.eval_callback]INFO | (Save ) Storing Best Model: New best mean reward!
+07-02-24 23:15[icct.rl_helpers.eval_callback]INFO | (Train) Episode: 340, Avg Reward: 215.05288422988897, Best: 292.99275696511273
+07-02-24 23:20[icct.rl_helpers.eval_callback]INFO | (Train) Episode: 360, Avg Reward: 212.6681157136828, Best: 292.99275696511273
+07-02-24 23:20[icct.rl_helpers.eval_callback]INFO | (Eval ) num_timesteps=260000, Reward=315.33 +/- 0.55, EpLength: 776.20 +/- 6.37
+07-02-24 23:24[icct.rl_helpers.eval_callback]INFO | (Train) Episode: 380, Avg Reward: 222.02244494616548, Best: 292.99275696511273
+07-02-24 23:26[icct.rl_helpers.eval_callback]INFO | (Eval ) num_timesteps=280000, Reward=311.77 +/- 0.47, EpLength: 815.60 +/- 11.48
+07-02-24 23:28[icct.rl_helpers.eval_callback]INFO | (Train) Episode: 400, Avg Reward: 213.39188022840594, Best: 292.99275696511273
+07-02-24 23:31[icct.rl_helpers.eval_callback]INFO | (Eval ) num_timesteps=300000, Reward=314.65 +/- 0.26, EpLength: 777.80 +/- 6.71
+07-02-24 23:32[icct.rl_helpers.eval_callback]INFO | (Train) Episode: 420, Avg Reward: 286.40873505441175, Best: 292.99275696511273
+07-02-24 23:37[icct.rl_helpers.eval_callback]INFO | (Eval ) num_timesteps=320000, Reward=314.65 +/- 0.63, EpLength: 815.40 +/- 20.41
+07-02-24 23:37[icct.rl_helpers.eval_callback]INFO | (Train) Episode: 440, Avg Reward: 294.5742301551902, Best: 294.5742301551902
+07-02-24 23:41[icct.rl_helpers.eval_callback]INFO | (Train) Episode: 460, Avg Reward: 297.5368754935949, Best: 297.5368754935949
+07-02-24 23:42[icct.rl_helpers.eval_callback]INFO | (Eval ) num_timesteps=340000, Reward=313.91 +/- 0.27, EpLength: 728.60 +/- 6.02
+07-02-24 23:45[icct.rl_helpers.eval_callback]INFO | (Train) Episode: 480, Avg Reward: 294.68207293835195, Best: 297.6208528234289
+07-02-24 23:48[icct.rl_helpers.eval_callback]INFO | (Eval ) num_timesteps=360000, Reward=317.66 +/- 0.27, EpLength: 800.80 +/- 4.17
+07-02-24 23:48[icct.rl_helpers.eval_callback]INFO | (Save ) Storing Best Model: New best mean reward!
+07-02-24 23:49[icct.rl_helpers.eval_callback]INFO | (Train) Episode: 500, Avg Reward: 304.6097107288815, Best: 304.6097107288815
+07-02-24 23:53[icct.rl_helpers.eval_callback]INFO | (Eval ) num_timesteps=380000, Reward=316.20 +/- 0.41, EpLength: 730.60 +/- 8.71
+07-02-24 23:53[icct.rl_helpers.eval_callback]INFO | (Train) Episode: 520, Avg Reward: 308.36183075879563, Best: 308.40858857190034
+07-02-24 23:58[icct.rl_helpers.eval_callback]INFO | (Train) Episode: 540, Avg Reward: 308.2156406699689, Best: 308.40858857190034
+07-02-24 23:59[icct.rl_helpers.eval_callback]INFO | (Eval ) num_timesteps=400000, Reward=315.49 +/- 1.24, EpLength: 769.20 +/- 8.49
+08-02-24 00:02[icct.rl_helpers.eval_callback]INFO | (Train) Episode: 560, Avg Reward: 307.6655128752685, Best: 310.85106335965355
+08-02-24 00:04[icct.rl_helpers.eval_callback]INFO | (Eval ) num_timesteps=420000, Reward=317.99 +/- 0.46, EpLength: 754.40 +/- 5.08
+08-02-24 00:04[icct.rl_helpers.eval_callback]INFO | (Save ) Storing Best Model: New best mean reward!
+08-02-24 00:06[icct.rl_helpers.eval_callback]INFO | (Train) Episode: 580, Avg Reward: 307.4736289667243, Best: 310.85106335965355
+08-02-24 00:09[icct.rl_helpers.eval_callback]INFO | (Eval ) num_timesteps=440000, Reward=314.57 +/- 0.28, EpLength: 765.00 +/- 5.76
+08-02-24 00:10[icct.rl_helpers.eval_callback]INFO | (Train) Episode: 600, Avg Reward: 305.41688284635245, Best: 310.85106335965355
+08-02-24 00:14[icct.rl_helpers.eval_callback]INFO | (Train) Episode: 620, Avg Reward: 302.5547837036782, Best: 310.85106335965355
+08-02-24 00:15[icct.rl_helpers.eval_callback]INFO | (Eval ) num_timesteps=460000, Reward=318.88 +/- 0.36, EpLength: 742.40 +/- 5.61
+08-02-24 00:15[icct.rl_helpers.eval_callback]INFO | (Save ) Storing Best Model: New best mean reward!
+08-02-24 00:18[icct.rl_helpers.eval_callback]INFO | (Train) Episode: 640, Avg Reward: 295.80047198936944, Best: 310.85106335965355
+08-02-24 00:20[icct.rl_helpers.eval_callback]INFO | (Eval ) num_timesteps=480000, Reward=317.92 +/- 0.45, EpLength: 742.80 +/- 3.92
+08-02-24 00:22[icct.rl_helpers.eval_callback]INFO | (Train) Episode: 660, Avg Reward: 293.7567356509361, Best: 310.85106335965355
+08-02-24 00:26[icct.rl_helpers.eval_callback]INFO | (Train) Episode: 680, Avg Reward: 297.1801682636776, Best: 310.85106335965355
+08-02-24 00:26[icct.rl_helpers.eval_callback]INFO | (Eval ) num_timesteps=500000, Reward=320.68 +/- 0.69, EpLength: 735.00 +/- 6.16
+08-02-24 00:26[icct.rl_helpers.eval_callback]INFO | (Save ) Storing Best Model: New best mean reward!
+08-02-24 00:30[icct.rl_helpers.eval_callback]INFO | (Train) Episode: 700, Avg Reward: 301.24315997918677, Best: 310.85106335965355
+08-02-24 00:31[icct.rl_helpers.eval_callback]INFO | (Eval ) num_timesteps=520000, Reward=318.11 +/- 0.33, EpLength: 755.60 +/- 4.27
+08-02-24 00:34[icct.rl_helpers.eval_callback]INFO | (Train) Episode: 720, Avg Reward: 301.0484242415291, Best: 310.85106335965355
+08-02-24 00:37[icct.rl_helpers.eval_callback]INFO | (Eval ) num_timesteps=540000, Reward=318.01 +/- 0.46, EpLength: 769.40 +/- 5.08
+08-02-24 00:38[icct.rl_helpers.eval_callback]INFO | (Train) Episode: 740, Avg Reward: 307.958368338241, Best: 310.85106335965355
+08-02-24 00:42[icct.rl_helpers.eval_callback]INFO | (Eval ) num_timesteps=560000, Reward=319.28 +/- 0.41, EpLength: 719.60 +/- 6.71
+08-02-24 00:43[icct.rl_helpers.eval_callback]INFO | (Train) Episode: 760, Avg Reward: 313.2859592835401, Best: 313.3044214898562
+08-02-24 00:47[icct.rl_helpers.eval_callback]INFO | (Train) Episode: 780, Avg Reward: 313.2204929827353, Best: 313.3044214898562
+08-02-24 00:48[icct.rl_helpers.eval_callback]INFO | (Eval ) num_timesteps=580000, Reward=318.78 +/- 0.42, EpLength: 710.00 +/- 5.90
+08-02-24 00:51[icct.rl_helpers.eval_callback]INFO | (Train) Episode: 800, Avg Reward: 313.3198344096956, Best: 313.40088311953895
+08-02-24 00:53[icct.rl_helpers.eval_callback]INFO | (Eval ) num_timesteps=600000, Reward=318.03 +/- 0.42, EpLength: 722.20 +/- 9.39
+08-02-24 00:55[icct.rl_helpers.eval_callback]INFO | (Train) Episode: 820, Avg Reward: 315.4013890711134, Best: 315.4013890711134
+08-02-24 00:59[icct.rl_helpers.eval_callback]INFO | (Eval ) num_timesteps=620000, Reward=319.83 +/- 0.27, EpLength: 727.60 +/- 3.93
+08-02-24 00:59[icct.rl_helpers.eval_callback]INFO | (Train) Episode: 840, Avg Reward: 315.7406794072503, Best: 315.7406794072503
+08-02-24 01:03[icct.rl_helpers.eval_callback]INFO | (Train) Episode: 860, Avg Reward: 313.81312500776914, Best: 315.805042079462
+08-02-24 01:04[icct.rl_helpers.eval_callback]INFO | (Eval ) num_timesteps=640000, Reward=321.69 +/- 0.39, EpLength: 723.20 +/- 3.19
+08-02-24 01:04[icct.rl_helpers.eval_callback]INFO | (Save ) Storing Best Model: New best mean reward!
+08-02-24 01:07[icct.rl_helpers.eval_callback]INFO | (Train) Episode: 880, Avg Reward: 311.21830886570433, Best: 315.805042079462
+08-02-24 01:09[icct.rl_helpers.eval_callback]INFO | (Eval ) num_timesteps=660000, Reward=319.57 +/- 0.54, EpLength: 733.00 +/- 4.69
+08-02-24 01:11[icct.rl_helpers.eval_callback]INFO | (Train) Episode: 900, Avg Reward: 311.34767016572414, Best: 315.805042079462
+08-02-24 01:15[icct.rl_helpers.eval_callback]INFO | (Train) Episode: 920, Avg Reward: 309.0100045391506, Best: 315.805042079462
+08-02-24 01:15[icct.rl_helpers.eval_callback]INFO | (Eval ) num_timesteps=680000, Reward=314.90 +/- 1.00, EpLength: 737.00 +/- 12.49
+08-02-24 01:19[icct.rl_helpers.eval_callback]INFO | (Train) Episode: 940, Avg Reward: 309.1154752849996, Best: 315.805042079462
+08-02-24 01:20[icct.rl_helpers.eval_callback]INFO | (Eval ) num_timesteps=700000, Reward=318.90 +/- 0.27, EpLength: 729.60 +/- 1.96
+08-02-24 01:20[root]INFO | [END]======> Execution time of seed 19: 3 hours, 10 minutes, 20 seconds

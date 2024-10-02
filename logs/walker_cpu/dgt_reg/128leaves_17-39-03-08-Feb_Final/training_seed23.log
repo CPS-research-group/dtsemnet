@@ -1,0 +1,25 @@
+08-02-24 03:40[root]INFO | Training on env: walker
+08-02-24 03:40[root]INFO | Agent Type: dgt_reg
+08-02-24 03:40[root]INFO | Log Directory: ./logs/walker_cpu/dgt_reg/128leaves_17-39-03-08-Feb_Final/
+08-02-24 03:40[root]INFO | GPU?: False
+08-02-24 03:40[root]INFO | Num Leaves: 128
+08-02-24 03:40[root]INFO | DGT Reg Policy
+08-02-24 03:40[root]INFO | Value Net Size: [256, 256]
+08-02-24 03:40[root]INFO | [START]======> Training Started for Seed [23]: 2024-02-08 03:40:25
+08-02-24 03:40[root]INFO | actor: DGTregActor(
+  (features_extractor): FlattenExtractor(
+    (flatten): Flatten(start_dim=1, end_dim=-1)
+  )
+  (drnet): DGTreg(
+    (_and_act_fn): Softmax(dim=-1)
+    (_predicate_l): Sequential(
+      (0): Linear(in_features=24, out_features=127, bias=True)
+    )
+    (_and_l): XLinear(
+      (_l): Linear(in_features=127, out_features=128, bias=False)
+    )
+    (_or_l): ModuleList(
+      (0-3): 4 x Linear(in_features=128, out_features=24, bias=True)
+    )
+  )
+)
