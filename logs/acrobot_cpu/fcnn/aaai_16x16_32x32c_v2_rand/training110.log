@@ -1,0 +1,78 @@
+13-08-23 00:51[root]INFO | Training on acrobot environment for 1500 episodes
+13-08-23 00:51[root]INFO | Agent Type: fcnn
+13-08-23 00:51[root]INFO | Log Directory: acrobot_cpu/fcnn/aaai_16x16_32x32c_v2_rand/
+13-08-23 00:51[root]INFO | Random Weight Initialization: True
+13-08-23 00:51[root]INFO | Training Started: 2023-08-13 00:51:15
+13-08-23 00:51[root]INFO | Using Acrobot Environment
+13-08-23 00:51[root]INFO | Hyperparameters: {"learning_rate": 0.007, "ent_coef": 0.02, "gamma": 0.99, "gae_lambda": 0.85, "clip_range": 0.2, "n_epochs": 16, "batch_size": 64, "n_steps": 1024, "vf_coef": 0.5, "max_grad_norm": 0.5}
+13-08-23 00:51[root]INFO | ===================> Training with seed 110 <=================
+13-08-23 00:51[root]INFO | Agent: FCNN
+13-08-23 00:51[root]INFO | Creating FCNN Action Net with arch:
+13-08-23 00:51[root]INFO | Using 16x16 architecture
+13-08-23 00:51[root]INFO | Creating FCNN Value Net with arch:
+13-08-23 00:51[root]INFO | Using 32x32 architecture
+13-08-23 00:51[root]INFO | Action Net Arch: FCNN(
+  (layer1): Linear(in_features=6, out_features=16, bias=True)
+  (layer2): Linear(in_features=16, out_features=16, bias=True)
+  (activation): ReLU()
+  (layer3): Linear(in_features=16, out_features=3, bias=True)
+  (softmax): Softmax(dim=1)
+)
+13-08-23 00:51[root]INFO | Value Net Arch: FCNN(
+  (layer1): Linear(in_features=6, out_features=32, bias=True)
+  (layer2): Linear(in_features=32, out_features=32, bias=True)
+  (activation): ReLU()
+  (layer3): Linear(in_features=32, out_features=3, bias=True)
+  (value_output): Linear(in_features=3, out_features=1, bias=True)
+)
+13-08-23 00:51[root]INFO | Episode: 0, Avg Reward: -422.0, Best Eval: -500.0
+13-08-23 00:51[root]INFO | Episode: 50, Avg Reward: -301.2352941176471, Best Eval: -156.73333333333332
+13-08-23 00:52[root]INFO | Episode: 100, Avg Reward: -219.4, Best Eval: -104.6
+13-08-23 00:52[root]INFO | Episode: 150, Avg Reward: -124.28, Best Eval: -96.1
+13-08-23 00:52[root]INFO | Episode: 200, Avg Reward: -104.11, Best Eval: -96.1
+13-08-23 00:52[root]INFO | Episode: 250, Avg Reward: -98.47, Best Eval: -96.1
+13-08-23 00:52[root]INFO | Episode: 300, Avg Reward: -93.63, Best Eval: -87.3
+13-08-23 00:53[root]INFO | Episode: 350, Avg Reward: -95.48, Best Eval: -81.66666666666667
+13-08-23 00:53[root]INFO | Episode: 400, Avg Reward: -93.79, Best Eval: -81.66666666666667
+13-08-23 00:53[root]INFO | Episode: 450, Avg Reward: -85.05, Best Eval: -81.66666666666667
+13-08-23 00:53[root]INFO | Episode: 500, Avg Reward: -85.38, Best Eval: -79.03333333333333
+13-08-23 00:53[root]INFO | Episode: 550, Avg Reward: -85.83, Best Eval: -79.03333333333333
+13-08-23 00:53[root]INFO | Episode: 600, Avg Reward: -86.65, Best Eval: -78.03333333333333
+13-08-23 00:54[root]INFO | Episode: 650, Avg Reward: -91.1, Best Eval: -76.96666666666667
+13-08-23 00:54[root]INFO | Episode: 700, Avg Reward: -96.22, Best Eval: -76.96666666666667
+13-08-23 00:54[root]INFO | Episode: 750, Avg Reward: -106.54, Best Eval: -76.96666666666667
+13-08-23 00:54[root]INFO | Episode: 800, Avg Reward: -99.57, Best Eval: -76.96666666666667
+13-08-23 00:54[root]INFO | Episode: 850, Avg Reward: -83.68, Best Eval: -76.96666666666667
+13-08-23 00:54[root]INFO | Episode: 900, Avg Reward: -87.96, Best Eval: -76.06666666666666
+13-08-23 00:55[root]INFO | Episode: 950, Avg Reward: -89.1, Best Eval: -75.2
+13-08-23 00:55[root]INFO | Episode: 1000, Avg Reward: -87.48, Best Eval: -75.2
+13-08-23 00:55[root]INFO | Episode: 1050, Avg Reward: -94.71, Best Eval: -75.2
+13-08-23 00:55[root]INFO | Episode: 1100, Avg Reward: -98.13, Best Eval: -75.2
+13-08-23 00:55[root]INFO | Episode: 1150, Avg Reward: -95.71, Best Eval: -75.2
+13-08-23 00:55[root]INFO | Episode: 1200, Avg Reward: -91.4, Best Eval: -75.2
+13-08-23 00:56[root]INFO | Episode: 1250, Avg Reward: -87.55, Best Eval: -75.2
+13-08-23 00:56[root]INFO | Episode: 1300, Avg Reward: -86.6, Best Eval: -75.2
+13-08-23 00:56[root]INFO | Episode: 1350, Avg Reward: -84.43, Best Eval: -75.2
+13-08-23 00:56[root]INFO | Episode: 1400, Avg Reward: -86.13, Best Eval: -75.2
+13-08-23 00:56[root]INFO | Episode: 1450, Avg Reward: -84.77, Best Eval: -75.2
+13-08-23 00:56[root]INFO | Agent: FCNN
+13-08-23 00:56[root]INFO | Creating FCNN Action Net with arch:
+13-08-23 00:56[root]INFO | Using 16x16 architecture
+13-08-23 00:56[root]INFO | Creating FCNN Value Net with arch:
+13-08-23 00:56[root]INFO | Using 32x32 architecture
+13-08-23 00:56[root]INFO | Action Net Arch: FCNN(
+  (layer1): Linear(in_features=6, out_features=16, bias=True)
+  (layer2): Linear(in_features=16, out_features=16, bias=True)
+  (activation): ReLU()
+  (layer3): Linear(in_features=16, out_features=3, bias=True)
+  (softmax): Softmax(dim=1)
+)
+13-08-23 00:56[root]INFO | Value Net Arch: FCNN(
+  (layer1): Linear(in_features=6, out_features=32, bias=True)
+  (layer2): Linear(in_features=32, out_features=32, bias=True)
+  (activation): ReLU()
+  (layer3): Linear(in_features=32, out_features=3, bias=True)
+  (value_output): Linear(in_features=3, out_features=1, bias=True)
+)
+13-08-23 00:56[root]INFO | ==============> Test reward for seeds [500, 600]: -83.49 +/- 19.750187340883627 <==========
+13-08-23 00:56[root]INFO | Execution time of seed 110: 0 hours, 5 minutes, 35 seconds

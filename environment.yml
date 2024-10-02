@@ -1,0 +1,52 @@
+name: dtnet-rl
+channels:
+  - anaconda
+  - pytorch
+  - nvidia
+  - conda-forge
+  - defaults
+dependencies:
+  - graphviz
+  - gymnasium
+  - gymnasium-notices
+  - matplotlib-base
+  - matplotlib-inline
+  - numpy-base=1.23.5=py38h31eccc5_0
+  - pip
+  - pydot
+  - python=3.8.10=h12debd9_8
+  - pytorch=2.0.0=py3.8_cuda11.7_cudnn8.5.0_0
+  - setuptools
+  - tensorboard
+  - pip:
+      - gym==0.21.0
+      - box2d==2.3.10
+      - ipykernel
+      - ipython
+      - ipython-genutils
+      - ipywidgets
+      - jupyter
+      - jupyter-client
+      - jupyter-console
+      - jupyter-core
+      - jupyterlab-widgets
+      - mujoco-py
+      - notebook
+      - optuna
+      - pandas
+      - pysc2==2.0.1
+      - pytest
+      - python-dateutil
+      - pytz
+      - s2clientprotocol==4.5.1.67344.0
+      - s2protocol==5.0.11.90136.0
+      - sc2==0.10.6
+      - sc2reader==1.1.0
+      - scikit-learn==1.0.2
+      - scipy==1.7.0
+      - shap
+      - sklearn
+      - stable-baselines3==1.8.0
+      - whichcraft
+      - -e .
+

@@ -1,0 +1,42 @@
+12-08-23 01:23[root]INFO | Training on cart environment for 1500 episodes
+12-08-23 01:23[root]INFO | Agent Type: dtnet
+12-08-23 01:23[root]INFO | Log Directory: cart_cpu/dtnet/aaai_15n_16x16c_rand/
+12-08-23 01:23[root]INFO | Random Weight Initialization: True
+12-08-23 01:23[root]INFO | Training Started: 2023-08-12 01:23:20
+12-08-23 01:23[root]INFO | Using Cart Pole Environment
+12-08-23 01:23[root]INFO | Hyperparameters: {"learning_rate": 0.024, "gamma": 0.99, "batch_size": 32, "n_steps": 832, "ent_coef": 0.02, "clip_range": 0.2, "vf_coef": 0.5, "max_grad_norm": 0.5, "gae_lambda": 0.86, "n_epochs": 20}
+12-08-23 01:23[root]INFO | ===================> Training with seed 100 <=================
+12-08-23 01:23[root]INFO | Using cartpole architecture 16x16
+12-08-23 01:23[root]INFO | Episode: 0, Avg Reward: 16.0, Best Eval: 10.6
+12-08-23 01:23[root]INFO | Episode: 50, Avg Reward: 25.07843137254902, Best Eval: 144.96666666666667
+12-08-23 01:23[root]INFO | Episode: 100, Avg Reward: 51.48, Best Eval: 449.46666666666664
+12-08-23 01:24[root]INFO | Episode: 150, Avg Reward: 165.12, Best Eval: 463.2
+12-08-23 01:25[root]INFO | Episode: 200, Avg Reward: 285.71, Best Eval: 500.0
+12-08-23 01:26[root]INFO | Episode: 250, Avg Reward: 334.05, Best Eval: 500.0
+12-08-23 01:27[root]INFO | Episode: 300, Avg Reward: 391.09, Best Eval: 500.0
+12-08-23 01:28[root]INFO | Episode: 350, Avg Reward: 418.56, Best Eval: 500.0
+12-08-23 01:29[root]INFO | Episode: 400, Avg Reward: 452.08, Best Eval: 500.0
+12-08-23 01:30[root]INFO | Episode: 450, Avg Reward: 483.7, Best Eval: 500.0
+12-08-23 01:31[root]INFO | Episode: 500, Avg Reward: 380.61, Best Eval: 500.0
+12-08-23 01:32[root]INFO | Episode: 550, Avg Reward: 383.76, Best Eval: 500.0
+12-08-23 01:33[root]INFO | Episode: 600, Avg Reward: 486.85, Best Eval: 500.0
+12-08-23 01:34[root]INFO | Episode: 650, Avg Reward: 459.99, Best Eval: 500.0
+12-08-23 01:36[root]INFO | Episode: 700, Avg Reward: 455.53, Best Eval: 500.0
+12-08-23 01:37[root]INFO | Episode: 750, Avg Reward: 486.36, Best Eval: 500.0
+12-08-23 01:37[root]INFO | Episode: 800, Avg Reward: 351.86, Best Eval: 500.0
+12-08-23 01:38[root]INFO | Episode: 850, Avg Reward: 323.99, Best Eval: 500.0
+12-08-23 01:40[root]INFO | Episode: 900, Avg Reward: 450.17, Best Eval: 500.0
+12-08-23 01:41[root]INFO | Episode: 950, Avg Reward: 460.27, Best Eval: 500.0
+12-08-23 01:42[root]INFO | Episode: 1000, Avg Reward: 449.45, Best Eval: 500.0
+12-08-23 01:43[root]INFO | Episode: 1050, Avg Reward: 464.14, Best Eval: 500.0
+12-08-23 01:44[root]INFO | Episode: 1100, Avg Reward: 467.72, Best Eval: 500.0
+12-08-23 01:45[root]INFO | Episode: 1150, Avg Reward: 416.62, Best Eval: 500.0
+12-08-23 01:46[root]INFO | Episode: 1200, Avg Reward: 375.15, Best Eval: 500.0
+12-08-23 01:47[root]INFO | Episode: 1250, Avg Reward: 425.39, Best Eval: 500.0
+12-08-23 01:48[root]INFO | Episode: 1300, Avg Reward: 453.18, Best Eval: 500.0
+12-08-23 01:49[root]INFO | Episode: 1350, Avg Reward: 289.35, Best Eval: 500.0
+12-08-23 01:49[root]INFO | Episode: 1400, Avg Reward: 134.02, Best Eval: 500.0
+12-08-23 01:50[root]INFO | Episode: 1450, Avg Reward: 220.33, Best Eval: 500.0
+12-08-23 01:51[root]INFO | Using cartpole architecture 16x16
+12-08-23 01:51[root]INFO | ==============> Test reward for seeds [500, 600]: 500.00 +/- 0.0 <==========
+12-08-23 01:51[root]INFO | Execution time of seed 100: 0 hours, 28 minutes, 1 seconds

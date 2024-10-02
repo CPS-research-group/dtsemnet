@@ -1,0 +1,62 @@
+13-08-23 10:26[root]INFO | Training on lunar environment for 1500 episodes
+13-08-23 10:26[root]INFO | Agent Type: icct
+13-08-23 10:26[root]INFO | Log Directory: lunar_cpu/icct/aaai_31n_32x32c_v3_rand/
+13-08-23 10:26[root]INFO | Random Weight Initialization: True
+13-08-23 10:26[root]INFO | Training Started: 2023-08-13 10:26:08
+13-08-23 10:26[root]INFO | Using Lunar Lander Environment
+13-08-23 10:26[root]INFO | Hyperparameters: {"learning_rate": 0.005, "ent_coef": 0.01, "gamma": 0.99, "gae_lambda": 0.9, "clip_range": 0.2, "n_epochs": 4, "batch_size": 64, "n_steps": 2048, "vf_coef": 0.5, "max_grad_norm": 0.5}
+13-08-23 10:26[root]INFO | ===================> Training with seed 42 <=================
+13-08-23 10:26[root]INFO | Agent: ICCT
+13-08-23 10:26[root]INFO | Action Net Arch: ICCT(
+  (sig): Sigmoid()
+)
+13-08-23 10:26[root]INFO | Value Net Arch: Sequential(
+  (0): Linear(in_features=8, out_features=32, bias=True)
+  (1): ReLU()
+  (2): Linear(in_features=32, out_features=32, bias=True)
+  (3): ReLU()
+  (4): Linear(in_features=32, out_features=1, bias=True)
+)
+13-08-23 10:26[root]INFO | Episode: 0, Avg Reward: -217.03418962005526, Best Eval: -127.52683266150999
+13-08-23 10:36[root]INFO | Episode: 50, Avg Reward: -180.46194551550948, Best Eval: -124.46832542622384
+13-08-23 10:49[root]INFO | Episode: 100, Avg Reward: -189.41749701425317, Best Eval: -124.46832542622384
+13-08-23 11:04[root]INFO | Episode: 150, Avg Reward: -204.6350056455389, Best Eval: -124.46832542622384
+13-08-23 11:19[root]INFO | Episode: 200, Avg Reward: -192.95843806998454, Best Eval: -124.46832542622384
+13-08-23 11:32[root]INFO | Episode: 250, Avg Reward: -187.87654473554926, Best Eval: -124.46832542622384
+13-08-23 11:39[root]INFO | Episode: 300, Avg Reward: -197.42460684275838, Best Eval: -124.46832542622384
+13-08-23 11:47[root]INFO | Episode: 350, Avg Reward: -184.9125088036561, Best Eval: -124.46832542622384
+13-08-23 11:58[root]INFO | Episode: 400, Avg Reward: -189.305136328965, Best Eval: -124.46832542622384
+13-08-23 12:07[root]INFO | Episode: 450, Avg Reward: -177.19596169867174, Best Eval: -124.46832542622384
+13-08-23 12:17[root]INFO | Episode: 500, Avg Reward: -148.40694391417492, Best Eval: -124.46832542622384
+13-08-23 12:28[root]INFO | Episode: 550, Avg Reward: -171.5742052724288, Best Eval: -124.46832542622384
+13-08-23 12:39[root]INFO | Episode: 600, Avg Reward: -169.61042996487464, Best Eval: -124.46832542622384
+13-08-23 12:50[root]INFO | Episode: 650, Avg Reward: -145.89963753861085, Best Eval: -124.46832542622384
+13-08-23 13:01[root]INFO | Episode: 700, Avg Reward: -152.72413424376762, Best Eval: -124.46832542622384
+13-08-23 13:14[root]INFO | Episode: 750, Avg Reward: -165.99327442882978, Best Eval: -124.46832542622384
+13-08-23 13:26[root]INFO | Episode: 800, Avg Reward: -171.30766978213538, Best Eval: -124.46832542622384
+13-08-23 13:33[root]INFO | Episode: 850, Avg Reward: -148.07188147640773, Best Eval: -124.46832542622384
+13-08-23 13:40[root]INFO | Episode: 900, Avg Reward: -121.8532119787093, Best Eval: -124.46832542622384
+13-08-23 13:49[root]INFO | Episode: 950, Avg Reward: -121.93169696460711, Best Eval: -124.46832542622384
+13-08-23 13:59[root]INFO | Episode: 1000, Avg Reward: -120.5967832499207, Best Eval: -124.46832542622384
+13-08-23 14:10[root]INFO | Episode: 1050, Avg Reward: -116.7664481490833, Best Eval: -124.46832542622384
+13-08-23 14:24[root]INFO | Episode: 1100, Avg Reward: -121.16149276743701, Best Eval: -124.46832542622384
+13-08-23 14:38[root]INFO | Episode: 1150, Avg Reward: -112.89556526639731, Best Eval: -124.46832542622384
+13-08-23 14:48[root]INFO | Episode: 1200, Avg Reward: -103.06325818747456, Best Eval: -124.46832542622384
+13-08-23 15:07[root]INFO | Episode: 1250, Avg Reward: -115.19235757174262, Best Eval: -124.46832542622384
+13-08-23 15:26[root]INFO | Episode: 1300, Avg Reward: -115.17746937976816, Best Eval: -124.46832542622384
+13-08-23 15:47[root]INFO | Episode: 1350, Avg Reward: -127.55000824564559, Best Eval: -124.46832542622384
+13-08-23 16:05[root]INFO | Episode: 1400, Avg Reward: -138.53267984584033, Best Eval: -124.46832542622384
+13-08-23 16:17[root]INFO | Episode: 1450, Avg Reward: -123.04203623048029, Best Eval: -124.46832542622384
+13-08-23 16:28[root]INFO | Agent: ICCT
+13-08-23 16:28[root]INFO | Action Net Arch: ICCT(
+  (sig): Sigmoid()
+)
+13-08-23 16:28[root]INFO | Value Net Arch: Sequential(
+  (0): Linear(in_features=8, out_features=32, bias=True)
+  (1): ReLU()
+  (2): Linear(in_features=32, out_features=32, bias=True)
+  (3): ReLU()
+  (4): Linear(in_features=32, out_features=1, bias=True)
+)
+13-08-23 16:31[root]INFO | ==============> Test reward for seeds [500, 600]: -133.34 +/- 44.75508915124592 <==========
+13-08-23 16:31[root]INFO | Execution time of seed 42: 6 hours, 4 minutes, 51 seconds

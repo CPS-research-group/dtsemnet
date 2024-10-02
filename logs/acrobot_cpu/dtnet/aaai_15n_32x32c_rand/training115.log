@@ -1,0 +1,42 @@
+12-08-23 01:32[root]INFO | Training on acrobot environment for 1500 episodes
+12-08-23 01:32[root]INFO | Agent Type: dtnet
+12-08-23 01:32[root]INFO | Log Directory: acrobot_cpu/dtnet/aaai_15n_32x32c_rand/
+12-08-23 01:32[root]INFO | Random Weight Initialization: True
+12-08-23 01:32[root]INFO | Training Started: 2023-08-12 01:32:48
+12-08-23 01:32[root]INFO | Using Acrobot Environment
+12-08-23 01:32[root]INFO | Hyperparameters: {"learning_rate": 0.045, "ent_coef": 0.01, "gamma": 0.99, "gae_lambda": 0.8, "clip_range": 0.2, "n_epochs": 16, "batch_size": 64, "n_steps": 1024, "vf_coef": 0.5, "max_grad_norm": 0.52}
+12-08-23 01:32[root]INFO | ===================> Training with seed 115 <=================
+12-08-23 01:32[root]INFO | Using 32x32 architecture
+12-08-23 01:32[root]INFO | Episode: 0, Avg Reward: -500.0, Best Eval: -500.0
+12-08-23 01:33[root]INFO | Episode: 50, Avg Reward: -385.4117647058824, Best Eval: -309.1
+12-08-23 01:34[root]INFO | Episode: 100, Avg Reward: -312.96, Best Eval: -209.2
+12-08-23 01:34[root]INFO | Episode: 150, Avg Reward: -220.13, Best Eval: -125.96666666666667
+12-08-23 01:35[root]INFO | Episode: 200, Avg Reward: -156.97, Best Eval: -112.33333333333333
+12-08-23 01:35[root]INFO | Episode: 250, Avg Reward: -108.3, Best Eval: -83.7
+12-08-23 01:35[root]INFO | Episode: 300, Avg Reward: -99.58, Best Eval: -78.76666666666667
+12-08-23 01:35[root]INFO | Episode: 350, Avg Reward: -91.86, Best Eval: -78.76666666666667
+12-08-23 01:36[root]INFO | Episode: 400, Avg Reward: -85.4, Best Eval: -78.26666666666667
+12-08-23 01:36[root]INFO | Episode: 450, Avg Reward: -88.48, Best Eval: -78.26666666666667
+12-08-23 01:36[root]INFO | Episode: 500, Avg Reward: -87.18, Best Eval: -78.26666666666667
+12-08-23 01:36[root]INFO | Episode: 550, Avg Reward: -85.68, Best Eval: -78.26666666666667
+12-08-23 01:36[root]INFO | Episode: 600, Avg Reward: -90.06, Best Eval: -78.26666666666667
+12-08-23 01:37[root]INFO | Episode: 650, Avg Reward: -89.22, Best Eval: -78.26666666666667
+12-08-23 01:37[root]INFO | Episode: 700, Avg Reward: -84.76, Best Eval: -78.26666666666667
+12-08-23 01:37[root]INFO | Episode: 750, Avg Reward: -84.47, Best Eval: -77.5
+12-08-23 01:37[root]INFO | Episode: 800, Avg Reward: -83.78, Best Eval: -77.5
+12-08-23 01:37[root]INFO | Episode: 850, Avg Reward: -82.57, Best Eval: -76.5
+12-08-23 01:38[root]INFO | Episode: 900, Avg Reward: -84.98, Best Eval: -76.5
+12-08-23 01:38[root]INFO | Episode: 950, Avg Reward: -86.07, Best Eval: -76.5
+12-08-23 01:38[root]INFO | Episode: 1000, Avg Reward: -83.18, Best Eval: -76.5
+12-08-23 01:38[root]INFO | Episode: 1050, Avg Reward: -84.52, Best Eval: -76.5
+12-08-23 01:38[root]INFO | Episode: 1100, Avg Reward: -86.71, Best Eval: -76.5
+12-08-23 01:39[root]INFO | Episode: 1150, Avg Reward: -86.58, Best Eval: -76.5
+12-08-23 01:39[root]INFO | Episode: 1200, Avg Reward: -86.03, Best Eval: -76.5
+12-08-23 01:39[root]INFO | Episode: 1250, Avg Reward: -86.06, Best Eval: -76.5
+12-08-23 01:39[root]INFO | Episode: 1300, Avg Reward: -83.7, Best Eval: -76.5
+12-08-23 01:39[root]INFO | Episode: 1350, Avg Reward: -82.0, Best Eval: -76.5
+12-08-23 01:40[root]INFO | Episode: 1400, Avg Reward: -86.18, Best Eval: -76.5
+12-08-23 01:40[root]INFO | Episode: 1450, Avg Reward: -85.84, Best Eval: -76.5
+12-08-23 01:40[root]INFO | Using 32x32 architecture
+12-08-23 01:40[root]INFO | ==============> Test reward for seeds [500, 600]: -81.14 +/- 14.300363631740279 <==========
+12-08-23 01:40[root]INFO | Execution time of seed 115: 0 hours, 7 minutes, 48 seconds

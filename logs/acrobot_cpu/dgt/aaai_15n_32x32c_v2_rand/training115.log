@@ -1,0 +1,80 @@
+13-08-23 04:06[root]INFO | Training on acrobot environment for 1500 episodes
+13-08-23 04:06[root]INFO | Agent Type: dgt
+13-08-23 04:06[root]INFO | Log Directory: acrobot_cpu/dgt/aaai_15n_32x32c_v2_rand/
+13-08-23 04:06[root]INFO | Random Weight Initialization: True
+13-08-23 04:06[root]INFO | Training Started: 2023-08-13 04:06:17
+13-08-23 04:06[root]INFO | Using Acrobot Environment
+13-08-23 04:06[root]INFO | Hyperparameters: {"n_steps": 2048, "batch_size": 128, "gamma": 0.99, "gae_lambda": 0.94, "clip_range": 0.22, "vf_coef": 0.54, "ent_coef": 0.012, "learning_rate": 0.001, "max_grad_norm": 0.5, "n_epochs": 20}
+13-08-23 04:06[root]INFO | ===================> Training with seed 115 <=================
+13-08-23 04:06[root]INFO | Agent: DGT
+13-08-23 04:06[root]INFO | Action Net Arch: DGT(
+  (_and_act_fn): Softmax(dim=-1)
+  (_predicate_l): Sequential(
+    (0): Linear(in_features=6, out_features=15, bias=True)
+  )
+  (_and_l): XLinear(
+    (_l): Linear(in_features=15, out_features=16, bias=False)
+  )
+  (_or_l): XLinear(
+    (_l): Linear(in_features=16, out_features=3, bias=False)
+  )
+)
+13-08-23 04:06[root]INFO | Value Net Arch: Sequential(
+  (0): Linear(in_features=6, out_features=32, bias=True)
+  (1): ReLU()
+  (2): Linear(in_features=32, out_features=32, bias=True)
+  (3): ReLU()
+  (4): Linear(in_features=32, out_features=1, bias=True)
+)
+13-08-23 04:06[root]INFO | Episode: 0, Avg Reward: -500.0, Best Eval: -500.0
+13-08-23 04:08[root]INFO | Episode: 50, Avg Reward: -440.5098039215686, Best Eval: -112.66666666666667
+13-08-23 04:09[root]INFO | Episode: 100, Avg Reward: -328.03, Best Eval: -87.76666666666667
+13-08-23 04:09[root]INFO | Episode: 150, Avg Reward: -170.09, Best Eval: -87.76666666666667
+13-08-23 04:10[root]INFO | Episode: 200, Avg Reward: -115.52, Best Eval: -81.2
+13-08-23 04:10[root]INFO | Episode: 250, Avg Reward: -102.98, Best Eval: -76.93333333333334
+13-08-23 04:10[root]INFO | Episode: 300, Avg Reward: -97.4, Best Eval: -76.93333333333334
+13-08-23 04:11[root]INFO | Episode: 350, Avg Reward: -93.35, Best Eval: -76.93333333333334
+13-08-23 04:11[root]INFO | Episode: 400, Avg Reward: -90.26, Best Eval: -76.93333333333334
+13-08-23 04:12[root]INFO | Episode: 450, Avg Reward: -88.37, Best Eval: -76.93333333333334
+13-08-23 04:12[root]INFO | Episode: 500, Avg Reward: -88.86, Best Eval: -76.93333333333334
+13-08-23 04:13[root]INFO | Episode: 550, Avg Reward: -91.49, Best Eval: -76.93333333333334
+13-08-23 04:13[root]INFO | Episode: 600, Avg Reward: -92.25, Best Eval: -76.93333333333334
+13-08-23 04:13[root]INFO | Episode: 650, Avg Reward: -95.03, Best Eval: -76.93333333333334
+13-08-23 04:14[root]INFO | Episode: 700, Avg Reward: -92.63, Best Eval: -76.93333333333334
+13-08-23 04:14[root]INFO | Episode: 750, Avg Reward: -87.98, Best Eval: -76.93333333333334
+13-08-23 04:15[root]INFO | Episode: 800, Avg Reward: -93.06, Best Eval: -76.93333333333334
+13-08-23 04:15[root]INFO | Episode: 850, Avg Reward: -93.68, Best Eval: -76.93333333333334
+13-08-23 04:16[root]INFO | Episode: 900, Avg Reward: -92.86, Best Eval: -76.93333333333334
+13-08-23 04:16[root]INFO | Episode: 950, Avg Reward: -101.15, Best Eval: -76.93333333333334
+13-08-23 04:17[root]INFO | Episode: 1000, Avg Reward: -106.51, Best Eval: -76.93333333333334
+13-08-23 04:17[root]INFO | Episode: 1050, Avg Reward: -108.49, Best Eval: -76.93333333333334
+13-08-23 04:17[root]INFO | Episode: 1100, Avg Reward: -106.62, Best Eval: -76.93333333333334
+13-08-23 04:18[root]INFO | Episode: 1150, Avg Reward: -98.91, Best Eval: -76.93333333333334
+13-08-23 04:18[root]INFO | Episode: 1200, Avg Reward: -100.49, Best Eval: -76.93333333333334
+13-08-23 04:19[root]INFO | Episode: 1250, Avg Reward: -97.93, Best Eval: -76.93333333333334
+13-08-23 04:19[root]INFO | Episode: 1300, Avg Reward: -90.31, Best Eval: -76.93333333333334
+13-08-23 04:20[root]INFO | Episode: 1350, Avg Reward: -90.31, Best Eval: -76.93333333333334
+13-08-23 04:20[root]INFO | Episode: 1400, Avg Reward: -91.72, Best Eval: -76.93333333333334
+13-08-23 04:20[root]INFO | Episode: 1450, Avg Reward: -96.71, Best Eval: -76.93333333333334
+13-08-23 04:21[root]INFO | Agent: DGT
+13-08-23 04:21[root]INFO | Action Net Arch: DGT(
+  (_and_act_fn): Softmax(dim=-1)
+  (_predicate_l): Sequential(
+    (0): Linear(in_features=6, out_features=15, bias=True)
+  )
+  (_and_l): XLinear(
+    (_l): Linear(in_features=15, out_features=16, bias=False)
+  )
+  (_or_l): XLinear(
+    (_l): Linear(in_features=16, out_features=3, bias=False)
+  )
+)
+13-08-23 04:21[root]INFO | Value Net Arch: Sequential(
+  (0): Linear(in_features=6, out_features=32, bias=True)
+  (1): ReLU()
+  (2): Linear(in_features=32, out_features=32, bias=True)
+  (3): ReLU()
+  (4): Linear(in_features=32, out_features=1, bias=True)
+)
+13-08-23 04:21[root]INFO | ==============> Test reward for seeds [500, 600]: -83.06 +/- 20.45474028190043 <==========
+13-08-23 04:21[root]INFO | Execution time of seed 115: 0 hours, 15 minutes, 19 seconds

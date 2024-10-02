@@ -1,0 +1,42 @@
+12-08-23 00:51[root]INFO | Training on acrobot environment for 1500 episodes
+12-08-23 00:51[root]INFO | Agent Type: icct
+12-08-23 00:51[root]INFO | Log Directory: acrobot_cpu/icct/aaai_15n_32x32c_rand/
+12-08-23 00:51[root]INFO | Random Weight Initialization: True
+12-08-23 00:51[root]INFO | Training Started: 2023-08-12 00:51:40
+12-08-23 00:51[root]INFO | Using Acrobot Environment
+12-08-23 00:51[root]INFO | Hyperparameters: {"learning_rate": 0.045, "ent_coef": 0.01, "gamma": 0.99, "gae_lambda": 0.8, "clip_range": 0.2, "n_epochs": 16, "batch_size": 64, "n_steps": 1024, "vf_coef": 0.5, "max_grad_norm": 0.52}
+12-08-23 00:51[root]INFO | ===================> Training with seed 100 <=================
+12-08-23 00:51[root]INFO | Agent: ICCT
+12-08-23 00:51[root]INFO | Episode: 0, Avg Reward: -500.0, Best Eval: -500.0
+12-08-23 00:53[root]INFO | Episode: 50, Avg Reward: -469.1764705882353, Best Eval: -186.66666666666666
+12-08-23 00:53[root]INFO | Episode: 100, Avg Reward: -336.01, Best Eval: -91.1
+12-08-23 00:54[root]INFO | Episode: 150, Avg Reward: -161.12, Best Eval: -91.1
+12-08-23 00:54[root]INFO | Episode: 200, Avg Reward: -108.49, Best Eval: -90.73333333333333
+12-08-23 00:55[root]INFO | Episode: 250, Avg Reward: -96.4, Best Eval: -83.16666666666667
+12-08-23 00:55[root]INFO | Episode: 300, Avg Reward: -93.25, Best Eval: -83.16666666666667
+12-08-23 00:55[root]INFO | Episode: 350, Avg Reward: -96.3, Best Eval: -83.16666666666667
+12-08-23 00:56[root]INFO | Episode: 400, Avg Reward: -107.53, Best Eval: -83.16666666666667
+12-08-23 00:56[root]INFO | Episode: 450, Avg Reward: -103.0, Best Eval: -83.16666666666667
+12-08-23 00:56[root]INFO | Episode: 500, Avg Reward: -90.2, Best Eval: -83.16666666666667
+12-08-23 00:56[root]INFO | Episode: 550, Avg Reward: -95.8, Best Eval: -76.6
+12-08-23 00:57[root]INFO | Episode: 600, Avg Reward: -105.42, Best Eval: -76.6
+12-08-23 00:58[root]INFO | Episode: 650, Avg Reward: -123.24, Best Eval: -76.6
+12-08-23 00:58[root]INFO | Episode: 700, Avg Reward: -146.52, Best Eval: -76.6
+12-08-23 00:58[root]INFO | Episode: 750, Avg Reward: -135.52, Best Eval: -76.6
+12-08-23 00:59[root]INFO | Episode: 800, Avg Reward: -102.82, Best Eval: -76.6
+12-08-23 00:59[root]INFO | Episode: 850, Avg Reward: -93.09, Best Eval: -75.83333333333333
+12-08-23 00:59[root]INFO | Episode: 900, Avg Reward: -95.8, Best Eval: -75.83333333333333
+12-08-23 00:59[root]INFO | Episode: 950, Avg Reward: -109.25, Best Eval: -75.83333333333333
+12-08-23 01:00[root]INFO | Episode: 1000, Avg Reward: -111.75, Best Eval: -75.83333333333333
+12-08-23 01:00[root]INFO | Episode: 1050, Avg Reward: -93.71, Best Eval: -75.83333333333333
+12-08-23 01:00[root]INFO | Episode: 1100, Avg Reward: -91.28, Best Eval: -75.83333333333333
+12-08-23 01:00[root]INFO | Episode: 1150, Avg Reward: -93.89, Best Eval: -75.83333333333333
+12-08-23 01:01[root]INFO | Episode: 1200, Avg Reward: -91.54, Best Eval: -75.83333333333333
+12-08-23 01:01[root]INFO | Episode: 1250, Avg Reward: -88.02, Best Eval: -75.83333333333333
+12-08-23 01:01[root]INFO | Episode: 1300, Avg Reward: -88.4, Best Eval: -75.83333333333333
+12-08-23 01:01[root]INFO | Episode: 1350, Avg Reward: -93.04, Best Eval: -75.83333333333333
+12-08-23 01:02[root]INFO | Episode: 1400, Avg Reward: -95.31, Best Eval: -75.83333333333333
+12-08-23 01:02[root]INFO | Episode: 1450, Avg Reward: -100.13, Best Eval: -75.83333333333333
+12-08-23 01:02[root]INFO | Agent: ICCT
+12-08-23 01:02[root]INFO | ==============> Test reward for seeds [500, 600]: -85.65 +/- 36.52187700543333 <==========
+12-08-23 01:02[root]INFO | Execution time of seed 100: 0 hours, 11 minutes, 18 seconds

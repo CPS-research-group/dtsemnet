@@ -1,0 +1,225 @@
+INFO:root:Training prolo on lunar for 1500 episodes.
+INFO:root:Description: fixed 31N nodup with rand and lr 2e-2 rms
+INFO:root:DT Type: None
+INFO:root:Using GPU: True
+INFO:root:PATH: lunar_gpu/prolo/fixed_nodup_rand/
+INFO:root:Random: True
+INFO:root:Training seed: [42, 46, 48, 50, 51]
+INFO:root:State dim: 8 Action dim: 4
+INFO:root:Train Params: discount: 0.99 epsilon: 1.0, epsilon_decay: 0.99, epsilon_min: 0.1
+INFO:root:Training ProLoNet Agent for seed: 0
+INFO:root:>>>>>>>>>>>>> Training for seed: 0 <<<<<<<<<<<<<<<<<<<
+INFO:root:Episode 0  Current Episode Reward: -197.72256409524374  Average (last 100) Running Reward: -197.72
+INFO:root:Model saved for seed 0. Max Test reward: -657.6838114194247
+INFO:root:Model saved for seed 0. Max Test reward: -570.1285595910792
+INFO:root:Model saved for seed 0. Max Test reward: -442.06151309522454
+INFO:root:Episode 50  Current Episode Reward: -11.314007813637488  Average (last 100) Running Reward: -243.01
+INFO:root:Model saved for seed 0. Max Test reward: -365.04498518954813
+INFO:root:Model saved for seed 0. Max Test reward: -150.32551812396292
+INFO:root:Episode 100  Current Episode Reward: -100.01972296549508  Average (last 100) Running Reward: -185.24
+INFO:root:Episode 150  Current Episode Reward: -36.585879899954634  Average (last 100) Running Reward: -87.49
+INFO:root:Model saved for seed 0. Max Test reward: -121.3843876164391
+INFO:root:Model saved for seed 0. Max Test reward: -105.32805668861914
+INFO:root:Episode 200  Current Episode Reward: -32.27709048040967  Average (last 100) Running Reward: -43.83
+INFO:root:Episode 250  Current Episode Reward: -60.78378358188514  Average (last 100) Running Reward: -48.41
+INFO:root:Model saved for seed 0. Max Test reward: -92.46318820450776
+INFO:root:Episode 300  Current Episode Reward: 23.839530122859003  Average (last 100) Running Reward: -27.16
+INFO:root:Model saved for seed 0. Max Test reward: -78.20835204467292
+INFO:root:Model saved for seed 0. Max Test reward: -64.06235892488219
+INFO:root:Model saved for seed 0. Max Test reward: -58.0794160774987
+INFO:root:Model saved for seed 0. Max Test reward: -54.57007890560763
+INFO:root:Episode 350  Current Episode Reward: 122.34368934677657  Average (last 100) Running Reward: 19.28
+INFO:root:Model saved for seed 0. Max Test reward: 129.4679629968732
+INFO:root:Model saved for seed 0. Max Test reward: 132.65417405064375
+INFO:root:Model saved for seed 0. Max Test reward: 139.78203761744652
+INFO:root:Episode 400  Current Episode Reward: 32.04796093739408  Average (last 100) Running Reward: 53.53
+INFO:root:Model saved for seed 0. Max Test reward: 141.05950990802438
+INFO:root:Episode 450  Current Episode Reward: 59.038955328044665  Average (last 100) Running Reward: 75.32
+INFO:root:Episode 500  Current Episode Reward: 99.21582230206612  Average (last 100) Running Reward: 43.63
+INFO:root:Episode 550  Current Episode Reward: -28.56738886311421  Average (last 100) Running Reward: 36.26
+INFO:root:Episode 600  Current Episode Reward: 91.05260326383703  Average (last 100) Running Reward: 75.85
+INFO:root:Episode 650  Current Episode Reward: 70.3187659210644  Average (last 100) Running Reward: 78.75
+INFO:root:Episode 700  Current Episode Reward: 111.4130100892599  Average (last 100) Running Reward: 76.01
+INFO:root:Episode 750  Current Episode Reward: 57.25347838865822  Average (last 100) Running Reward: 83.25
+INFO:root:Episode 800  Current Episode Reward: 107.6913030966249  Average (last 100) Running Reward: 84.83
+INFO:root:Episode 850  Current Episode Reward: 126.74386288694687  Average (last 100) Running Reward: 81.57
+INFO:root:Episode 900  Current Episode Reward: 48.49182178667968  Average (last 100) Running Reward: 80.29
+INFO:root:Episode 950  Current Episode Reward: 98.21951426734668  Average (last 100) Running Reward: 84.52
+INFO:root:Episode 1000  Current Episode Reward: 76.16449800877976  Average (last 100) Running Reward: 84.23
+INFO:root:Episode 1050  Current Episode Reward: 68.79047422243025  Average (last 100) Running Reward: 87.1
+INFO:root:Episode 1100  Current Episode Reward: 115.51821907743272  Average (last 100) Running Reward: 97.16
+INFO:root:Episode 1150  Current Episode Reward: 86.29445406085387  Average (last 100) Running Reward: 103.09
+INFO:root:Episode 1200  Current Episode Reward: 79.1166213968878  Average (last 100) Running Reward: 98.61
+INFO:root:Episode 1250  Current Episode Reward: 55.15658994694432  Average (last 100) Running Reward: 92.74
+INFO:root:Episode 1300  Current Episode Reward: 134.34850981295017  Average (last 100) Running Reward: 95.73
+INFO:root:Episode 1350  Current Episode Reward: 127.32690149147287  Average (last 100) Running Reward: 102.12
+INFO:root:Episode 1400  Current Episode Reward: 121.94168721648647  Average (last 100) Running Reward: 106.28
+INFO:root:Episode 1450  Current Episode Reward: 111.74328472710648  Average (last 100) Running Reward: 109.81
+INFO:root:=====> Test reward for seed 0: 67.74257052320655 <=====
+INFO:root:Training ProLoNet Agent for seed: 1
+INFO:root:>>>>>>>>>>>>> Training for seed: 1 <<<<<<<<<<<<<<<<<<<
+INFO:root:Episode 0  Current Episode Reward: -78.63560645102942  Average (last 100) Running Reward: -78.64
+INFO:root:Model saved for seed 1. Max Test reward: -711.5786095152858
+INFO:root:Model saved for seed 1. Max Test reward: -312.1105493322799
+INFO:root:Model saved for seed 1. Max Test reward: -103.28241905489045
+INFO:root:Episode 50  Current Episode Reward: -116.34378584833397  Average (last 100) Running Reward: -153.99
+INFO:root:Model saved for seed 1. Max Test reward: -83.35359737710526
+INFO:root:Episode 100  Current Episode Reward: -108.73881811952242  Average (last 100) Running Reward: -117.87
+INFO:root:Episode 150  Current Episode Reward: -282.34960471865736  Average (last 100) Running Reward: -95.9
+INFO:root:Episode 200  Current Episode Reward: -83.73925750222715  Average (last 100) Running Reward: -139.16
+INFO:root:Episode 250  Current Episode Reward: -40.97243858396707  Average (last 100) Running Reward: -151.0
+INFO:root:Model saved for seed 1. Max Test reward: -71.0901477204861
+INFO:root:Model saved for seed 1. Max Test reward: -64.46516461008765
+INFO:root:Episode 300  Current Episode Reward: -15.10203967213151  Average (last 100) Running Reward: -99.01
+INFO:root:Episode 350  Current Episode Reward: -126.32760861719224  Average (last 100) Running Reward: -72.15
+INFO:root:Episode 400  Current Episode Reward: -281.90416120286557  Average (last 100) Running Reward: -104.16
+INFO:root:Episode 450  Current Episode Reward: -149.92568107115338  Average (last 100) Running Reward: -151.21
+INFO:root:Episode 500  Current Episode Reward: -134.90362289388634  Average (last 100) Running Reward: -167.76
+INFO:root:Episode 550  Current Episode Reward: -144.55314831969167  Average (last 100) Running Reward: -143.92
+INFO:root:Episode 600  Current Episode Reward: -191.38480841209082  Average (last 100) Running Reward: -147.09
+INFO:root:Episode 650  Current Episode Reward: -162.00682334639666  Average (last 100) Running Reward: -158.97
+INFO:root:Episode 700  Current Episode Reward: -99.7251117662458  Average (last 100) Running Reward: -140.87
+INFO:root:Episode 750  Current Episode Reward: -44.98776478861634  Average (last 100) Running Reward: -123.12
+INFO:root:Episode 800  Current Episode Reward: -96.56890440124819  Average (last 100) Running Reward: -103.31
+INFO:root:Episode 850  Current Episode Reward: -195.84731627111188  Average (last 100) Running Reward: -98.35
+INFO:root:Episode 900  Current Episode Reward: -187.457875898645  Average (last 100) Running Reward: -117.36
+INFO:root:Episode 950  Current Episode Reward: -192.6187690177693  Average (last 100) Running Reward: -132.37
+INFO:root:Episode 1000  Current Episode Reward: -409.70477581622794  Average (last 100) Running Reward: -124.88
+INFO:root:Episode 1050  Current Episode Reward: -152.17612012999382  Average (last 100) Running Reward: -112.35
+INFO:root:Episode 1100  Current Episode Reward: -108.61144613652301  Average (last 100) Running Reward: -101.86
+INFO:root:Episode 1150  Current Episode Reward: -66.87867437081917  Average (last 100) Running Reward: -89.22
+INFO:root:Episode 1200  Current Episode Reward: -35.52061826043671  Average (last 100) Running Reward: -87.0
+INFO:root:Episode 1250  Current Episode Reward: -451.35709909240296  Average (last 100) Running Reward: -80.49
+INFO:root:Episode 1300  Current Episode Reward: -38.360748403512815  Average (last 100) Running Reward: -62.84
+INFO:root:Episode 1350  Current Episode Reward: -11.282114565562978  Average (last 100) Running Reward: -53.02
+INFO:root:Episode 1400  Current Episode Reward: -82.0619118169758  Average (last 100) Running Reward: -66.73
+INFO:root:Episode 1450  Current Episode Reward: -27.14654054665459  Average (last 100) Running Reward: -74.56
+INFO:root:=====> Test reward for seed 1: -141.4921515411284 <=====
+INFO:root:Training ProLoNet Agent for seed: 2
+INFO:root:>>>>>>>>>>>>> Training for seed: 2 <<<<<<<<<<<<<<<<<<<
+INFO:root:Episode 0  Current Episode Reward: -192.98077064362516  Average (last 100) Running Reward: -192.98
+INFO:root:Model saved for seed 2. Max Test reward: -509.0886554549253
+INFO:root:Model saved for seed 2. Max Test reward: -112.2058113577331
+INFO:root:Model saved for seed 2. Max Test reward: -64.72482886960394
+INFO:root:Episode 50  Current Episode Reward: -259.5811802057942  Average (last 100) Running Reward: -176.65
+INFO:root:Episode 100  Current Episode Reward: -10.90882261837254  Average (last 100) Running Reward: -127.04
+INFO:root:Episode 150  Current Episode Reward: -125.88011117328375  Average (last 100) Running Reward: -78.64
+INFO:root:Episode 200  Current Episode Reward: -49.421586420081  Average (last 100) Running Reward: -88.46
+INFO:root:Episode 250  Current Episode Reward: -98.42240954570035  Average (last 100) Running Reward: -88.25
+INFO:root:Episode 300  Current Episode Reward: -15.86508389114033  Average (last 100) Running Reward: -87.58
+INFO:root:Episode 350  Current Episode Reward: -88.90391584579419  Average (last 100) Running Reward: -95.35
+INFO:root:Episode 400  Current Episode Reward: -250.0759871469976  Average (last 100) Running Reward: -113.47
+INFO:root:Episode 450  Current Episode Reward: -141.12440032968118  Average (last 100) Running Reward: -134.77
+INFO:root:Episode 500  Current Episode Reward: -115.99499072254719  Average (last 100) Running Reward: -182.99
+INFO:root:Episode 550  Current Episode Reward: -410.48129751719114  Average (last 100) Running Reward: -199.61
+INFO:root:Episode 600  Current Episode Reward: -132.4291853232468  Average (last 100) Running Reward: -126.22
+INFO:root:Episode 650  Current Episode Reward: -48.954284112831616  Average (last 100) Running Reward: -75.66
+INFO:root:Episode 700  Current Episode Reward: -110.01578546736482  Average (last 100) Running Reward: -81.21
+INFO:root:Episode 750  Current Episode Reward: -25.954319170354655  Average (last 100) Running Reward: -85.97
+INFO:root:Episode 800  Current Episode Reward: -62.8796159969267  Average (last 100) Running Reward: -55.12
+INFO:root:Episode 850  Current Episode Reward: -9.994702576738561  Average (last 100) Running Reward: -21.35
+INFO:root:Episode 900  Current Episode Reward: 19.323146518885984  Average (last 100) Running Reward: 1.73
+INFO:root:Episode 950  Current Episode Reward: 64.37579636812953  Average (last 100) Running Reward: 11.48
+INFO:root:Model saved for seed 2. Max Test reward: -60.40729696449277
+INFO:root:Model saved for seed 2. Max Test reward: -59.199084030916794
+INFO:root:Episode 1000  Current Episode Reward: 83.49122940259413  Average (last 100) Running Reward: 23.63
+INFO:root:Episode 1050  Current Episode Reward: 115.89254864479801  Average (last 100) Running Reward: 56.13
+INFO:root:Model saved for seed 2. Max Test reward: -59.055104421648885
+INFO:root:Episode 1100  Current Episode Reward: 126.05201966562605  Average (last 100) Running Reward: 78.75
+INFO:root:Episode 1150  Current Episode Reward: 111.28184755881821  Average (last 100) Running Reward: 88.88
+INFO:root:Episode 1200  Current Episode Reward: 95.61923899234695  Average (last 100) Running Reward: 84.7
+INFO:root:Episode 1250  Current Episode Reward: 114.7517916961983  Average (last 100) Running Reward: 78.02
+INFO:root:Model saved for seed 2. Max Test reward: -55.96575827433314
+INFO:root:Episode 1300  Current Episode Reward: 93.42758282884805  Average (last 100) Running Reward: 79.93
+INFO:root:Episode 1350  Current Episode Reward: 79.13280812155274  Average (last 100) Running Reward: 87.6
+INFO:root:Model saved for seed 2. Max Test reward: -51.50353143022704
+INFO:root:Model saved for seed 2. Max Test reward: -51.05944335507225
+INFO:root:Episode 1400  Current Episode Reward: 135.1547310905516  Average (last 100) Running Reward: 93.06
+INFO:root:Model saved for seed 2. Max Test reward: -50.85674960222173
+INFO:root:Episode 1450  Current Episode Reward: -43.753149006701534  Average (last 100) Running Reward: 85.28
+INFO:root:Model saved for seed 2. Max Test reward: 77.73837847370257
+INFO:root:=====> Test reward for seed 2: 9.164258048690826 <=====
+INFO:root:Training ProLoNet Agent for seed: 3
+INFO:root:>>>>>>>>>>>>> Training for seed: 3 <<<<<<<<<<<<<<<<<<<
+INFO:root:Episode 0  Current Episode Reward: -215.55529953765807  Average (last 100) Running Reward: -215.56
+INFO:root:Model saved for seed 3. Max Test reward: -315.9365730686547
+INFO:root:Model saved for seed 3. Max Test reward: -117.65388958095359
+INFO:root:Episode 50  Current Episode Reward: -43.69427871345661  Average (last 100) Running Reward: -144.65
+INFO:root:Episode 100  Current Episode Reward: -8.551246880962978  Average (last 100) Running Reward: -120.77
+INFO:root:Episode 150  Current Episode Reward: 48.01976668890303  Average (last 100) Running Reward: -99.11
+INFO:root:Model saved for seed 3. Max Test reward: -15.870955918649528
+INFO:root:Episode 200  Current Episode Reward: -83.1372326057917  Average (last 100) Running Reward: -99.5
+INFO:root:Model saved for seed 3. Max Test reward: 22.113756138509743
+INFO:root:Episode 250  Current Episode Reward: -46.47832104754655  Average (last 100) Running Reward: -93.44
+INFO:root:Episode 300  Current Episode Reward: 20.87473850113199  Average (last 100) Running Reward: -87.31
+INFO:root:Episode 350  Current Episode Reward: -0.8129026247157753  Average (last 100) Running Reward: -57.32
+INFO:root:Episode 400  Current Episode Reward: -235.8753510979119  Average (last 100) Running Reward: -26.9
+INFO:root:Model saved for seed 3. Max Test reward: 54.57438903001835
+INFO:root:Episode 450  Current Episode Reward: 21.812281267244284  Average (last 100) Running Reward: -23.0
+INFO:root:Model saved for seed 3. Max Test reward: 136.53446392094318
+INFO:root:Episode 500  Current Episode Reward: 50.95589632084293  Average (last 100) Running Reward: -19.83
+INFO:root:Episode 550  Current Episode Reward: 111.03595738370271  Average (last 100) Running Reward: 8.5
+INFO:root:Episode 600  Current Episode Reward: 5.3252174699214905  Average (last 100) Running Reward: 14.7
+INFO:root:Model saved for seed 3. Max Test reward: 139.69503040781296
+INFO:root:Episode 650  Current Episode Reward: -58.017354414290224  Average (last 100) Running Reward: -3.04
+INFO:root:Model saved for seed 3. Max Test reward: 145.91301609418946
+INFO:root:Model saved for seed 3. Max Test reward: 166.9624437907974
+INFO:root:Episode 700  Current Episode Reward: 13.88897612615773  Average (last 100) Running Reward: -0.75
+INFO:root:Episode 750  Current Episode Reward: -169.17635946141257  Average (last 100) Running Reward: -6.68
+INFO:root:Episode 800  Current Episode Reward: 62.389776128733985  Average (last 100) Running Reward: -2.47
+INFO:root:Model saved for seed 3. Max Test reward: 180.10713473117096
+INFO:root:Episode 850  Current Episode Reward: -66.1181368409969  Average (last 100) Running Reward: -13.73
+INFO:root:Episode 900  Current Episode Reward: -36.68768654752073  Average (last 100) Running Reward: -17.78
+INFO:root:Episode 950  Current Episode Reward: 62.314474704287804  Average (last 100) Running Reward: -4.02
+INFO:root:Episode 1000  Current Episode Reward: 139.4422179060326  Average (last 100) Running Reward: -2.8
+INFO:root:Episode 1050  Current Episode Reward: 44.37637502635137  Average (last 100) Running Reward: -5.89
+INFO:root:Episode 1100  Current Episode Reward: 101.80286314387443  Average (last 100) Running Reward: -23.86
+INFO:root:Episode 1150  Current Episode Reward: 107.46574585698957  Average (last 100) Running Reward: -11.43
+INFO:root:Episode 1200  Current Episode Reward: -223.77257874217554  Average (last 100) Running Reward: -1.02
+INFO:root:Episode 1250  Current Episode Reward: 43.51479084009293  Average (last 100) Running Reward: -2.4
+INFO:root:Episode 1300  Current Episode Reward: 32.345161053449566  Average (last 100) Running Reward: 14.42
+INFO:root:Episode 1350  Current Episode Reward: 169.61769361365012  Average (last 100) Running Reward: 31.26
+INFO:root:Episode 1400  Current Episode Reward: -21.071683069116304  Average (last 100) Running Reward: 31.8
+INFO:root:Episode 1450  Current Episode Reward: 19.234016159261202  Average (last 100) Running Reward: 27.16
+INFO:root:=====> Test reward for seed 3: 0.17443239439870695 <=====
+INFO:root:Training ProLoNet Agent for seed: 4
+INFO:root:>>>>>>>>>>>>> Training for seed: 4 <<<<<<<<<<<<<<<<<<<
+INFO:root:Episode 0  Current Episode Reward: -280.2371280978409  Average (last 100) Running Reward: -280.24
+INFO:root:Model saved for seed 4. Max Test reward: -119.2913096518572
+INFO:root:Episode 50  Current Episode Reward: -139.43809516228416  Average (last 100) Running Reward: -165.34
+INFO:root:Model saved for seed 4. Max Test reward: -42.904218836714705
+INFO:root:Episode 100  Current Episode Reward: -44.21487478804384  Average (last 100) Running Reward: -129.43
+INFO:root:Episode 150  Current Episode Reward: -140.16702077192366  Average (last 100) Running Reward: -85.93
+INFO:root:Episode 200  Current Episode Reward: -57.90106275634017  Average (last 100) Running Reward: -46.24
+INFO:root:Episode 250  Current Episode Reward: 46.3302271473658  Average (last 100) Running Reward: -33.75
+INFO:root:Episode 300  Current Episode Reward: 24.649596139191175  Average (last 100) Running Reward: -18.69
+INFO:root:Model saved for seed 4. Max Test reward: 95.92624280988798
+INFO:root:Model saved for seed 4. Max Test reward: 157.45867189849366
+INFO:root:Episode 350  Current Episode Reward: 20.49939922046714  Average (last 100) Running Reward: 27.83
+INFO:root:Episode 400  Current Episode Reward: -189.9174634211213  Average (last 100) Running Reward: 30.52
+INFO:root:Episode 450  Current Episode Reward: 32.66351684785434  Average (last 100) Running Reward: -2.14
+INFO:root:Episode 500  Current Episode Reward: -5.574394183324504  Average (last 100) Running Reward: -20.32
+INFO:root:Episode 550  Current Episode Reward: 105.25482161099802  Average (last 100) Running Reward: 8.24
+INFO:root:Episode 600  Current Episode Reward: 156.82607468615126  Average (last 100) Running Reward: 63.57
+INFO:root:Model saved for seed 4. Max Test reward: 184.91309655982252
+INFO:root:Model saved for seed 4. Max Test reward: 195.00930777835066
+INFO:root:Episode 650  Current Episode Reward: 102.57835797601791  Average (last 100) Running Reward: 99.52
+INFO:root:Episode 700  Current Episode Reward: 131.13806106861404  Average (last 100) Running Reward: 107.34
+INFO:root:Episode 750  Current Episode Reward: -10.050097392804929  Average (last 100) Running Reward: 96.27
+INFO:root:Episode 800  Current Episode Reward: 58.6473458186552  Average (last 100) Running Reward: 98.06
+INFO:root:Episode 850  Current Episode Reward: 111.07774948794633  Average (last 100) Running Reward: 111.78
+INFO:root:Episode 900  Current Episode Reward: 62.11426782959822  Average (last 100) Running Reward: 103.76
+INFO:root:Episode 950  Current Episode Reward: 138.50425037127377  Average (last 100) Running Reward: 104.0
+INFO:root:Episode 1000  Current Episode Reward: 111.86031541161546  Average (last 100) Running Reward: 110.53
+INFO:root:Episode 1050  Current Episode Reward: 127.4210006919459  Average (last 100) Running Reward: 108.07
+INFO:root:Model saved for seed 4. Max Test reward: 218.47708748049266
+INFO:root:Episode 1100  Current Episode Reward: 102.4938436742666  Average (last 100) Running Reward: 112.81
+INFO:root:Model saved for seed 4. Max Test reward: 222.15349682557428
+INFO:root:Episode 1150  Current Episode Reward: 140.9635044061176  Average (last 100) Running Reward: 118.36
+INFO:root:Episode 1200  Current Episode Reward: 101.66617428184931  Average (last 100) Running Reward: 108.97
+INFO:root:Episode 1250  Current Episode Reward: 143.11037444694605  Average (last 100) Running Reward: 111.92
+INFO:root:Episode 1300  Current Episode Reward: 7.101549791397488  Average (last 100) Running Reward: 111.21
+INFO:root:Episode 1350  Current Episode Reward: 173.54972236189053  Average (last 100) Running Reward: 115.19
+INFO:root:Episode 1400  Current Episode Reward: 7.453405364762247  Average (last 100) Running Reward: 123.97
+INFO:root:Episode 1450  Current Episode Reward: 166.08553789856003  Average (last 100) Running Reward: 109.13
+INFO:root:=====> Test reward for seed 4: 209.23397670450345 <=====

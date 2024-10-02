@@ -1,0 +1,42 @@
+12-08-23 10:06[root]INFO | Training on cart environment for 1500 episodes
+12-08-23 10:06[root]INFO | Agent Type: icct
+12-08-23 10:06[root]INFO | Log Directory: cart_cpu/icct/aaai_15n_16x16c_rand/
+12-08-23 10:06[root]INFO | Random Weight Initialization: True
+12-08-23 10:06[root]INFO | Training Started: 2023-08-12 10:06:01
+12-08-23 10:06[root]INFO | Using Cart Pole Environment
+12-08-23 10:06[root]INFO | Hyperparameters: {"learning_rate": 0.024, "gamma": 0.99, "batch_size": 32, "n_steps": 832, "ent_coef": 0.02, "clip_range": 0.2, "vf_coef": 0.5, "max_grad_norm": 0.5, "gae_lambda": 0.86, "n_epochs": 20}
+12-08-23 10:06[root]INFO | ===================> Training with seed 100 <=================
+12-08-23 10:06[root]INFO | Agent: ICCT
+12-08-23 10:06[root]INFO | Episode: 0, Avg Reward: 15.0, Best Eval: 9.233333333333333
+12-08-23 10:06[root]INFO | Episode: 50, Avg Reward: 21.098039215686274, Best Eval: 12.433333333333334
+12-08-23 10:06[root]INFO | Episode: 100, Avg Reward: 24.37, Best Eval: 245.33333333333334
+12-08-23 10:07[root]INFO | Episode: 150, Avg Reward: 70.69, Best Eval: 470.7
+12-08-23 10:07[root]INFO | Episode: 200, Avg Reward: 146.96, Best Eval: 470.7
+12-08-23 10:08[root]INFO | Episode: 250, Avg Reward: 202.9, Best Eval: 470.7
+12-08-23 10:09[root]INFO | Episode: 300, Avg Reward: 217.96, Best Eval: 500.0
+12-08-23 10:10[root]INFO | Episode: 350, Avg Reward: 218.74, Best Eval: 500.0
+12-08-23 10:11[root]INFO | Episode: 400, Avg Reward: 179.75, Best Eval: 500.0
+12-08-23 10:12[root]INFO | Episode: 450, Avg Reward: 139.74, Best Eval: 500.0
+12-08-23 10:13[root]INFO | Episode: 500, Avg Reward: 197.93, Best Eval: 500.0
+12-08-23 10:14[root]INFO | Episode: 550, Avg Reward: 232.32, Best Eval: 500.0
+12-08-23 10:15[root]INFO | Episode: 600, Avg Reward: 246.96, Best Eval: 500.0
+12-08-23 10:16[root]INFO | Episode: 650, Avg Reward: 275.5, Best Eval: 500.0
+12-08-23 10:17[root]INFO | Episode: 700, Avg Reward: 215.33, Best Eval: 500.0
+12-08-23 10:18[root]INFO | Episode: 750, Avg Reward: 175.48, Best Eval: 500.0
+12-08-23 10:19[root]INFO | Episode: 800, Avg Reward: 227.62, Best Eval: 500.0
+12-08-23 10:21[root]INFO | Episode: 850, Avg Reward: 295.51, Best Eval: 500.0
+12-08-23 10:22[root]INFO | Episode: 900, Avg Reward: 327.27, Best Eval: 500.0
+12-08-23 10:23[root]INFO | Episode: 950, Avg Reward: 244.25, Best Eval: 500.0
+12-08-23 10:24[root]INFO | Episode: 1000, Avg Reward: 224.58, Best Eval: 500.0
+12-08-23 10:25[root]INFO | Episode: 1050, Avg Reward: 261.92, Best Eval: 500.0
+12-08-23 10:27[root]INFO | Episode: 1100, Avg Reward: 252.35, Best Eval: 500.0
+12-08-23 10:28[root]INFO | Episode: 1150, Avg Reward: 267.47, Best Eval: 500.0
+12-08-23 10:29[root]INFO | Episode: 1200, Avg Reward: 267.78, Best Eval: 500.0
+12-08-23 10:31[root]INFO | Episode: 1250, Avg Reward: 302.31, Best Eval: 500.0
+12-08-23 10:32[root]INFO | Episode: 1300, Avg Reward: 307.41, Best Eval: 500.0
+12-08-23 10:33[root]INFO | Episode: 1350, Avg Reward: 236.67, Best Eval: 500.0
+12-08-23 10:35[root]INFO | Episode: 1400, Avg Reward: 259.35, Best Eval: 500.0
+12-08-23 10:36[root]INFO | Episode: 1450, Avg Reward: 307.85, Best Eval: 500.0
+12-08-23 10:37[root]INFO | Agent: ICCT
+12-08-23 10:37[root]INFO | ==============> Test reward for seeds [500, 600]: 500.00 +/- 0.0 <==========
+12-08-23 10:37[root]INFO | Execution time of seed 100: 0 hours, 31 minutes, 54 seconds
