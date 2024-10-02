@@ -1,5 +1,7 @@
-# DTSemNets: Decision Tree Semantic Networks
-This repository implements the work proposed in "Gradient Descent on Decision Trees for Trustworthy Reinforcement Learning," which is exact conversion between DT and NN. The architecture proposed (main contribution) in this paper is at `src/agents/dtnet/arch`.
+# DTSemNets: RL Experiments
+RL experiments using DTSemNet for discrete action environments.
+
+
 
 ## System Information
 - OS: Ubuntu 22.04
