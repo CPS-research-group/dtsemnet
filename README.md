@@ -26,11 +26,13 @@ Update the `parallel_seed_train_local.sh' with correct option then run the scrip
 ./parallel_seed_train_local.sh
 ```
 
-If requried to execute the training for single program:
+If requried to execute the training for single seed:
 ```bash
-./train_drnet_singleSEED_lunar.sh 11 16test 16 0.001 256
+.\train_drnet_singleSEED_lunar.sh 11 16test 16 0.001 256
 ```
 
 
 ## Eval Agent
-Update the path of the model to be updated in `eval_agent.sh' the execute the script
+Update the path of the model to be updated in `eval_agent.sh' then execute the script
+```bash
+.\eval_agent.sh
