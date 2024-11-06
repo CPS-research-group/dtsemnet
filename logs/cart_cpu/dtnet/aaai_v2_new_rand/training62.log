@@ -1,0 +1,74 @@
+07-11-24 04:33[root]INFO | Training on cart environment for 1500 episodes
+07-11-24 04:33[root]INFO | Agent Type: dtnet
+07-11-24 04:33[root]INFO | Log Directory: cart_cpu/dtnet/aaai_v2_new_rand/
+07-11-24 04:33[root]INFO | Random Weight Initialization: True
+07-11-24 04:33[root]INFO | Training Started: 2024-11-07 04:33:17
+07-11-24 04:33[root]INFO | Using Cart Pole Environment
+07-11-24 04:33[root]INFO | Hyperparameters: {"learning_rate": 0.024, "gamma": 0.99, "batch_size": 32, "n_steps": 832, "ent_coef": 0.02, "clip_range": 0.2, "vf_coef": 0.5, "max_grad_norm": 0.5, "gae_lambda": 0.86, "n_epochs": 20}
+07-11-24 04:33[root]INFO | ===================> Training with seed 62 <=================
+07-11-24 04:33[root]INFO | Using DTNet agent
+07-11-24 04:33[root]INFO | Using cartpole architecture 16x16
+07-11-24 04:33[root]INFO | Action Net Arch: DTNetv0(
+  (linear1): Linear(in_features=4, out_features=15, bias=True)
+  (reluP): ReLU()
+  (reluM): ReLU()
+  (linear2): Linear(in_features=30, out_features=16, bias=False)
+  (mpool): MaxPoolLayer()
+  (softmax): Softmax(dim=-1)
+)
+07-11-24 04:33[root]INFO | Value Net Arch: FCNN(
+  (layer1): Linear(in_features=4, out_features=16, bias=True)
+  (layer2): Linear(in_features=16, out_features=16, bias=True)
+  (activation): ReLU()
+  (layer3): Linear(in_features=16, out_features=2, bias=True)
+  (value_output): Linear(in_features=2, out_features=1, bias=True)
+)
+07-11-24 04:33[root]INFO | Episode: 0, Avg Reward: 17.0, Best Eval: -inf
+07-11-24 04:33[root]INFO | Episode: 50, Avg Reward: 21.784313725490197, Best Eval: -inf
+07-11-24 04:34[root]INFO | Episode: 100, Avg Reward: 43.63, Best Eval: -inf
+07-11-24 04:36[root]INFO | Episode: 150, Avg Reward: 117.34, Best Eval: -inf
+07-11-24 04:41[root]INFO | Episode: 200, Avg Reward: 277.3, Best Eval: -inf
+07-11-24 04:45[root]INFO | Episode: 250, Avg Reward: 339.49, Best Eval: 500.0
+07-11-24 04:51[root]INFO | Episode: 300, Avg Reward: 362.51, Best Eval: 500.0
+07-11-24 04:53[root]INFO | Episode: 350, Avg Reward: 313.45, Best Eval: 500.0
+07-11-24 04:56[root]INFO | Episode: 400, Avg Reward: 207.24, Best Eval: 500.0
+07-11-24 04:59[root]INFO | Episode: 450, Avg Reward: 249.42, Best Eval: 500.0
+07-11-24 05:03[root]INFO | Episode: 500, Avg Reward: 296.67, Best Eval: 500.0
+07-11-24 05:07[root]INFO | Episode: 550, Avg Reward: 267.3, Best Eval: 500.0
+07-11-24 05:13[root]INFO | Episode: 600, Avg Reward: 357.91, Best Eval: 500.0
+07-11-24 05:19[root]INFO | Episode: 650, Avg Reward: 456.03, Best Eval: 500.0
+07-11-24 05:24[root]INFO | Episode: 700, Avg Reward: 430.14, Best Eval: 500.0
+07-11-24 05:30[root]INFO | Episode: 750, Avg Reward: 436.89, Best Eval: 500.0
+07-11-24 05:35[root]INFO | Episode: 800, Avg Reward: 429.36, Best Eval: 500.0
+07-11-24 05:42[root]INFO | Episode: 850, Avg Reward: 463.9, Best Eval: 500.0
+07-11-24 05:48[root]INFO | Episode: 900, Avg Reward: 492.43, Best Eval: 500.0
+07-11-24 05:54[root]INFO | Episode: 950, Avg Reward: 488.62, Best Eval: 500.0
+07-11-24 06:00[root]INFO | Episode: 1000, Avg Reward: 439.44, Best Eval: 500.0
+07-11-24 06:06[root]INFO | Episode: 1050, Avg Reward: 443.25, Best Eval: 500.0
+07-11-24 06:12[root]INFO | Episode: 1100, Avg Reward: 495.13, Best Eval: 500.0
+07-11-24 06:18[root]INFO | Episode: 1150, Avg Reward: 474.67, Best Eval: 500.0
+07-11-24 06:24[root]INFO | Episode: 1200, Avg Reward: 471.28, Best Eval: 500.0
+07-11-24 06:30[root]INFO | Episode: 1250, Avg Reward: 464.82, Best Eval: 500.0
+07-11-24 06:35[root]INFO | Episode: 1300, Avg Reward: 449.8, Best Eval: 500.0
+07-11-24 06:39[root]INFO | Episode: 1350, Avg Reward: 475.44, Best Eval: 500.0
+07-11-24 06:42[root]INFO | Episode: 1400, Avg Reward: 479.87, Best Eval: 500.0
+07-11-24 06:44[root]INFO | Episode: 1450, Avg Reward: 380.21, Best Eval: 500.0
+07-11-24 06:45[root]INFO | Using DTNet agent
+07-11-24 06:45[root]INFO | Using cartpole architecture 16x16
+07-11-24 06:45[root]INFO | Action Net Arch: DTNetv0(
+  (linear1): Linear(in_features=4, out_features=15, bias=True)
+  (reluP): ReLU()
+  (reluM): ReLU()
+  (linear2): Linear(in_features=30, out_features=16, bias=False)
+  (mpool): MaxPoolLayer()
+  (softmax): Softmax(dim=-1)
+)
+07-11-24 06:45[root]INFO | Value Net Arch: FCNN(
+  (layer1): Linear(in_features=4, out_features=16, bias=True)
+  (layer2): Linear(in_features=16, out_features=16, bias=True)
+  (activation): ReLU()
+  (layer3): Linear(in_features=16, out_features=2, bias=True)
+  (value_output): Linear(in_features=2, out_features=1, bias=True)
+)
+07-11-24 06:45[root]INFO | ==============> Test reward for seeds [500, 600]: 500.00 +/- 0.0 <==========
+07-11-24 06:45[root]INFO | Execution time of seed 62: 2 hours, 12 minutes, 27 seconds

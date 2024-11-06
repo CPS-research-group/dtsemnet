@@ -97,4 +97,5 @@ Please edit the log name and environment name in the script `parallel_seed_train
 ```
 
 
-
+### For evaluating the agent
+python ./eval_agent/eval_sb_stored_agents.py

@@ -1,7 +1,7 @@
 #!/bin/bash
 
-LOG_NAME="test"
-ENV_TYPE="lunar"
+LOG_NAME="new"
+ENV_TYPE="cart"
 
 case "$ENV_TYPE" in
     "cart")
