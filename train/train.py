@@ -23,7 +23,7 @@ from stable_baselines3.common.torch_layers import (
     FlattenExtractor
 )
 
-from constants import *
+# from constants import *
 
 #info: Registers the custom policies
 from icct.rl_helpers import ddt_sac_policy
