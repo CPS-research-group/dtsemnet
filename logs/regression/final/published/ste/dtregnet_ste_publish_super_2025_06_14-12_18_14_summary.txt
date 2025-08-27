@@ -1,0 +1,21 @@
+{'dataset': 'superconduct', 'model': 'dtregnet_ste', 'simulations': 10, 'output_prefix': 'publish_super', 'should_normalize_dataset': True, 'verbose': True, 'gpu': True}
+
+python -m reg_dataset_linear.reg_train_linear --dataset superconduct --model dtregnet_ste --simulations 10 --output_prefix publish_super --should_normalize_dataset True --verbose True --gpu True
+
+---
+
+
+--------------------------------------------------
+
+DATASET: superconduct
+Num Total Samples: 14884
+10 simulations executed. Seed: 1
+Average in-sample multivariate accuracy: 1.304 ± 0.012
+Average test multivariate accuracy: 1.395 ± 0.010
+Average train active leaves: 20.600 ± 2.332
+Average train normalized entropy: 0.833 ± 0.028
+Average test active leaves: 20.400 ± 2.458
+Average test normalized entropy: 0.828 ± 0.026
+
+Best test multivariate accuracy: 1.371
+Average elapsed time: 43.035 ± 6.406

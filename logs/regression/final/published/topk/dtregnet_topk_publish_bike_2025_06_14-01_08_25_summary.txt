@@ -1,0 +1,56 @@
+{'dataset': 'Bike_Sharing_Demand', 'model': 'dtregnet_topk', 'simulations': 10, 'output_prefix': 'publish_bike', 'should_normalize_dataset': True, 'verbose': True, 'gpu': True}
+
+python -m reg_dataset_linear.reg_train_linear --dataset Bike_Sharing_Demand --model dtregnet_topk --simulations 10 --output_prefix publish_bike --should_normalize_dataset True --verbose True --gpu True
+
+---
+
+--- CONFIGURATION ---
+[{'attributes': [],
+  'batch_size': 128,
+  'bins': array([0. , 0.5]),
+  'classes': [],
+  'code': 'Bike_Sharing_Demand',
+  'depth': 6,
+  'detach': False,
+  'epochs': 40,
+  'epochs_fine_tune': 10,
+  'filepath': 'datasets/Bike_Sharing_Demand/',
+  'grad_clip': True,
+  'lamda_L1': 0.0001,
+  'learning_rate': 0.01,
+  'learning_rate_tune': 0.0001,
+  'lr_scheduler': True,
+  'lr_scheduler_gamma': 0.95,
+  'mix_experts': 2,
+  'n_attributes': 6,
+  'n_classes': 1,
+  'name': 'Bike_Sharing_Demand',
+  'nseed': 1,
+  'over_param': [],
+  'reg_hidden': 0,
+  'smax_temp': 0.5,
+  'ste': 'hard_argmax_ste',
+  'test_split': None,
+  'top_k': 4,
+  'tseed': 1,
+  'use_L1': True,
+  'use_pretrained': False,
+  'val_split': 0.2,
+  'wt_init': 'none'}]
+--- END CONFIG ---
+
+
+--------------------------------------------------
+
+DATASET: Bike_Sharing_Demand
+Num Total Samples: 12165
+10 simulations executed. Seed: 1
+Average in-sample multivariate accuracy: 1.092 ± 0.013
+Average test multivariate accuracy: 1.152 ± 0.014
+Average train active leaves: 18.400 ± 2.577
+Average train normalized entropy: 0.668 ± 0.031
+Average test active leaves: 18.000 ± 2.646
+Average test normalized entropy: 0.667 ± 0.031
+
+Best test multivariate accuracy: 1.123
+Average elapsed time: 790.612 ± 175.332

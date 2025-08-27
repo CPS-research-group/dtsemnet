@@ -1,0 +1,77 @@
+{'dataset': 'cpu_active', 'model': 'dtregnet_ste', 'simulations': 10, 'output_prefix': 'leaves_cpu', 'should_normalize_dataset': True, 'verbose': True, 'gpu': True}
+
+python -m reg_dataset_linear.reg_train_linear --dataset cpu_active --model dtregnet_ste --simulations 10 --output_prefix leaves_cpu --should_normalize_dataset True --verbose True --gpu True
+
+---
+
+
+--------------------------------------------------
+
+DATASET: CPU Active
+Num Total Samples: 3932
+10 simulations executed. Seed: 1
+Average in-sample multivariate accuracy: 2.388 ± 0.032
+Average test multivariate accuracy: 2.728 ± 0.096
+Average train active leaves: 11.600 ± 2.375
+Average train normalized entropy: 0.580 ± 0.063
+Average test active leaves: 11.500 ± 1.688
+Average test normalized entropy: 0.579 ± 0.064
+
+Best test multivariate accuracy: 2.628
+Average elapsed time: 27.223 ± 0.285
+--------------------------------------------------
+
+DATASET: CPU Active
+Num Total Samples: 3932
+10 simulations executed. Seed: 2
+Average in-sample multivariate accuracy: 2.394 ± 0.030
+Average test multivariate accuracy: 2.598 ± 0.081
+Average train active leaves: 12.200 ± 2.821
+Average train normalized entropy: 0.616 ± 0.063
+Average test active leaves: 12.200 ± 2.600
+Average test normalized entropy: 0.611 ± 0.065
+
+Best test multivariate accuracy: 2.514
+Average elapsed time: 25.122 ± 1.299
+--------------------------------------------------
+
+DATASET: CPU Active
+Num Total Samples: 3932
+10 simulations executed. Seed: 3
+Average in-sample multivariate accuracy: 2.479 ± 0.048
+Average test multivariate accuracy: 2.590 ± 0.063
+Average train active leaves: 12.200 ± 1.600
+Average train normalized entropy: 0.628 ± 0.078
+Average test active leaves: 12.200 ± 1.536
+Average test normalized entropy: 0.632 ± 0.077
+
+Best test multivariate accuracy: 2.495
+Average elapsed time: 23.973 ± 0.168
+--------------------------------------------------
+
+DATASET: CPU Active
+Num Total Samples: 3932
+10 simulations executed. Seed: 4
+Average in-sample multivariate accuracy: 2.466 ± 0.061
+Average test multivariate accuracy: 2.645 ± 0.164
+Average train active leaves: 11.700 ± 2.002
+Average train normalized entropy: 0.609 ± 0.054
+Average test active leaves: 11.600 ± 1.685
+Average test normalized entropy: 0.610 ± 0.052
+
+Best test multivariate accuracy: 2.494
+Average elapsed time: 24.196 ± 0.256
+--------------------------------------------------
+
+DATASET: CPU Active
+Num Total Samples: 3932
+10 simulations executed. Seed: 5
+Average in-sample multivariate accuracy: 2.428 ± 0.035
+Average test multivariate accuracy: 2.641 ± 0.159
+Average train active leaves: 12.000 ± 2.864
+Average train normalized entropy: 0.636 ± 0.070
+Average test active leaves: 12.400 ± 2.871
+Average test normalized entropy: 0.635 ± 0.070
+
+Best test multivariate accuracy: 2.522
+Average elapsed time: 24.355 ± 0.160

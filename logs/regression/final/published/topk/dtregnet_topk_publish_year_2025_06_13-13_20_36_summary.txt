@@ -1,0 +1,57 @@
+{'dataset': 'year', 'model': 'dtregnet_topk', 'simulations': 10, 'output_prefix': 'publish_year', 'should_normalize_dataset': True, 'verbose': True, 'gpu': True}
+
+python -m reg_dataset_linear.reg_train_linear --dataset year --model dtregnet_topk --simulations 10 --output_prefix publish_year --should_normalize_dataset True --verbose True --gpu True
+
+---
+
+--- CONFIGURATION ---
+[{'attributes': [],
+  'batch_size': 128,
+  'bins': array([-2.1 , -1.14, -0.76, -0.49, -0.13,  0.25,  0.75,  1.4 ]),
+  'classes': [],
+  'code': 'year',
+  'depth': 6,
+  'detach': False,
+  'epochs': 40,
+  'epochs_fine_tune': 10,
+  'filepath': 'datasets/year/',
+  'gamma_L1': 0.0001,
+  'grad_clip': False,
+  'lamda_L1': 0.0001,
+  'learning_rate': 0.001,
+  'learning_rate_tune': 0.0001,
+  'lr_scheduler': True,
+  'lr_scheduler_gamma': 0.9,
+  'mix_experts': 2,
+  'n_attributes': 90,
+  'n_classes': 1,
+  'name': 'Year Prediction',
+  'nseed': 1,
+  'over_param': [6],
+  'reg_hidden': 0,
+  'smax_temp': 0.2,
+  'ste': 'hard_argmax_ste',
+  'test_split': None,
+  'top_k': 4,
+  'tseed': 1,
+  'use_L1': True,
+  'use_pretrained': False,
+  'val_split': 0.2,
+  'wt_init': 'none'}]
+--- END CONFIG ---
+
+
+--------------------------------------------------
+
+DATASET: Year Prediction
+Num Total Samples: 370972
+10 simulations executed. Seed: 1
+Average in-sample multivariate accuracy: 8.739 ± 0.016
+Average test multivariate accuracy: 8.994 ± 0.020
+Average train active leaves: 19.100 ± 1.640
+Average train normalized entropy: 0.655 ± 0.024
+Average test active leaves: 19.600 ± 1.800
+Average test normalized entropy: 0.653 ± 0.024
+
+Best test multivariate accuracy: 8.946
+Average elapsed time: 5372.070 ± 3522.766

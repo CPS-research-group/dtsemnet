@@ -1,0 +1,58 @@
+{'dataset': 'pol', 'model': 'dtregnet_topk', 'simulations': 1, 'output_prefix': 'topk_leaf_dist_pol', 'should_normalize_dataset': True, 'verbose': True, 'gpu': True}
+
+python -m reg_dataset_linear.reg_train_linear --dataset pol --model dtregnet_topk --simulations 1 --output_prefix topk_leaf_dist_pol --should_normalize_dataset True --verbose True --gpu True
+
+---
+
+--- CONFIGURATION ---
+[{'attributes': [],
+  'batch_size': 128,
+  'bins': array([0. , 0.5]),
+  'classes': [],
+  'code': 'pol',
+  'depth': 5,
+  'detach': False,
+  'epochs': 50,
+  'epochs_fine_tune': 10,
+  'filepath': 'datasets/pol/',
+  'grad_clip': True,
+  'lamda_L1': 1e-05,
+  'learning_rate': 0.01,
+  'learning_rate_tune': 0.0001,
+  'lr_scheduler': True,
+  'lr_scheduler_gamma': 0.9,
+  'mix_experts': 2,
+  'n_attributes': 26,
+  'n_classes': 1,
+  'name': 'pol',
+  'nseed': 1,
+  'over_param': [],
+  'reg_hidden': 0,
+  'smax_temp': 0.5,
+  'ste': 'hard_argmax_ste',
+  'test_split': None,
+  'top_k': 4,
+  'tseed': 1,
+  'use_L1': True,
+  'use_pretrained': False,
+  'val_split': 0.2,
+  'wt_init': 'none'}]
+--- END CONFIG ---
+
+
+--------------------------------------------------
+
+DATASET: pol
+In-sample:
+        Multivariate accuracy: 5.108157190293671
+Test:
+        Multivariate accuracy: 6.407647108592511
+        Train Active Leaves: 13
+        Train Normalized Entropy: 0.74
+        Test Active Leaves: 14
+        Test Normalized Entropy: 0.74
+Elapsed time: 82.68912022002041
+
+
+--------
+

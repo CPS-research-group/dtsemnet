@@ -1,0 +1,228 @@
+nohup: ignoring input
+===>Training Started for Configuration: Batch Size: 128, Learning Rate: 0.001, 
+LR Scheduler Rate: 0.9, Over Params [32, 16]<===
+{
+    'code': 'ctslice',
+    'name': 'CT Slice',
+    'filepath': 'datasets/ctslice/',
+    'n_attributes': 384,
+    'attributes': [],
+    'n_classes': 1,
+    'classes': [],
+    'use_L1': False,
+    'lamda_L1': 1e-05,
+    'nseed': 5,
+    'tseed': None,
+    'grad_clip': False,
+    'over_param': [32, 16],
+    'reg_hidden': 64,
+    'test_split': 0.2,
+    'val_split': 0.2,
+    'depth': 5,
+    'ste': 'hard_argmax_ste',
+    'bins': array([-0.5,  0.5]),
+    'epochs': 50,
+    'batch_size': 128,
+    'learning_rate': 0.001,
+    'lr_scheduler': True,
+    'lr_scheduler_gamma': 0.9
+}
+X_train size: (34240, 384), y_train size: (34240,)
+X_val size: (8560, 384), y_val size: (8560,)
+X_test size: (10700, 384), y_test size: (10700,)
+X_train min: -9.38750611054979
+X_train max: 185.03783396922844
+train size:
+torch.Size([34240, 384])
+test size:
+torch.Size([10700, 384])
+val size:
+torch.Size([8560, 384])
+[-0.5  0.5]
+Max y_train_clf: 1
+Min y_train_clf: -1
+train size:
+torch.Size([34240, 384])
+test size:
+torch.Size([10700, 384])
+val size:
+torch.Size([8560, 384])
+Class Label Distribution:
+Class -1: 12740 samples
+Class 0: 11106 samples
+Class 1: 10394 samples
+======================================================================
+Iteration 0/1  Seed 1  (dataset: CT Slice, 0/1):  Num Sample: 34240 
+======================================================================
+DTSemNet(
+  (linear1): Sequential(
+    (0): Linear(in_features=384, out_features=992, bias=True)
+    (1): Linear(in_features=992, out_features=496, bias=True)
+    (2): Linear(in_features=496, out_features=31, bias=True)
+  )
+  (reluP): ReLU()
+  (reluM): ReLU()
+  (linear2): Linear(in_features=62, out_features=32, bias=False)
+  (softmax): Softmax(dim=-1)
+  (regression_layer): Sequential(
+    (0): Linear(in_features=384, out_features=64, bias=True)
+    (1): Linear(in_features=64, out_features=32, bias=True)
+  )
+)
+At start of epoch: 0, Leaf Dist: [795.0, 736.0, 507.0, 483.0, 480.0, 474.0, 
+439.0, 416.0, 411.0, 408.0, 396.0, 393.0, 390.0, 363.0, 335.0, 302.0, 294.0, 
+293.0, 284.0, 265.0, 262.0, 257.0, 255.0, 251.0, 228.0, 210.0, 173.0, 163.0, 
+133.0, 120.0, 108.0, 76.0]
+Epoch: 1/50, Average Loss: 18.2216, Train Acc: 4.2687 Test Acc: 4.2717
+At start of epoch: 1, Leaf Dist: [1606.0, 1515.0, 1045.0, 1028.0, 932.0, 781.0, 
+521.0, 516.0, 431.0, 310.0, 242.0, 201.0, 190.0, 142.0, 137.0, 136.0, 108.0, 
+91.0, 91.0, 91.0, 89.0, 83.0, 80.0, 71.0, 51.0, 51.0, 39.0, 31.0, 31.0, 27.0, 
+22.0, 11.0]
+Epoch: 2/50, Average Loss: 31.1987, Train Acc: 5.5856 Test Acc: 5.8994
+At start of epoch: 2, Leaf Dist: [2041.0, 1860.0, 1492.0, 1330.0, 871.0, 782.0, 
+586.0, 532.0, 254.0, 195.0, 118.0, 116.0, 98.0, 91.0, 72.0, 52.0, 38.0, 36.0, 
+34.0, 29.0, 20.0, 16.0, 14.0, 10.0, 5.0, 4.0, 3.0, 1.0, 0.0, 0.0, 0.0, 0.0]
+Epoch: 3/50, Average Loss: 13.2453, Train Acc: 3.6394 Test Acc: 3.5096
+Epoch: 4/50, Average Loss: 7.3132, Train Acc: 2.7043 Test Acc: 2.3534
+Epoch: 5/50, Average Loss: 5.4980, Train Acc: 2.3448 Test Acc: 2.3658
+At start of epoch: 5, Leaf Dist: [1878.0, 1849.0, 1541.0, 1316.0, 1283.0, 
+1258.0, 1021.0, 432.0, 77.0, 26.0, 9.0, 3.0, 3.0, 2.0, 1.0, 1.0, 0.0, 0.0, 0.0, 
+0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0]
+Epoch: 6/50, Average Loss: 3.2544, Train Acc: 1.8040 Test Acc: 1.8075
+Epoch: 7/50, Average Loss: 2.7133, Train Acc: 1.6472 Test Acc: 1.6962
+Epoch: 8/50, Average Loss: 2.7947, Train Acc: 1.6717 Test Acc: 1.7266
+Epoch: 9/50, Average Loss: 2.7353, Train Acc: 1.6539 Test Acc: 1.6892
+Epoch: 10/50, Average Loss: 2.5535, Train Acc: 1.5980 Test Acc: 1.6572
+At start of epoch: 10, Leaf Dist: [2044.0, 1580.0, 1558.0, 1489.0, 1398.0, 
+1198.0, 690.0, 619.0, 73.0, 40.0, 4.0, 2.0, 2.0, 1.0, 1.0, 1.0, 0.0, 0.0, 0.0, 
+0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0]
+Epoch: 11/50, Average Loss: 2.1856, Train Acc: 1.4784 Test Acc: 1.5518
+Epoch: 12/50, Average Loss: 1.8339, Train Acc: 1.3542 Test Acc: 1.4305
+Epoch: 13/50, Average Loss: 1.8396, Train Acc: 1.3563 Test Acc: 1.4391
+Epoch: 14/50, Average Loss: 7.4663, Train Acc: 2.7324 Test Acc: 2.6456
+Epoch: 15/50, Average Loss: 3.5950, Train Acc: 1.8960 Test Acc: 2.2365
+Epoch: 16/50, Average Loss: 2.2771, Train Acc: 1.5090 Test Acc: 1.5826
+Epoch: 17/50, Average Loss: 2.6890, Train Acc: 1.6398 Test Acc: 1.8261
+Epoch: 18/50, Average Loss: 1.7405, Train Acc: 1.3193 Test Acc: 1.4332
+Epoch: 19/50, Average Loss: 1.7531, Train Acc: 1.3241 Test Acc: 1.4126
+Epoch: 20/50, Average Loss: 1.5975, Train Acc: 1.2639 Test Acc: 1.3648
+Epoch: 21/50, Average Loss: 1.4768, Train Acc: 1.2152 Test Acc: 1.3278
+Epoch: 22/50, Average Loss: 1.4643, Train Acc: 1.2101 Test Acc: 1.3306
+Epoch: 23/50, Average Loss: 1.5043, Train Acc: 1.2265 Test Acc: 1.3306
+Epoch: 24/50, Average Loss: 1.4549, Train Acc: 1.2062 Test Acc: 1.3264
+Epoch: 25/50, Average Loss: 1.4799, Train Acc: 1.2165 Test Acc: 1.3387
+Epoch: 26/50, Average Loss: 1.4287, Train Acc: 1.1953 Test Acc: 1.3206
+Epoch: 27/50, Average Loss: 1.4955, Train Acc: 1.2229 Test Acc: 1.3081
+Epoch: 28/50, Average Loss: 1.3990, Train Acc: 1.1828 Test Acc: 1.3020
+Epoch: 29/50, Average Loss: 1.4229, Train Acc: 1.1928 Test Acc: 1.3116
+Epoch: 30/50, Average Loss: 1.4261, Train Acc: 1.1942 Test Acc: 1.2887
+Epoch: 31/50, Average Loss: 1.3940, Train Acc: 1.1807 Test Acc: 1.3165
+Epoch: 32/50, Average Loss: 1.3480, Train Acc: 1.1610 Test Acc: 1.2911
+Epoch: 33/50, Average Loss: 1.3160, Train Acc: 1.1472 Test Acc: 1.2863
+Epoch: 34/50, Average Loss: 1.3892, Train Acc: 1.1786 Test Acc: 1.3031
+Epoch: 35/50, Average Loss: 1.3324, Train Acc: 1.1543 Test Acc: 1.3029
+Epoch: 36/50, Average Loss: 1.3255, Train Acc: 1.1513 Test Acc: 1.2855
+Epoch: 37/50, Average Loss: 1.3139, Train Acc: 1.1463 Test Acc: 1.2961
+Epoch: 38/50, Average Loss: 1.3859, Train Acc: 1.1772 Test Acc: 1.2677
+Epoch: 39/50, Average Loss: 1.3048, Train Acc: 1.1423 Test Acc: 1.2740
+Epoch: 40/50, Average Loss: 1.3044, Train Acc: 1.1421 Test Acc: 1.2719
+Epoch: 41/50, Average Loss: 1.2890, Train Acc: 1.1354 Test Acc: 1.2696
+Epoch: 42/50, Average Loss: 1.3123, Train Acc: 1.1456 Test Acc: 1.2751
+Epoch: 43/50, Average Loss: 1.3097, Train Acc: 1.1444 Test Acc: 1.2784
+Epoch: 44/50, Average Loss: 1.2880, Train Acc: 1.1349 Test Acc: 1.2677
+Epoch: 45/50, Average Loss: 1.2978, Train Acc: 1.1392 Test Acc: 1.2760
+Epoch: 46/50, Average Loss: 1.3258, Train Acc: 1.1514 Test Acc: 1.2749
+Epoch: 47/50, Average Loss: 1.2980, Train Acc: 1.1393 Test Acc: 1.2619
+Epoch: 48/50, Average Loss: 1.3033, Train Acc: 1.1416 Test Acc: 1.2610
+Epoch: 49/50, Average Loss: 1.2787, Train Acc: 1.1308 Test Acc: 1.2634
+Epoch: 50/50, Average Loss: 1.2570, Train Acc: 1.1212 Test Acc: 1.2623
+Epoch: Final 100%, Leaf Dist: [1752.0, 1686.0, 1542.0, 1216.0, 1144.0, 1069.0, 
+983.0, 807.0, 173.0, 105.0, 91.0, 67.0, 34.0, 11.0, 9.0, 5.0, 3.0, 2.0, 1.0, 
+0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0]
+Train RMSE: 1.1212, Test RMSE: 1.2623
+Elapsed time: 26.85 seconds
+Saved summary to 
+'logs/regression/dtregnet_ste_ste_leaf_dist_ct_2025_08_19-21_32_23_summary.txt'.
+Saved full data to 
+'logs/regression/dtregnet_ste_ste_leaf_dist_ct_2025_08_19-21_32_23_full.txt'.
+X_train size: (34240, 384), y_train size: (34240,)
+X_val size: (8560, 384), y_val size: (8560,)
+X_test size: (10700, 384), y_test size: (10700,)
+X_train min: -9.845989021126508
+X_train max: 185.03783396917208
+train size:
+torch.Size([34240, 384])
+test size:
+torch.Size([10700, 384])
+val size:
+torch.Size([8560, 384])
+[-0.5  0.5]
+Max y_train_clf: 1
+Min y_train_clf: -1
+train size:
+torch.Size([34240, 384])
+test size:
+torch.Size([10700, 384])
+val size:
+torch.Size([8560, 384])
+Class Label Distribution:
+Class -1: 12758 samples
+Class 0: 11056 samples
+Class 1: 10426 samples
+======================================================================
+Iteration 0/1  Seed 2  (dataset: CT Slice, 0/1):  Num Sample: 34240 
+======================================================================
+DTSemNet(
+  (linear1): Sequential(
+    (0): Linear(in_features=384, out_features=992, bias=True)
+    (1): Linear(in_features=992, out_features=496, bias=True)
+    (2): Linear(in_features=496, out_features=31, bias=True)
+  )
+  (reluP): ReLU()
+  (reluM): ReLU()
+  (linear2): Linear(in_features=62, out_features=32, bias=False)
+  (softmax): Softmax(dim=-1)
+  (regression_layer): Sequential(
+    (0): Linear(in_features=384, out_features=64, bias=True)
+    (1): Linear(in_features=64, out_features=32, bias=True)
+  )
+)
+At start of epoch: 0, Leaf Dist: [852.0, 694.0, 525.0, 513.0, 480.0, 472.0, 
+464.0, 417.0, 406.0, 403.0, 386.0, 381.0, 357.0, 353.0, 350.0, 295.0, 295.0, 
+293.0, 292.0, 291.0, 291.0, 264.0, 250.0, 230.0, 211.0, 187.0, 175.0, 165.0, 
+110.0, 108.0, 108.0, 82.0]
+Epoch: 1/50, Average Loss: 15.3508, Train Acc: 3.9180 Test Acc: 3.9816
+At start of epoch: 1, Leaf Dist: [1740.0, 1514.0, 1473.0, 1406.0, 998.0, 683.0, 
+526.0, 478.0, 456.0, 320.0, 300.0, 216.0, 199.0, 167.0, 50.0, 38.0, 32.0, 29.0, 
+23.0, 23.0, 15.0, 6.0, 6.0, 1.0, 1.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0]
+Epoch: 2/50, Average Loss: 13.0925, Train Acc: 3.6184 Test Acc: 3.4766
+At start of epoch: 2, Leaf Dist: [2204.0, 1597.0, 1503.0, 1470.0, 1162.0, 760.0,
+727.0, 626.0, 190.0, 132.0, 57.0, 46.0, 44.0, 42.0, 37.0, 24.0, 22.0, 20.0, 
+10.0, 8.0, 7.0, 5.0, 5.0, 1.0, 1.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0]
+Epoch: 3/50, Average Loss: 8.4421, Train Acc: 2.9055 Test Acc: 3.0025
+Epoch: 4/50, Average Loss: 6.4658, Train Acc: 2.5428 Test Acc: 2.2059
+Epoch: 5/50, Average Loss: 16.7775, Train Acc: 4.0960 Test Acc: 4.1945
+At start of epoch: 5, Leaf Dist: [2658.0, 1713.0, 1560.0, 1323.0, 1290.0, 955.0,
+807.0, 145.0, 106.0, 82.0, 15.0, 13.0, 4.0, 4.0, 4.0, 4.0, 3.0, 3.0, 3.0, 3.0, 
+2.0, 2.0, 1.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0]
+Epoch: 6/50, Average Loss: 5.0413, Train Acc: 2.2453 Test Acc: 2.5136
+Epoch: 7/50, Average Loss: 4.9815, Train Acc: 2.2319 Test Acc: 2.0642
+Epoch: 8/50, Average Loss: 3.2012, Train Acc: 1.7892 Test Acc: 1.9746
+Epoch: 9/50, Average Loss: 2.9906, Train Acc: 1.7293 Test Acc: 1.9124
+Epoch: 10/50, Average Loss: 2.7579, Train Acc: 1.6607 Test Acc: 1.8136
+At start of epoch: 10, Leaf Dist: [1853.0, 1742.0, 1741.0, 1590.0, 1516.0, 
+1329.0, 632.0, 278.0, 8.0, 4.0, 2.0, 1.0, 1.0, 1.0, 1.0, 1.0, 0.0, 0.0, 0.0, 
+0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0]
+Epoch: 11/50, Average Loss: 2.5486, Train Acc: 1.5964 Test Acc: 1.7798
+Epoch: 12/50, Average Loss: 2.6057, Train Acc: 1.6142 Test Acc: 1.7712
+Epoch: 13/50, Average Loss: 2.5206, Train Acc: 1.5876 Test Acc: 1.7300
+Epoch: 14/50, Average Loss: 2.3643, Train Acc: 1.5376 Test Acc: 1.7027
+Epoch: 15/50, Average Loss: 2.3830, Train Acc: 1.5437 Test Acc: 1.7000
+Epoch: 16/50, Average Loss: 2.3167, Train Acc: 1.5221 Test Acc: 1.6753
+Epoch: 17/50, Average Loss: 2.2706, Train Acc: 1.5068 Test Acc: 1.6805
+Epoch: 18/50, Average Loss: 2.2240, Train Acc: 1.4913 Test Acc: 1.6464
+Epoch: 19/50, Average Loss: 2.5827, Train Acc: 1.6071 Test Acc: 1.7548
+Epoch: 20/50, Average Loss: 2.0938, Train Acc: 1.4470 Test Acc: 1.6394
+Epoch: 21/50, Average Loss: 1.9757, Train Acc: 1.4056 Test Acc: 1.6051
+Epoch: 22/50, Average Loss: 2.0183, Train Acc: 1.4207 Test Acc: 1.7042
+Epoch: 23/50, Average Loss: 2.1789, Train Acc: 1.4761 Test Acc: 1.6489

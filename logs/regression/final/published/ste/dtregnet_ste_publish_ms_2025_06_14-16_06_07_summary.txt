@@ -1,0 +1,21 @@
+{'dataset': 'ms', 'model': 'dtregnet_ste', 'simulations': 10, 'output_prefix': 'publish_ms', 'should_normalize_dataset': True, 'verbose': True, 'gpu': True}
+
+python -m reg_dataset_linear.reg_train_linear --dataset ms --model dtregnet_ste --simulations 10 --output_prefix publish_ms --should_normalize_dataset True --verbose True --gpu True
+
+---
+
+
+--------------------------------------------------
+
+DATASET: microsoft
+Num Total Samples: 723412
+10 simulations executed. Seed: 1
+Average in-sample multivariate accuracy: 0.749 ± 0.000
+Average test multivariate accuracy: 0.767 ± 0.001
+Average train active leaves: 24.800 ± 2.040
+Average train normalized entropy: 0.904 ± 0.021
+Average test active leaves: 24.800 ± 1.887
+Average test normalized entropy: 0.902 ± 0.022
+
+Best test multivariate accuracy: 0.765
+Average elapsed time: 427.600 ± 59.964

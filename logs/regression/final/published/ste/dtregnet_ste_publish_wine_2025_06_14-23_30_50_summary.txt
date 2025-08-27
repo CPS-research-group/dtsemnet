@@ -1,0 +1,21 @@
+{'dataset': 'wine_quality', 'model': 'dtregnet_ste', 'simulations': 10, 'output_prefix': 'publish_wine', 'should_normalize_dataset': True, 'verbose': True, 'gpu': True}
+
+python -m reg_dataset_linear.reg_train_linear --dataset wine_quality --model dtregnet_ste --simulations 10 --output_prefix publish_wine --should_normalize_dataset True --verbose True --gpu True
+
+---
+
+
+--------------------------------------------------
+
+DATASET: wine_quality
+Num Total Samples: 4547
+10 simulations executed. Seed: 1
+Average in-sample multivariate accuracy: 0.665 ± 0.006
+Average test multivariate accuracy: 0.694 ± 0.004
+Average train active leaves: 18.800 ± 1.939
+Average train normalized entropy: 0.812 ± 0.043
+Average test active leaves: 18.500 ± 1.803
+Average test normalized entropy: 0.812 ± 0.039
+
+Best test multivariate accuracy: 0.689
+Average elapsed time: 2.826 ± 0.080

@@ -1,0 +1,77 @@
+{'dataset': 'abalone', 'model': 'dtregnet_ste', 'simulations': 10, 'output_prefix': 'publish_abalone', 'should_normalize_dataset': True, 'verbose': True, 'gpu': True}
+
+python -m reg_dataset_linear.reg_train_linear --dataset abalone --model dtregnet_ste --simulations 10 --output_prefix publish_abalone --should_normalize_dataset True --verbose True --gpu True
+
+---
+
+
+--------------------------------------------------
+
+DATASET: Abalone
+Num Total Samples: 2004
+10 simulations executed. Seed: 1
+Average in-sample multivariate accuracy: 2.064 ± 0.012
+Average test multivariate accuracy: 2.134 ± 0.014
+Average train active leaves: 5.700 ± 0.900
+Average train normalized entropy: 0.397 ± 0.062
+Average test active leaves: 5.900 ± 0.943
+Average test normalized entropy: 0.390 ± 0.065
+
+Best test multivariate accuracy: 2.106
+Average elapsed time: 7.479 ± 0.094
+--------------------------------------------------
+
+DATASET: Abalone
+Num Total Samples: 2004
+10 simulations executed. Seed: 2
+Average in-sample multivariate accuracy: 2.069 ± 0.015
+Average test multivariate accuracy: 2.141 ± 0.011
+Average train active leaves: 5.900 ± 1.300
+Average train normalized entropy: 0.401 ± 0.043
+Average test active leaves: 5.900 ± 1.221
+Average test normalized entropy: 0.404 ± 0.044
+
+Best test multivariate accuracy: 2.123
+Average elapsed time: 9.075 ± 2.351
+--------------------------------------------------
+
+DATASET: Abalone
+Num Total Samples: 2004
+10 simulations executed. Seed: 3
+Average in-sample multivariate accuracy: 2.039 ± 0.015
+Average test multivariate accuracy: 2.190 ± 0.019
+Average train active leaves: 5.700 ± 0.640
+Average train normalized entropy: 0.391 ± 0.031
+Average test active leaves: 5.800 ± 0.600
+Average test normalized entropy: 0.384 ± 0.033
+
+Best test multivariate accuracy: 2.162
+Average elapsed time: 7.585 ± 0.381
+--------------------------------------------------
+
+DATASET: Abalone
+Num Total Samples: 2004
+10 simulations executed. Seed: 4
+Average in-sample multivariate accuracy: 2.090 ± 0.006
+Average test multivariate accuracy: 2.142 ± 0.013
+Average train active leaves: 6.100 ± 0.539
+Average train normalized entropy: 0.426 ± 0.042
+Average test active leaves: 6.600 ± 1.114
+Average test normalized entropy: 0.429 ± 0.044
+
+Best test multivariate accuracy: 2.108
+Average elapsed time: 7.414 ± 0.028
+--------------------------------------------------
+
+DATASET: Abalone
+Num Total Samples: 2004
+10 simulations executed. Seed: 5
+Average in-sample multivariate accuracy: 2.063 ± 0.007
+Average test multivariate accuracy: 2.127 ± 0.017
+Average train active leaves: 5.200 ± 0.872
+Average train normalized entropy: 0.382 ± 0.039
+Average test active leaves: 5.200 ± 1.077
+Average test normalized entropy: 0.381 ± 0.037
+
+Best test multivariate accuracy: 2.104
+Average elapsed time: 7.429 ± 0.032

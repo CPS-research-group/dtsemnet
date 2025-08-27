@@ -1,0 +1,175 @@
+{'dataset': 'sulfur', 'model': 'dtregnet_topk', 'simulations': 10, 'output_prefix': 'publish_sulfur', 'should_normalize_dataset': True, 'verbose': True, 'gpu': True}
+
+python -m reg_dataset_linear.reg_train_linear --dataset sulfur --model dtregnet_topk --simulations 10 --output_prefix publish_sulfur --should_normalize_dataset True --verbose True --gpu True
+
+---
+
+--- CONFIGURATION ---
+[{'attributes': [],
+  'batch_size': 128,
+  'bins': array([0. , 0.5]),
+  'classes': [],
+  'code': 'sulfur',
+  'depth': 5,
+  'detach': False,
+  'epochs': 20,
+  'epochs_fine_tune': 10,
+  'filepath': 'datasets/sulfur/',
+  'grad_clip': True,
+  'lamda_L1': 5e-05,
+  'learning_rate': 0.01,
+  'learning_rate_tune': 0.0001,
+  'lr_scheduler': True,
+  'lr_scheduler_gamma': 0.95,
+  'mix_experts': 2,
+  'n_attributes': 6,
+  'n_classes': 1,
+  'name': 'sulfur',
+  'nseed': 1,
+  'over_param': [],
+  'reg_hidden': 0,
+  'smax_temp': 0.5,
+  'ste': 'hard_argmax_ste',
+  'test_split': None,
+  'top_k': 4,
+  'tseed': 1,
+  'use_L1': True,
+  'use_pretrained': False,
+  'val_split': 0.2,
+  'wt_init': 'none'}]
+--- END CONFIG ---
+
+
+--------------------------------------------------
+
+DATASET: sulfur
+In-sample:
+        Multivariate accuracy: 0.2160564970595458
+Test:
+        Multivariate accuracy: 0.3260557676782912
+        Train Active Leaves: 14
+        Train Normalized Entropy: 0.71
+        Test Active Leaves: 14
+        Test Normalized Entropy: 0.69
+Elapsed time: 237.7143992090132
+
+
+--------
+
+In-sample:
+        Multivariate accuracy: 0.23808348385784536
+Test:
+        Multivariate accuracy: 0.35897524384021395
+        Train Active Leaves: 14
+        Train Normalized Entropy: 0.66
+        Test Active Leaves: 13
+        Test Normalized Entropy: 0.65
+Elapsed time: 234.74025217205053
+
+
+--------
+
+In-sample:
+        Multivariate accuracy: 0.22583087080072772
+Test:
+        Multivariate accuracy: 0.3531592029619224
+        Train Active Leaves: 13
+        Train Normalized Entropy: 0.73
+        Test Active Leaves: 13
+        Test Normalized Entropy: 0.72
+Elapsed time: 251.48222049494507
+
+
+--------
+
+In-sample:
+        Multivariate accuracy: 0.2236930742480041
+Test:
+        Multivariate accuracy: 0.34615328655485705
+        Train Active Leaves: 15
+        Train Normalized Entropy: 0.68
+        Test Active Leaves: 14
+        Test Normalized Entropy: 0.68
+Elapsed time: 228.75464013702003
+
+
+--------
+
+In-sample:
+        Multivariate accuracy: 0.21638497209072152
+Test:
+        Multivariate accuracy: 0.33381064644225666
+        Train Active Leaves: 12
+        Train Normalized Entropy: 0.63
+        Test Active Leaves: 12
+        Test Normalized Entropy: 0.63
+Elapsed time: 226.45062321901787
+
+
+--------
+
+In-sample:
+        Multivariate accuracy: 0.22600607883580096
+Test:
+        Multivariate accuracy: 0.3483152669262697
+        Train Active Leaves: 14
+        Train Normalized Entropy: 0.73
+        Test Active Leaves: 14
+        Test Normalized Entropy: 0.73
+Elapsed time: 230.971645653015
+
+
+--------
+
+In-sample:
+        Multivariate accuracy: 0.22302943142298445
+Test:
+        Multivariate accuracy: 0.34723258786192995
+        Train Active Leaves: 16
+        Train Normalized Entropy: 0.75
+        Test Active Leaves: 15
+        Test Normalized Entropy: 0.74
+Elapsed time: 205.31709292100277
+
+
+--------
+
+In-sample:
+        Multivariate accuracy: 0.22774669127637007
+Test:
+        Multivariate accuracy: 0.34412161635192134
+        Train Active Leaves: 14
+        Train Normalized Entropy: 0.65
+        Test Active Leaves: 14
+        Test Normalized Entropy: 0.65
+Elapsed time: 175.74806598201394
+
+
+--------
+
+In-sample:
+        Multivariate accuracy: 0.22641692728775142
+Test:
+        Multivariate accuracy: 0.33560771048157856
+        Train Active Leaves: 13
+        Train Normalized Entropy: 0.73
+        Test Active Leaves: 13
+        Test Normalized Entropy: 0.73
+Elapsed time: 182.23739632498473
+
+
+--------
+
+In-sample:
+        Multivariate accuracy: 0.21533702444195832
+Test:
+        Multivariate accuracy: 0.33273163143907697
+        Train Active Leaves: 11
+        Train Normalized Entropy: 0.64
+        Test Active Leaves: 11
+        Test Normalized Entropy: 0.65
+Elapsed time: 189.3208689329913
+
+
+--------
+

@@ -1,0 +1,23 @@
+{'dataset': 'ctslice', 'model': 'dtregnet_ste', 'simulations': 1, 'output_prefix': 'ste_leaf_dist_ct', 'should_normalize_dataset': True, 'verbose': True, 'gpu': True}
+
+python -m reg_dataset_linear.reg_train_linear --dataset ctslice --model dtregnet_ste --simulations 1 --output_prefix ste_leaf_dist_ct --should_normalize_dataset True --verbose True --gpu True
+
+---
+
+
+--------------------------------------------------
+
+DATASET: CT Slice
+In-sample:
+        Multivariate accuracy: 1.1211523444746168
+Test:
+        Multivariate accuracy: 1.2623499147395665
+        Train Active Leaves: 9
+        Train Normalized Entropy: 0.64
+        Test Active Leaves: 9
+        Test Normalized Entropy: 0.64
+Elapsed time: 26.851380094885826
+
+
+--------
+

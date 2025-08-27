@@ -1,0 +1,21 @@
+{'dataset': 'Bike_Sharing_Demand', 'model': 'dtregnet_ste', 'simulations': 10, 'output_prefix': 'publish_elevators', 'should_normalize_dataset': True, 'verbose': True, 'gpu': True}
+
+python -m reg_dataset_linear.reg_train_linear --dataset Bike_Sharing_Demand --model dtregnet_ste --simulations 10 --output_prefix publish_elevators --should_normalize_dataset True --verbose True --gpu True
+
+---
+
+
+--------------------------------------------------
+
+DATASET: Bike_Sharing_Demand
+Num Total Samples: 12165
+10 simulations executed. Seed: 1
+Average in-sample multivariate accuracy: 1.136 ± 0.004
+Average test multivariate accuracy: 1.183 ± 0.007
+Average train active leaves: 9.000 ± 2.449
+Average train normalized entropy: 0.467 ± 0.046
+Average test active leaves: 8.900 ± 2.211
+Average test normalized entropy: 0.468 ± 0.047
+
+Best test multivariate accuracy: 1.174
+Average elapsed time: 11.293 ± 0.089

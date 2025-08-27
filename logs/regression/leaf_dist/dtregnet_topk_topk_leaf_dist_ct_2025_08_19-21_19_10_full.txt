@@ -1,0 +1,74 @@
+{'dataset': 'ctslice', 'model': 'dtregnet_topk', 'simulations': 1, 'output_prefix': 'topk_leaf_dist_ct', 'should_normalize_dataset': True, 'verbose': True, 'gpu': True}
+
+python -m reg_dataset_linear.reg_train_linear --dataset ctslice --model dtregnet_topk --simulations 1 --output_prefix topk_leaf_dist_ct --should_normalize_dataset True --verbose True --gpu True
+
+---
+
+--- CONFIGURATION ---
+[{'attributes': [],
+  'batch_size': 128,
+  'bins': array([-2.1 , -1.14, -0.76, -0.49, -0.13,  0.25,  0.75,  1.4 ]),
+  'classes': [],
+  'code': 'ctslice',
+  'depth': 5,
+  'detach': False,
+  'epochs': 40,
+  'epochs_fine_tune': 30,
+  'filepath': 'datasets/ctslice/',
+  'grad_clip': False,
+  'lamda_L1': 5e-05,
+  'learning_rate': 0.001,
+  'learning_rate_tune': 0.0001,
+  'lr_scheduler': True,
+  'lr_scheduler_gamma': 0.95,
+  'mix_experts': 2,
+  'n_attributes': 384,
+  'n_classes': 1,
+  'name': 'CT Slice',
+  'nseed': 5,
+  'over_param': [],
+  'reg_hidden': 0,
+  'smax_temp': 0.5,
+  'ste': 'hard_argmax_ste',
+  'test_split': 0.2,
+  'top_k': 4,
+  'tseed': None,
+  'use_L1': True,
+  'use_pretrained': False,
+  'val_split': 0.2,
+  'wt_init': 'none'}]
+--- END CONFIG ---
+
+
+--------------------------------------------------
+
+DATASET: CT Slice
+In-sample:
+        Multivariate accuracy: 0.8007042049563704
+Test:
+        Multivariate accuracy: 1.067444429242585
+        Train Active Leaves: 21
+        Train Normalized Entropy: 0.85
+        Test Active Leaves: 21
+        Test Normalized Entropy: 0.85
+Elapsed time: 331.62642069440335
+
+
+--------
+
+--------------------------------------------------
+
+DATASET: CT Slice
+In-sample:
+        Multivariate accuracy: 0.7728772411840408
+Test:
+        Multivariate accuracy: 1.004581357218532
+        Train Active Leaves: 20
+        Train Normalized Entropy: 0.87
+        Test Active Leaves: 20
+        Test Normalized Entropy: 0.87
+Elapsed time: 335.9926501447335
+
+
+--------
+

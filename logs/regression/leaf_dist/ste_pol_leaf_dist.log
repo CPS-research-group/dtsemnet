@@ -1,0 +1,125 @@
+nohup: ignoring input
+===>Training Started for Configuration: Batch Size: 128, Learning Rate: 0.05, LR
+Scheduler Rate: 0.88, Over Params [2]<===
+{
+    'code': 'pol',
+    'name': 'pol',
+    'filepath': 'datasets/pol/',
+    'n_attributes': 26,
+    'attributes': [],
+    'n_classes': 1,
+    'classes': [],
+    'use_L1': True,
+    'lamda_L1': 1e-05,
+    'over_param': [2],
+    'reg_hidden': 0,
+    'nseed': 1,
+    'tseed': 1,
+    'grad_clip': True,
+    'test_split': None,
+    'val_split': 0.2,
+    'depth': 5,
+    'ste': 'hard_argmax_ste',
+    'bins': array([0. , 0.5]),
+    'epochs': 30,
+    'batch_size': 128,
+    'learning_rate': 0.05,
+    'lr_scheduler': True,
+    'lr_scheduler_gamma': 0.88
+}
+X_train size: (10500, 26), y_train size: (10500,)
+X_val size: (1350, 26), y_val size: (1350,)
+X_test size: (3150, 26), y_test size: (3150,)
+X_train min: -1.8190089097992248
+X_train max: 20.43071053946282
+train size:
+torch.Size([10500, 26])
+test size:
+torch.Size([3150, 26])
+val size:
+torch.Size([1350, 26])
+[0.  0.5]
+Max y_train_clf: 1
+Min y_train_clf: -1
+train size:
+torch.Size([10500, 26])
+test size:
+torch.Size([3150, 26])
+val size:
+torch.Size([1350, 26])
+Class Label Distribution:
+Class -1: 6981 samples
+Class 0: 389 samples
+Class 1: 3130 samples
+======================================================================
+Iteration 0/1  Seed 1  (dataset: pol, 0/1):  Num Sample: 10500 
+======================================================================
+DTSemNet(
+  (linear1): Sequential(
+    (0): Linear(in_features=26, out_features=62, bias=True)
+    (1): Linear(in_features=62, out_features=31, bias=True)
+  )
+  (reluP): ReLU()
+  (reluM): ReLU()
+  (linear2): Linear(in_features=62, out_features=32, bias=False)
+  (softmax): Softmax(dim=-1)
+  (regression_layer): Linear(in_features=26, out_features=32, bias=True)
+)
+At start of epoch: 0, Leaf Dist: [272.0, 261.0, 225.0, 199.0, 171.0, 166.0, 
+159.0, 158.0, 119.0, 113.0, 108.0, 106.0, 93.0, 88.0, 87.0, 84.0, 75.0, 69.0, 
+69.0, 63.0, 60.0, 59.0, 56.0, 47.0, 45.0, 44.0, 43.0, 39.0, 33.0, 27.0, 8.0, 
+4.0]
+Epoch: 1/30, Average Loss: 604.7460, Train Acc: 24.5916 Test Acc: 24.8059
+At start of epoch: 1, Leaf Dist: [690.0, 577.0, 411.0, 342.0, 205.0, 205.0, 
+193.0, 172.0, 88.0, 68.0, 45.0, 27.0, 23.0, 22.0, 21.0, 15.0, 10.0, 9.0, 8.0, 
+5.0, 4.0, 4.0, 2.0, 2.0, 1.0, 1.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0]
+Epoch: 2/30, Average Loss: 298.6804, Train Acc: 17.2824 Test Acc: 17.6673
+At start of epoch: 2, Leaf Dist: [1102.0, 819.0, 709.0, 207.0, 206.0, 49.0, 
+14.0, 12.0, 7.0, 5.0, 4.0, 3.0, 2.0, 2.0, 2.0, 2.0, 2.0, 1.0, 1.0, 1.0, 0.0, 
+0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0]
+Epoch: 3/30, Average Loss: 249.6552, Train Acc: 15.8005 Test Acc: 16.2540
+Epoch: 4/30, Average Loss: 165.3430, Train Acc: 12.8586 Test Acc: 13.3027
+Epoch: 5/30, Average Loss: 315.7871, Train Acc: 17.7704 Test Acc: 19.3191
+At start of epoch: 5, Leaf Dist: [1185.0, 807.0, 726.0, 191.0, 161.0, 29.0, 
+21.0, 5.0, 4.0, 3.0, 3.0, 3.0, 3.0, 2.0, 2.0, 2.0, 1.0, 1.0, 1.0, 0.0, 0.0, 0.0,
+0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0]
+Epoch: 6/30, Average Loss: 185.9234, Train Acc: 13.6354 Test Acc: 14.0922
+Epoch: 7/30, Average Loss: 110.2792, Train Acc: 10.5014 Test Acc: 11.1087
+Epoch: 8/30, Average Loss: 85.9544, Train Acc: 9.2712 Test Acc: 10.0664
+Epoch: 9/30, Average Loss: 85.5806, Train Acc: 9.2510 Test Acc: 9.3128
+Epoch: 10/30, Average Loss: 71.7111, Train Acc: 8.4682 Test Acc: 9.1918
+At start of epoch: 10, Leaf Dist: [1085.0, 812.0, 706.0, 312.0, 186.0, 32.0, 
+5.0, 3.0, 3.0, 3.0, 2.0, 1.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 
+0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0]
+Epoch: 11/30, Average Loss: 54.5596, Train Acc: 7.3864 Test Acc: 7.8831
+Epoch: 12/30, Average Loss: 73.3493, Train Acc: 8.5644 Test Acc: 9.0661
+Epoch: 13/30, Average Loss: 53.0532, Train Acc: 7.2838 Test Acc: 7.3338
+Epoch: 14/30, Average Loss: 56.1277, Train Acc: 7.4918 Test Acc: 8.4100
+Epoch: 15/30, Average Loss: 45.5065, Train Acc: 6.7458 Test Acc: 7.3655
+Epoch: 16/30, Average Loss: 65.1601, Train Acc: 8.0722 Test Acc: 8.6650
+Epoch: 17/30, Average Loss: 70.7575, Train Acc: 8.4117 Test Acc: 9.1736
+Epoch: 18/30, Average Loss: 75.4784, Train Acc: 8.6878 Test Acc: 9.3686
+Epoch: 19/30, Average Loss: 137.1451, Train Acc: 11.7109 Test Acc: 11.6504
+Epoch: 20/30, Average Loss: 99.0624, Train Acc: 9.9530 Test Acc: 10.6004
+Epoch: 21/30, Average Loss: 77.8697, Train Acc: 8.8244 Test Acc: 9.8024
+Epoch: 22/30, Average Loss: 70.5270, Train Acc: 8.3980 Test Acc: 8.9255
+Epoch: 23/30, Average Loss: 67.4554, Train Acc: 8.2131 Test Acc: 9.0009
+Epoch: 24/30, Average Loss: 91.4545, Train Acc: 9.5632 Test Acc: 9.8583
+Epoch: 25/30, Average Loss: 69.4489, Train Acc: 8.3336 Test Acc: 8.9729
+Epoch: 26/30, Average Loss: 76.4540, Train Acc: 8.7438 Test Acc: 9.2529
+Epoch: 27/30, Average Loss: 96.9531, Train Acc: 9.8465 Test Acc: 10.0789
+Epoch: 28/30, Average Loss: 67.2682, Train Acc: 8.2017 Test Acc: 8.8980
+Epoch: 29/30, Average Loss: 81.3340, Train Acc: 9.0185 Test Acc: 9.5341
+Epoch: 30/30, Average Loss: 76.6663, Train Acc: 8.7559 Test Acc: 9.1682
+Epoch: Final 100%, Leaf Dist: [1023.0, 947.0, 785.0, 288.0, 59.0, 17.0, 11.0, 
+10.0, 5.0, 3.0, 1.0, 1.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0,
+0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0]
+Train RMSE: 8.7559, Test RMSE: 9.1682
+Elapsed time: 5.09 seconds
+Saved summary to 
+'logs/regression/dtregnet_ste_ste_leaf_dist_pol_2025_08_19-21_33_36_summary.txt'
+.
+Saved full data to 
+'logs/regression/dtregnet_ste_ste_leaf_dist_pol_2025_08_19-21_33_36_full.txt'.
+---> Saving the model
+---> Model saved at trained_models/pol/ste_leaf_dist_pol_ste.pt

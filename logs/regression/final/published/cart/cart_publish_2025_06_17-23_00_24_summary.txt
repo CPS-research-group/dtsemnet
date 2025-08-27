@@ -1,0 +1,105 @@
+{'dataset': 'wine_quality_onwards', 'model': 'cart', 'simulations': 10, 'output_prefix': 'publish', 'should_normalize_dataset': True, 'verbose': True, 'gpu': True}
+
+python -m reg_dataset_linear.reg_train_linear --dataset wine_quality_onwards --model cart --simulations 10 --output_prefix publish --should_normalize_dataset True --verbose True --gpu True
+
+---
+
+
+--------------------------------------------------
+
+DATASET: wine_quality
+Num Total Samples: 4547
+10 simulations executed. Seed: 1
+Average in-sample multivariate accuracy: 0.780 ± 0.013
+Average test multivariate accuracy: 0.777 ± 0.012
+Average train active leaves: 0.000 ± 0.000
+Average train normalized entropy: 0.000 ± 0.000
+Average test active leaves: 0.000 ± 0.000
+Average test normalized entropy: 0.000 ± 0.000
+
+Best test multivariate accuracy: 0.758
+Average elapsed time: 0.086 ± 0.123
+--------------------------------------------------
+
+DATASET: superconduct
+Num Total Samples: 14884
+10 simulations executed. Seed: 1
+Average in-sample multivariate accuracy: 1.431 ± 0.026
+Average test multivariate accuracy: 1.511 ± 0.010
+Average train active leaves: 0.000 ± 0.000
+Average train normalized entropy: 0.000 ± 0.000
+Average test active leaves: 0.000 ± 0.000
+Average test normalized entropy: 0.000 ± 0.000
+
+Best test multivariate accuracy: 1.487
+Average elapsed time: 0.308 ± 0.030
+--------------------------------------------------
+
+DATASET: pol
+Num Total Samples: 10500
+10 simulations executed. Seed: 1
+Average in-sample multivariate accuracy: 9.566 ± 0.816
+Average test multivariate accuracy: 11.017 ± 1.045
+Average train active leaves: 0.000 ± 0.000
+Average train normalized entropy: 0.000 ± 0.000
+Average test active leaves: 0.000 ± 0.000
+Average test normalized entropy: 0.000 ± 0.000
+
+Best test multivariate accuracy: 9.814
+Average elapsed time: 0.177 ± 0.008
+--------------------------------------------------
+
+DATASET: elevators
+Num Total Samples: 11619
+10 simulations executed. Seed: 1
+Average in-sample multivariate accuracy: 0.517 ± 0.009
+Average test multivariate accuracy: 0.535 ± 0.013
+Average train active leaves: 0.000 ± 0.000
+Average train normalized entropy: 0.000 ± 0.000
+Average test active leaves: 0.000 ± 0.000
+Average test normalized entropy: 0.000 ± 0.000
+
+Best test multivariate accuracy: 0.509
+Average elapsed time: 0.167 ± 0.010
+--------------------------------------------------
+
+DATASET: Bike_Sharing_Demand
+Num Total Samples: 12165
+10 simulations executed. Seed: 1
+Average in-sample multivariate accuracy: 1.176 ± 0.034
+Average test multivariate accuracy: 1.221 ± 0.039
+Average train active leaves: 0.000 ± 0.000
+Average train normalized entropy: 0.000 ± 0.000
+Average test active leaves: 0.000 ± 0.000
+Average test normalized entropy: 0.000 ± 0.000
+
+Best test multivariate accuracy: 1.139
+Average elapsed time: 0.074 ± 0.005
+--------------------------------------------------
+
+DATASET: sulfur
+Num Total Samples: 7056
+10 simulations executed. Seed: 1
+Average in-sample multivariate accuracy: 0.333 ± 0.038
+Average test multivariate accuracy: 0.427 ± 0.033
+Average train active leaves: 0.000 ± 0.000
+Average train normalized entropy: 0.000 ± 0.000
+Average test active leaves: 0.000 ± 0.000
+Average test normalized entropy: 0.000 ± 0.000
+
+Best test multivariate accuracy: 0.375
+Average elapsed time: 0.050 ± 0.007
+--------------------------------------------------
+
+DATASET: medical
+Num Total Samples: 114145
+10 simulations executed. Seed: 1
+Average in-sample multivariate accuracy: 1.459 ± 1.403
+Average test multivariate accuracy: 1.456 ± 1.403
+Average train active leaves: 0.000 ± 0.000
+Average train normalized entropy: 0.000 ± 0.000
+Average test active leaves: 0.000 ± 0.000
+Average test normalized entropy: 0.000 ± 0.000
+
+Best test multivariate accuracy: 0.909
+Average elapsed time: 0.349 ± 0.058

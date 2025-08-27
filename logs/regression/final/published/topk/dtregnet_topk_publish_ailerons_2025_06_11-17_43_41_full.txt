@@ -1,0 +1,215 @@
+{'dataset': 'ailerons', 'model': 'dtregnet_topk', 'simulations': 10, 'output_prefix': 'publish_ailerons', 'should_normalize_dataset': True, 'verbose': True, 'gpu': True}
+
+python -m reg_dataset_linear.reg_train_linear --dataset ailerons --model dtregnet_topk --simulations 10 --output_prefix publish_ailerons --should_normalize_dataset True --verbose True --gpu True
+
+---
+
+--- CONFIGURATION ---
+[{'attributes': ['climbRate',
+                 'Sgz',
+                 'p',
+                 'q',
+                 'curPitch',
+                 'curRoll',
+                 'absRoll',
+                 'diffClb',
+                 'diffRollRate',
+                 'diffDiffClb',
+                 'SeTime1',
+                 'SeTime2',
+                 'SeTime3',
+                 'SeTime4',
+                 'SeTime5',
+                 'SeTime6',
+                 'SeTime7',
+                 'SeTime8',
+                 'SeTime9',
+                 'SeTime10',
+                 'SeTime11',
+                 'SeTime12',
+                 'SeTime13',
+                 'SeTime14',
+                 'diffSeTime1',
+                 'diffSeTime2',
+                 'diffSeTime3',
+                 'diffSeTime4',
+                 'diffSeTime5',
+                 'diffSeTime6',
+                 'diffSeTime7',
+                 'diffSeTime8',
+                 'diffSeTime9',
+                 'diffSeTime10',
+                 'diffSeTime11',
+                 'diffSeTime12',
+                 'diffSeTime13',
+                 'diffSeTime14',
+                 'alpha',
+                 'Se',
+                 'goal'],
+  'batch_size': 64,
+  'bins': array([-7.    , -0.5695,  0.1649,  0.655 ]),
+  'classes': [],
+  'code': 'ailerons',
+  'depth': 5,
+  'detach': False,
+  'epochs': 50,
+  'epochs_fine_tune': 15,
+  'filepath': 'datasets/ailerons/',
+  'grad_clip': True,
+  'lamda_L1': 0.0005,
+  'learning_rate': 0.01,
+  'learning_rate_tune': 1e-05,
+  'lr_scheduler': True,
+  'lr_scheduler_gamma': 0.9,
+  'mix_experts': 2,
+  'n_attributes': 40,
+  'n_classes': 1,
+  'name': 'Ailerons',
+  'nseed': 1,
+  'over_param': [],
+  'reg_hidden': 0,
+  'smax_temp': 0.5,
+  'ste': 'entmax_ste',
+  'test_split': None,
+  'top_k': 4,
+  'tseed': 1,
+  'use_L1': True,
+  'use_pretrained': False,
+  'val_split': 0.2,
+  'wt_init': 'none'}]
+--- END CONFIG ---
+
+
+--------------------------------------------------
+
+DATASET: Ailerons
+In-sample:
+        Multivariate accuracy: 1.5758755178099406
+Test:
+        Multivariate accuracy: 1.6357208985588312
+        Train Active Leaves: 7
+        Train Normalized Entropy: 0.46
+        Test Active Leaves: 7
+        Test Normalized Entropy: 0.46
+Elapsed time: 754.9579638009891
+
+
+--------
+
+In-sample:
+        Multivariate accuracy: 1.5596476927666514
+Test:
+        Multivariate accuracy: 1.6563407293192207
+        Train Active Leaves: 8
+        Train Normalized Entropy: 0.56
+        Test Active Leaves: 8
+        Test Normalized Entropy: 0.57
+Elapsed time: 716.3730264539772
+
+
+--------
+
+In-sample:
+        Multivariate accuracy: 1.5732585960634922
+Test:
+        Multivariate accuracy: 1.646742444591897
+        Train Active Leaves: 8
+        Train Normalized Entropy: 0.47
+        Test Active Leaves: 8
+        Test Normalized Entropy: 0.49
+Elapsed time: 649.4677366550022
+
+
+--------
+
+In-sample:
+        Multivariate accuracy: 1.5776420757166534
+Test:
+        Multivariate accuracy: 1.6530948914715144
+        Train Active Leaves: 6
+        Train Normalized Entropy: 0.49
+        Test Active Leaves: 6
+        Test Normalized Entropy: 0.49
+Elapsed time: 545.431011497014
+
+
+--------
+
+In-sample:
+        Multivariate accuracy: 1.5798753505506893
+Test:
+        Multivariate accuracy: 1.6653099322765605
+        Train Active Leaves: 6
+        Train Normalized Entropy: 0.46
+        Test Active Leaves: 7
+        Test Normalized Entropy: 0.46
+Elapsed time: 544.9508358740131
+
+
+--------
+
+In-sample:
+        Multivariate accuracy: 1.581833031605866
+Test:
+        Multivariate accuracy: 1.6366055128827968
+        Train Active Leaves: 7
+        Train Normalized Entropy: 0.51
+        Test Active Leaves: 7
+        Test Normalized Entropy: 0.51
+Elapsed time: 532.318668597989
+
+
+--------
+
+In-sample:
+        Multivariate accuracy: 1.5687975086985373
+Test:
+        Multivariate accuracy: 1.650676572781768
+        Train Active Leaves: 6
+        Train Normalized Entropy: 0.48
+        Test Active Leaves: 7
+        Test Normalized Entropy: 0.50
+Elapsed time: 545.9603170800256
+
+
+--------
+
+In-sample:
+        Multivariate accuracy: 1.5858845529362786
+Test:
+        Multivariate accuracy: 1.6494052264114578
+        Train Active Leaves: 6
+        Train Normalized Entropy: 0.44
+        Test Active Leaves: 6
+        Test Normalized Entropy: 0.45
+Elapsed time: 533.1191639350145
+
+
+--------
+
+In-sample:
+        Multivariate accuracy: 1.5798132851627928
+Test:
+        Multivariate accuracy: 1.6564232305828221
+        Train Active Leaves: 8
+        Train Normalized Entropy: 0.55
+        Test Active Leaves: 8
+        Test Normalized Entropy: 0.53
+Elapsed time: 596.3725971039967
+
+
+--------
+
+In-sample:
+        Multivariate accuracy: 1.5968522975094912
+Test:
+        Multivariate accuracy: 1.6655106668076312
+        Train Active Leaves: 6
+        Train Normalized Entropy: 0.37
+        Test Active Leaves: 6
+        Test Normalized Entropy: 0.37
+Elapsed time: 500.61689316201955
+
+
+--------
+

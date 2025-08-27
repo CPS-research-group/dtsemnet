@@ -1,0 +1,23 @@
+{'dataset': 'pol', 'model': 'dtregnet_ste', 'simulations': 1, 'output_prefix': 'ste_leaf_dist_pol', 'should_normalize_dataset': True, 'verbose': True, 'gpu': True}
+
+python -m reg_dataset_linear.reg_train_linear --dataset pol --model dtregnet_ste --simulations 1 --output_prefix ste_leaf_dist_pol --should_normalize_dataset True --verbose True --gpu True
+
+---
+
+
+--------------------------------------------------
+
+DATASET: pol
+In-sample:
+        Multivariate accuracy: 8.755927377667637
+Test:
+        Multivariate accuracy: 9.16817357743797
+        Train Active Leaves: 5
+        Train Normalized Entropy: 0.42
+        Test Active Leaves: 5
+        Test Normalized Entropy: 0.42
+Elapsed time: 5.0881089605391026
+
+
+--------
+

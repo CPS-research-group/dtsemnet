@@ -1,0 +1,41 @@
+{
+    "exp_name": "publish_top4",
+    "torch_deterministic": true,
+    "capture_video": false,
+    
+    "env_id": "lunar",
+    "agent": "dtsemnet_topk",
+    "episodes": 1500,
+    "total_timesteps": 1000000,
+    "num_envs": 1,
+    "buffer_size": 1000000,
+    "learning_starts": 10000,
+    "seed": 11,
+    "wt_init": true,
+    "cuda": true,
+    "eval_freq":50,
+
+    "height": 4,
+    "topk": 4, 
+    "smax_temp": 0.5,
+    "ste": "gumbel_softmax_ste",
+        
+    "policy_lr": 1e-3,
+    "q_lr": 1e-3,
+    "top1_lr": 1e-4,
+    "batch_size": 256,
+    
+    "train_freq": 64,
+    "gradient_steps": 32,
+    
+    "alpha": 0.2,
+    "ent_coef": 0.01,
+    "gamma": 0.99,
+    "tau": 0.01,
+    "autotune": true,
+    
+    "actor_arch": "DTSemNet",
+    "critic_arch": 256
+
+}
+

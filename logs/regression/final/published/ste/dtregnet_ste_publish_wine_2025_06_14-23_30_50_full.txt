@@ -1,0 +1,140 @@
+{'dataset': 'wine_quality', 'model': 'dtregnet_ste', 'simulations': 10, 'output_prefix': 'publish_wine', 'should_normalize_dataset': True, 'verbose': True, 'gpu': True}
+
+python -m reg_dataset_linear.reg_train_linear --dataset wine_quality --model dtregnet_ste --simulations 10 --output_prefix publish_wine --should_normalize_dataset True --verbose True --gpu True
+
+---
+
+
+--------------------------------------------------
+
+DATASET: wine_quality
+In-sample:
+        Multivariate accuracy: 0.6649369829455622
+Test:
+        Multivariate accuracy: 0.6900174132525961
+        Train Active Leaves: 19
+        Train Normalized Entropy: 0.83
+        Test Active Leaves: 19
+        Test Normalized Entropy: 0.82
+Elapsed time: 3.0615125979529694
+
+
+--------
+
+In-sample:
+        Multivariate accuracy: 0.6646263310410438
+Test:
+        Multivariate accuracy: 0.6992013476383343
+        Train Active Leaves: 17
+        Train Normalized Entropy: 0.77
+        Test Active Leaves: 18
+        Test Normalized Entropy: 0.78
+Elapsed time: 2.8061912849661894
+
+
+--------
+
+In-sample:
+        Multivariate accuracy: 0.6671893130442706
+Test:
+        Multivariate accuracy: 0.6929807888065808
+        Train Active Leaves: 18
+        Train Normalized Entropy: 0.81
+        Test Active Leaves: 17
+        Test Normalized Entropy: 0.81
+Elapsed time: 2.7969604620011523
+
+
+--------
+
+In-sample:
+        Multivariate accuracy: 0.6603188777113363
+Test:
+        Multivariate accuracy: 0.6987008183802255
+        Train Active Leaves: 21
+        Train Normalized Entropy: 0.86
+        Test Active Leaves: 19
+        Test Normalized Entropy: 0.86
+Elapsed time: 2.808137234998867
+
+
+--------
+
+In-sample:
+        Multivariate accuracy: 0.6696431943012547
+Test:
+        Multivariate accuracy: 0.6885588021480575
+        Train Active Leaves: 21
+        Train Normalized Entropy: 0.83
+        Test Active Leaves: 19
+        Test Normalized Entropy: 0.83
+Elapsed time: 2.781166440981906
+
+
+--------
+
+In-sample:
+        Multivariate accuracy: 0.6538370896277721
+Test:
+        Multivariate accuracy: 0.6913298604481293
+        Train Active Leaves: 21
+        Train Normalized Entropy: 0.87
+        Test Active Leaves: 22
+        Test Normalized Entropy: 0.87
+Elapsed time: 2.8136860390077345
+
+
+--------
+
+In-sample:
+        Multivariate accuracy: 0.6668734630032516
+Test:
+        Multivariate accuracy: 0.6936424321780991
+        Train Active Leaves: 15
+        Train Normalized Entropy: 0.77
+        Test Active Leaves: 15
+        Test Normalized Entropy: 0.78
+Elapsed time: 2.824650919996202
+
+
+--------
+
+In-sample:
+        Multivariate accuracy: 0.6701921230412768
+Test:
+        Multivariate accuracy: 0.6959896266135788
+        Train Active Leaves: 19
+        Train Normalized Entropy: 0.80
+        Test Active Leaves: 19
+        Test Normalized Entropy: 0.80
+Elapsed time: 2.7845087599707767
+
+
+--------
+
+In-sample:
+        Multivariate accuracy: 0.659723385627293
+Test:
+        Multivariate accuracy: 0.688725837764571
+        Train Active Leaves: 20
+        Train Normalized Entropy: 0.86
+        Test Active Leaves: 20
+        Test Normalized Entropy: 0.85
+Elapsed time: 2.8069387940340675
+
+
+--------
+
+In-sample:
+        Multivariate accuracy: 0.6762557764696916
+Test:
+        Multivariate accuracy: 0.7006978866323517
+        Train Active Leaves: 17
+        Train Normalized Entropy: 0.73
+        Test Active Leaves: 17
+        Test Normalized Entropy: 0.74
+Elapsed time: 2.7757219779887237
+
+
+--------
+

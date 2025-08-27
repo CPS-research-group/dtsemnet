@@ -1,0 +1,212 @@
+28-06-25 11:56[root]INFO | Training on lunar environment for 1500 episodes
+28-06-25 11:56[root]INFO | Agent Type: dtsemnet_topk
+28-06-25 11:56[root]INFO | Log Directory: lunar_gpu/dtsemnet_topk/publish_top4/
+28-06-25 11:56[root]INFO | Random Weight Initialization: True
+28-06-25 11:56[root]INFO | Training Started: 2025-06-28 11:56:37
+28-06-25 11:56[root]INFO | Hyperparameters: {"exp_name": "publish_top4", "torch_deterministic": true, "capture_video": false, "env_id": "lunar", "agent": "dtsemnet_topk", "episodes": 1500, "total_timesteps": 900000, "num_envs": 1, "buffer_size": 1000000, "learning_starts": 10000, "seed": 17, "wt_init": true, "cuda": true, "eval_freq": 50, "height": 4, "topk": 4, "smax_temp": 0.5, "ste": "gumbel_softmax_ste", "policy_lr": 0.001, "q_lr": 0.001, "top1_lr": 0.0001, "batch_size": 256, "train_freq": 64, "gradient_steps": 32, "alpha": 0.2, "ent_coef": 0.01, "gamma": 0.99, "tau": 0.01, "autotune": true, "actor_arch": "DTSemNet", "critic_arch": [256, 256]}
+28-06-25 11:56[root]INFO | Actor Architecture: DTSemNet
+28-06-25 11:56[root]INFO | Critic Architecture: [256, 256]
+28-06-25 11:56[root]INFO | STE: gumbel_softmax_ste
+28-06-25 11:56[root]INFO | ===================> Training Started with seed 17 <=================
+28-06-25 11:56[root]INFO | Episode: 10, Step: [102] Avg Reward (last 100eps): -166.85
+28-06-25 11:56[root]INFO | Episode: 20, Step: [96] Avg Reward (last 100eps): -210.11
+28-06-25 11:56[root]INFO | Episode: 30, Step: [82] Avg Reward (last 100eps): -189.91
+28-06-25 11:56[root]INFO | Episode: 40, Step: [146] Avg Reward (last 100eps): -206.86
+28-06-25 11:56[root]INFO | Episode: 50, Step: [111] Avg Reward (last 100eps): -203.60
+28-06-25 11:56[root]INFO | Episode: 60, Step: [96] Avg Reward (last 100eps): -206.33
+28-06-25 11:56[root]INFO | Episode: 70, Step: [100] Avg Reward (last 100eps): -207.12
+28-06-25 11:56[root]INFO | Episode: 80, Step: [117] Avg Reward (last 100eps): -206.36
+28-06-25 11:56[root]INFO | Episode: 90, Step: [115] Avg Reward (last 100eps): -204.23
+28-06-25 11:57[root]INFO | Episode: 100, Step: [124] Avg Reward (last 100eps): -198.99
+28-06-25 11:58[root]INFO | ==>Evaluation at episode 100 step 10442: Avg Reward (ep50): -330.55 ± 172.86
+28-06-25 11:58[root]INFO | ==>New best test reward: -330.55
+28-06-25 12:07[root]INFO | Episode: 110, Step: [1000] Avg Reward (last 100eps): -197.91
+28-06-25 12:21[root]INFO | Episode: 120, Step: [346] Avg Reward (last 100eps): -184.92
+28-06-25 12:40[root]INFO | Episode: 130, Step: [1000] Avg Reward (last 100eps): -178.91
+28-06-25 13:01[root]INFO | Episode: 140, Step: [1000] Avg Reward (last 100eps): -153.60
+28-06-25 13:21[root]INFO | Episode: 150, Step: [1000] Avg Reward (last 100eps): -134.29
+28-06-25 13:28[root]INFO | ==>Evaluation at episode 150 step 50654: Avg Reward (ep50): -21.15 ± 52.53
+28-06-25 13:28[root]INFO | ==>New best test reward: -21.15
+28-06-25 13:48[root]INFO | Episode: 160, Step: [1000] Avg Reward (last 100eps): -109.24
+28-06-25 14:08[root]INFO | Episode: 170, Step: [1000] Avg Reward (last 100eps): -89.24
+28-06-25 14:28[root]INFO | Episode: 180, Step: [1000] Avg Reward (last 100eps): -71.11
+28-06-25 14:48[root]INFO | Episode: 190, Step: [779] Avg Reward (last 100eps): -52.83
+28-06-25 15:09[root]INFO | Episode: 200, Step: [1000] Avg Reward (last 100eps): -34.09
+28-06-25 15:15[root]INFO | ==>Evaluation at episode 200 step 99467: Avg Reward (ep50): 29.85 ± 33.38
+28-06-25 15:15[root]INFO | ==>New best test reward: 29.85
+28-06-25 15:36[root]INFO | Episode: 210, Step: [1000] Avg Reward (last 100eps): -16.58
+28-06-25 15:57[root]INFO | Episode: 220, Step: [1000] Avg Reward (last 100eps): -2.07
+28-06-25 16:18[root]INFO | Episode: 230, Step: [1000] Avg Reward (last 100eps): 7.87
+28-06-25 16:38[root]INFO | Episode: 240, Step: [1000] Avg Reward (last 100eps): 8.56
+28-06-25 16:59[root]INFO | Episode: 250, Step: [1000] Avg Reward (last 100eps): 12.11
+28-06-25 17:05[root]INFO | ==>Evaluation at episode 250 step 148971: Avg Reward (ep50): 14.56 ± 35.20
+28-06-25 17:26[root]INFO | Episode: 260, Step: [1000] Avg Reward (last 100eps): 10.97
+28-06-25 17:47[root]INFO | Episode: 270, Step: [1000] Avg Reward (last 100eps): 15.65
+28-06-25 18:07[root]INFO | Episode: 280, Step: [1000] Avg Reward (last 100eps): 21.22
+28-06-25 18:28[root]INFO | Episode: 290, Step: [1000] Avg Reward (last 100eps): 22.53
+28-06-25 18:49[root]INFO | Episode: 300, Step: [1000] Avg Reward (last 100eps): 20.05
+28-06-25 18:55[root]INFO | ==>Evaluation at episode 300 step 198861: Avg Reward (ep50): 55.10 ± 65.34
+28-06-25 18:55[root]INFO | ==>New best test reward: 55.10
+28-06-25 19:16[root]INFO | Episode: 310, Step: [1000] Avg Reward (last 100eps): 20.61
+28-06-25 19:36[root]INFO | Episode: 320, Step: [1000] Avg Reward (last 100eps): 22.19
+28-06-25 19:56[root]INFO | Episode: 330, Step: [1000] Avg Reward (last 100eps): 23.68
+28-06-25 20:16[root]INFO | Episode: 340, Step: [1000] Avg Reward (last 100eps): 26.86
+28-06-25 20:35[root]INFO | Episode: 350, Step: [1000] Avg Reward (last 100eps): 28.79
+28-06-25 20:41[root]INFO | ==>Evaluation at episode 350 step 247038: Avg Reward (ep50): 35.72 ± 44.84
+28-06-25 21:02[root]INFO | Episode: 360, Step: [1000] Avg Reward (last 100eps): 29.62
+28-06-25 21:21[root]INFO | Episode: 370, Step: [1000] Avg Reward (last 100eps): 29.82
+28-06-25 21:42[root]INFO | Episode: 380, Step: [1000] Avg Reward (last 100eps): 25.55
+28-06-25 21:59[root]INFO | Episode: 390, Step: [1000] Avg Reward (last 100eps): 26.02
+28-06-25 22:19[root]INFO | Episode: 400, Step: [1000] Avg Reward (last 100eps): 23.27
+28-06-25 22:26[root]INFO | ==>Evaluation at episode 400 step 294667: Avg Reward (ep50): -20.91 ± 31.43
+28-06-25 22:46[root]INFO | Episode: 410, Step: [1000] Avg Reward (last 100eps): 21.19
+28-06-25 23:06[root]INFO | Episode: 420, Step: [1000] Avg Reward (last 100eps): 16.22
+28-06-25 23:26[root]INFO | Episode: 430, Step: [1000] Avg Reward (last 100eps): 14.37
+28-06-25 23:47[root]INFO | Episode: 440, Step: [1000] Avg Reward (last 100eps): 11.87
+29-06-25 00:06[root]INFO | Episode: 450, Step: [1000] Avg Reward (last 100eps): 10.49
+29-06-25 00:13[root]INFO | ==>Evaluation at episode 450 step 343533: Avg Reward (ep50): 20.31 ± 35.05
+29-06-25 00:33[root]INFO | Episode: 460, Step: [1000] Avg Reward (last 100eps): 11.33
+29-06-25 00:53[root]INFO | Episode: 470, Step: [1000] Avg Reward (last 100eps): 9.33
+29-06-25 01:13[root]INFO | Episode: 480, Step: [1000] Avg Reward (last 100eps): 9.68
+29-06-25 01:32[root]INFO | Episode: 490, Step: [1000] Avg Reward (last 100eps): 9.48
+29-06-25 01:48[root]INFO | Episode: 500, Step: [1000] Avg Reward (last 100eps): 13.35
+29-06-25 01:54[root]INFO | ==>Evaluation at episode 500 step 392970: Avg Reward (ep50): 30.29 ± 18.95
+29-06-25 02:10[root]INFO | Episode: 510, Step: [1000] Avg Reward (last 100eps): 14.22
+29-06-25 02:27[root]INFO | Episode: 520, Step: [1000] Avg Reward (last 100eps): 15.85
+29-06-25 02:42[root]INFO | Episode: 530, Step: [1000] Avg Reward (last 100eps): 21.24
+29-06-25 02:57[root]INFO | Episode: 540, Step: [1000] Avg Reward (last 100eps): 26.33
+29-06-25 03:14[root]INFO | Episode: 550, Step: [1000] Avg Reward (last 100eps): 26.29
+29-06-25 03:19[root]INFO | ==>Evaluation at episode 550 step 441353: Avg Reward (ep50): 48.20 ± 57.28
+29-06-25 03:35[root]INFO | Episode: 560, Step: [1000] Avg Reward (last 100eps): 24.76
+29-06-25 03:51[root]INFO | Episode: 570, Step: [1000] Avg Reward (last 100eps): 25.68
+29-06-25 04:08[root]INFO | Episode: 580, Step: [1000] Avg Reward (last 100eps): 31.21
+29-06-25 04:23[root]INFO | Episode: 590, Step: [1000] Avg Reward (last 100eps): 35.43
+29-06-25 04:35[root]INFO | Episode: 600, Step: [1000] Avg Reward (last 100eps): 36.21
+29-06-25 04:39[root]INFO | ==>Evaluation at episode 600 step 490964: Avg Reward (ep50): 52.92 ± 45.14
+29-06-25 04:51[root]INFO | Episode: 610, Step: [1000] Avg Reward (last 100eps): 39.63
+29-06-25 05:03[root]INFO | Episode: 620, Step: [1000] Avg Reward (last 100eps): 45.63
+29-06-25 05:15[root]INFO | Episode: 630, Step: [1000] Avg Reward (last 100eps): 43.37
+29-06-25 05:26[root]INFO | Episode: 640, Step: [1000] Avg Reward (last 100eps): 41.95
+29-06-25 05:34[root]INFO | Episode: 650, Step: [1000] Avg Reward (last 100eps): 40.49
+29-06-25 05:37[root]INFO | ==>Evaluation at episode 650 step 539715: Avg Reward (ep50): 68.44 ± 72.72
+29-06-25 05:37[root]INFO | ==>New best test reward: 68.44
+29-06-25 05:41[root]INFO | Episode: 660, Step: [1000] Avg Reward (last 100eps): 42.75
+29-06-25 05:42[root]INFO | Episode: 670, Step: [1000] Avg Reward (last 100eps): 49.53
+29-06-25 05:44[root]INFO | Episode: 680, Step: [1000] Avg Reward (last 100eps): 51.56
+29-06-25 05:46[root]INFO | Episode: 690, Step: [1000] Avg Reward (last 100eps): 52.84
+29-06-25 05:48[root]INFO | Episode: 700, Step: [1000] Avg Reward (last 100eps): 60.43
+29-06-25 05:48[root]INFO | ==>Evaluation at episode 700 step 585401: Avg Reward (ep50): 86.05 ± 68.83
+29-06-25 05:48[root]INFO | ==>New best test reward: 86.05
+29-06-25 05:50[root]INFO | Episode: 710, Step: [1000] Avg Reward (last 100eps): 66.30
+29-06-25 05:52[root]INFO | Episode: 720, Step: [1000] Avg Reward (last 100eps): 73.18
+29-06-25 05:53[root]INFO | Episode: 730, Step: [232] Avg Reward (last 100eps): 87.88
+29-06-25 05:54[root]INFO | Episode: 740, Step: [216] Avg Reward (last 100eps): 100.89
+29-06-25 05:55[root]INFO | Episode: 750, Step: [264] Avg Reward (last 100eps): 122.90
+29-06-25 05:55[root]INFO | ==>Evaluation at episode 750 step 616862: Avg Reward (ep50): 248.59 ± 32.28
+29-06-25 05:55[root]INFO | ==>New best test reward: 248.59
+29-06-25 05:56[root]INFO | Episode: 760, Step: [209] Avg Reward (last 100eps): 142.65
+29-06-25 05:57[root]INFO | Episode: 770, Step: [315] Avg Reward (last 100eps): 157.00
+29-06-25 05:57[root]INFO | Episode: 780, Step: [220] Avg Reward (last 100eps): 175.18
+29-06-25 05:58[root]INFO | Episode: 790, Step: [263] Avg Reward (last 100eps): 188.84
+29-06-25 05:58[root]INFO | Episode: 800, Step: [230] Avg Reward (last 100eps): 200.86
+29-06-25 05:59[root]INFO | ==>Evaluation at episode 800 step 633213: Avg Reward (ep50): 227.85 ± 113.29
+29-06-25 05:59[root]INFO | Episode: 810, Step: [1000] Avg Reward (last 100eps): 212.29
+29-06-25 06:00[root]INFO | Episode: 820, Step: [186] Avg Reward (last 100eps): 221.69
+29-06-25 06:00[root]INFO | Episode: 830, Step: [407] Avg Reward (last 100eps): 227.89
+29-06-25 06:01[root]INFO | Episode: 840, Step: [688] Avg Reward (last 100eps): 235.08
+29-06-25 06:02[root]INFO | Episode: 850, Step: [304] Avg Reward (last 100eps): 236.51
+29-06-25 06:02[root]INFO | ==>Evaluation at episode 850 step 648381: Avg Reward (ep50): 220.82 ± 115.77
+29-06-25 06:03[root]INFO | Episode: 860, Step: [198] Avg Reward (last 100eps): 234.07
+29-06-25 06:04[root]INFO | Episode: 870, Step: [302] Avg Reward (last 100eps): 232.12
+29-06-25 06:04[root]INFO | Episode: 880, Step: [1000] Avg Reward (last 100eps): 227.36
+29-06-25 06:05[root]INFO | Episode: 890, Step: [219] Avg Reward (last 100eps): 231.40
+29-06-25 06:06[root]INFO | Episode: 900, Step: [1000] Avg Reward (last 100eps): 232.34
+29-06-25 06:06[root]INFO | ==>Evaluation at episode 900 step 666778: Avg Reward (ep50): 229.01 ± 105.44
+29-06-25 06:07[root]INFO | Episode: 910, Step: [238] Avg Reward (last 100eps): 229.39
+29-06-25 06:07[root]INFO | Episode: 920, Step: [692] Avg Reward (last 100eps): 231.02
+29-06-25 06:08[root]INFO | Episode: 930, Step: [179] Avg Reward (last 100eps): 228.84
+29-06-25 06:09[root]INFO | Episode: 940, Step: [1000] Avg Reward (last 100eps): 225.91
+29-06-25 06:10[root]INFO | Episode: 950, Step: [455] Avg Reward (last 100eps): 222.73
+29-06-25 06:10[root]INFO | ==>Evaluation at episode 950 step 686229: Avg Reward (ep50): 251.33 ± 67.96
+29-06-25 06:10[root]INFO | ==>New best test reward: 251.33
+29-06-25 06:11[root]INFO | Episode: 960, Step: [334] Avg Reward (last 100eps): 219.42
+29-06-25 06:12[root]INFO | Episode: 970, Step: [282] Avg Reward (last 100eps): 221.48
+29-06-25 06:13[root]INFO | Episode: 980, Step: [258] Avg Reward (last 100eps): 222.69
+29-06-25 06:14[root]INFO | Episode: 990, Step: [327] Avg Reward (last 100eps): 221.44
+29-06-25 06:14[root]INFO | Episode: 1000, Step: [304] Avg Reward (last 100eps): 223.53
+29-06-25 06:14[root]INFO | ==>Evaluation at episode 1000 step 706516: Avg Reward (ep50): 263.33 ± 33.14
+29-06-25 06:14[root]INFO | ==>New best test reward: 263.33
+29-06-25 06:15[root]INFO | Episode: 1010, Step: [512] Avg Reward (last 100eps): 230.57
+29-06-25 06:16[root]INFO | Episode: 1020, Step: [576] Avg Reward (last 100eps): 232.94
+29-06-25 06:16[root]INFO | Episode: 1030, Step: [233] Avg Reward (last 100eps): 236.52
+29-06-25 06:17[root]INFO | Episode: 1040, Step: [193] Avg Reward (last 100eps): 242.89
+29-06-25 06:17[root]INFO | Episode: 1050, Step: [276] Avg Reward (last 100eps): 246.35
+29-06-25 06:18[root]INFO | ==>Evaluation at episode 1050 step 721459: Avg Reward (ep50): 264.27 ± 36.84
+29-06-25 06:18[root]INFO | ==>New best test reward: 264.27
+29-06-25 06:18[root]INFO | -->Saving best model<--
+29-06-25 06:18[root]INFO | Episode: 1060, Step: [506] Avg Reward (last 100eps): 255.56
+29-06-25 06:19[root]INFO | Episode: 1070, Step: [202] Avg Reward (last 100eps): 257.24
+29-06-25 06:19[root]INFO | Episode: 1080, Step: [244] Avg Reward (last 100eps): 257.67
+29-06-25 06:20[root]INFO | Episode: 1090, Step: [263] Avg Reward (last 100eps): 261.72
+29-06-25 06:20[root]INFO | Episode: 1100, Step: [213] Avg Reward (last 100eps): 262.94
+29-06-25 06:20[root]INFO | ==>Evaluation at episode 1100 step 734835: Avg Reward (ep50): 258.08 ± 45.37
+29-06-25 06:21[root]INFO | Episode: 1110, Step: [1000] Avg Reward (last 100eps): 261.71
+29-06-25 06:22[root]INFO | Episode: 1120, Step: [220] Avg Reward (last 100eps): 260.11
+29-06-25 06:23[root]INFO | Episode: 1130, Step: [315] Avg Reward (last 100eps): 257.30
+29-06-25 06:23[root]INFO | Episode: 1140, Step: [213] Avg Reward (last 100eps): 255.19
+29-06-25 06:24[root]INFO | Episode: 1150, Step: [392] Avg Reward (last 100eps): 253.92
+29-06-25 06:24[root]INFO | ==>Evaluation at episode 1150 step 751772: Avg Reward (ep50): 242.62 ± 69.00
+29-06-25 06:25[root]INFO | Episode: 1160, Step: [186] Avg Reward (last 100eps): 252.60
+29-06-25 06:25[root]INFO | Episode: 1170, Step: [186] Avg Reward (last 100eps): 250.92
+29-06-25 06:26[root]INFO | Episode: 1180, Step: [178] Avg Reward (last 100eps): 254.46
+29-06-25 06:27[root]INFO | Episode: 1190, Step: [177] Avg Reward (last 100eps): 252.43
+29-06-25 06:27[root]INFO | Episode: 1200, Step: [204] Avg Reward (last 100eps): 253.37
+29-06-25 06:27[root]INFO | ==>Evaluation at episode 1200 step 766281: Avg Reward (ep50): 266.67 ± 36.59
+29-06-25 06:27[root]INFO | ==>New best test reward: 266.67
+29-06-25 06:27[root]INFO | -->Saving best model<--
+29-06-25 06:28[root]INFO | Episode: 1210, Step: [189] Avg Reward (last 100eps): 254.84
+29-06-25 06:28[root]INFO | Episode: 1220, Step: [493] Avg Reward (last 100eps): 256.65
+29-06-25 06:29[root]INFO | Episode: 1230, Step: [229] Avg Reward (last 100eps): 260.73
+29-06-25 06:29[root]INFO | Episode: 1240, Step: [217] Avg Reward (last 100eps): 260.52
+29-06-25 06:30[root]INFO | Episode: 1250, Step: [217] Avg Reward (last 100eps): 259.09
+29-06-25 06:30[root]INFO | ==>Evaluation at episode 1250 step 780301: Avg Reward (ep50): 266.03 ± 37.89
+29-06-25 06:31[root]INFO | Episode: 1260, Step: [183] Avg Reward (last 100eps): 257.54
+29-06-25 06:32[root]INFO | Episode: 1270, Step: [184] Avg Reward (last 100eps): 258.78
+29-06-25 06:32[root]INFO | Episode: 1280, Step: [278] Avg Reward (last 100eps): 259.98
+29-06-25 06:33[root]INFO | Episode: 1290, Step: [182] Avg Reward (last 100eps): 261.81
+29-06-25 06:33[root]INFO | Episode: 1300, Step: [190] Avg Reward (last 100eps): 259.48
+29-06-25 06:33[root]INFO | ==>Evaluation at episode 1300 step 794886: Avg Reward (ep50): 272.82 ± 21.20
+29-06-25 06:33[root]INFO | ==>New best test reward: 272.82
+29-06-25 06:33[root]INFO | -->Saving best model<--
+29-06-25 06:34[root]INFO | Episode: 1310, Step: [365] Avg Reward (last 100eps): 259.83
+29-06-25 06:35[root]INFO | Episode: 1320, Step: [204] Avg Reward (last 100eps): 259.22
+29-06-25 06:35[root]INFO | Episode: 1330, Step: [197] Avg Reward (last 100eps): 258.89
+29-06-25 06:36[root]INFO | Episode: 1340, Step: [190] Avg Reward (last 100eps): 257.54
+29-06-25 06:36[root]INFO | Episode: 1350, Step: [219] Avg Reward (last 100eps): 259.21
+29-06-25 06:36[root]INFO | ==>Evaluation at episode 1350 step 807852: Avg Reward (ep50): 267.91 ± 37.78
+29-06-25 06:37[root]INFO | Episode: 1360, Step: [207] Avg Reward (last 100eps): 261.37
+29-06-25 06:37[root]INFO | Episode: 1370, Step: [296] Avg Reward (last 100eps): 263.74
+29-06-25 06:38[root]INFO | Episode: 1380, Step: [1000] Avg Reward (last 100eps): 259.50
+29-06-25 06:39[root]INFO | Episode: 1390, Step: [252] Avg Reward (last 100eps): 258.98
+29-06-25 06:39[root]INFO | Episode: 1400, Step: [305] Avg Reward (last 100eps): 256.81
+29-06-25 06:40[root]INFO | ==>Evaluation at episode 1400 step 823144: Avg Reward (ep50): 256.65 ± 46.52
+29-06-25 06:40[root]INFO | Episode: 1410, Step: [410] Avg Reward (last 100eps): 255.09
+29-06-25 06:41[root]INFO | Episode: 1420, Step: [190] Avg Reward (last 100eps): 255.15
+29-06-25 06:42[root]INFO | Episode: 1430, Step: [192] Avg Reward (last 100eps): 252.42
+29-06-25 06:42[root]INFO | Episode: 1440, Step: [185] Avg Reward (last 100eps): 254.87
+29-06-25 06:43[root]INFO | Episode: 1450, Step: [241] Avg Reward (last 100eps): 257.02
+29-06-25 06:43[root]INFO | ==>Evaluation at episode 1450 step 837765: Avg Reward (ep50): 270.09 ± 32.36
+29-06-25 06:43[root]INFO | Episode: 1460, Step: [268] Avg Reward (last 100eps): 257.46
+29-06-25 06:44[root]INFO | Episode: 1470, Step: [231] Avg Reward (last 100eps): 257.29
+29-06-25 06:44[root]INFO | Episode: 1480, Step: [274] Avg Reward (last 100eps): 260.77
+29-06-25 06:45[root]INFO | Episode: 1490, Step: [230] Avg Reward (last 100eps): 262.42
+29-06-25 06:45[root]INFO | Episode: 1500, Step: [187] Avg Reward (last 100eps): 265.35
+29-06-25 06:46[root]INFO | ==>Evaluation at episode 1500 step 850578: Avg Reward (ep50): 274.89 ± 28.52
+29-06-25 06:46[root]INFO | ==>New best test reward: 274.89
+29-06-25 06:46[root]INFO | -->Saving best model<--
+29-06-25 06:46[root]INFO | Training completed after 1501 episodes and 851017 steps.
+29-06-25 06:46[root]INFO | ===================> Storing Reward <=================
+29-06-25 06:46[root]INFO | ===================> Evaluation Started (Last Model-Reported for Publication) <=================
+29-06-25 06:46[root]INFO | ==============> Test reward for seeds [500, 600]: 269.43 +/- 30.73157712865299 <==========
+29-06-25 06:46[root]INFO | ===================> Evaluation Started (Best Model) <=================
+29-06-25 06:46[root]INFO | ==============> Test reward for seeds [500, 600]: 270.04 +/- 28.56188725116391 <==========

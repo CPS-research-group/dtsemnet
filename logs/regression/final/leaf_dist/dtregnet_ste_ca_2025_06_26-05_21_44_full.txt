@@ -1,0 +1,23 @@
+{'dataset': 'synth_30k', 'model': 'dtregnet_ste', 'simulations': 1, 'output_prefix': 'ca', 'should_normalize_dataset': True, 'verbose': True, 'gpu': True}
+
+python -m reg_dataset_linear.reg_train_linear --dataset synth_30k --model dtregnet_ste --simulations 1 --output_prefix ca --should_normalize_dataset True --verbose True --gpu True
+
+---
+
+
+--------------------------------------------------
+
+DATASET: synth_30k
+In-sample:
+        Multivariate accuracy: 0.1751675056155531
+Test:
+        Multivariate accuracy: 0.1784501954309632
+        Train Active Leaves: 15
+        Train Normalized Entropy: 0.70
+        Test Active Leaves: 15
+        Test Normalized Entropy: 0.70
+Elapsed time: 10.691484009847045
+
+
+--------
+

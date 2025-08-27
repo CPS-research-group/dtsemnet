@@ -1,0 +1,56 @@
+{'dataset': 'sulfur', 'model': 'dtregnet_topk', 'simulations': 10, 'output_prefix': 'publish_sulfur', 'should_normalize_dataset': True, 'verbose': True, 'gpu': True}
+
+python -m reg_dataset_linear.reg_train_linear --dataset sulfur --model dtregnet_topk --simulations 10 --output_prefix publish_sulfur --should_normalize_dataset True --verbose True --gpu True
+
+---
+
+--- CONFIGURATION ---
+[{'attributes': [],
+  'batch_size': 128,
+  'bins': array([0. , 0.5]),
+  'classes': [],
+  'code': 'sulfur',
+  'depth': 5,
+  'detach': False,
+  'epochs': 20,
+  'epochs_fine_tune': 10,
+  'filepath': 'datasets/sulfur/',
+  'grad_clip': True,
+  'lamda_L1': 5e-05,
+  'learning_rate': 0.01,
+  'learning_rate_tune': 0.0001,
+  'lr_scheduler': True,
+  'lr_scheduler_gamma': 0.95,
+  'mix_experts': 2,
+  'n_attributes': 6,
+  'n_classes': 1,
+  'name': 'sulfur',
+  'nseed': 1,
+  'over_param': [],
+  'reg_hidden': 0,
+  'smax_temp': 0.5,
+  'ste': 'hard_argmax_ste',
+  'test_split': None,
+  'top_k': 4,
+  'tseed': 1,
+  'use_L1': True,
+  'use_pretrained': False,
+  'val_split': 0.2,
+  'wt_init': 'none'}]
+--- END CONFIG ---
+
+
+--------------------------------------------------
+
+DATASET: sulfur
+Num Total Samples: 7056
+10 simulations executed. Seed: 1
+Average in-sample multivariate accuracy: 0.224 ± 0.007
+Average test multivariate accuracy: 0.343 ± 0.010
+Average train active leaves: 13.600 ± 1.356
+Average train normalized entropy: 0.691 ± 0.041
+Average test active leaves: 13.300 ± 1.100
+Average test normalized entropy: 0.687 ± 0.038
+
+Best test multivariate accuracy: 0.326
+Average elapsed time: 216.274 ± 24.825

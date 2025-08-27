@@ -1,0 +1,21 @@
+{'dataset': 'year', 'model': 'dtregnet_ste', 'simulations': 10, 'output_prefix': 'publish_year', 'should_normalize_dataset': True, 'verbose': True, 'gpu': True}
+
+python -m reg_dataset_linear.reg_train_linear --dataset year --model dtregnet_ste --simulations 10 --output_prefix publish_year --should_normalize_dataset True --verbose True --gpu True
+
+---
+
+
+--------------------------------------------------
+
+DATASET: Year Prediction
+Num Total Samples: 370972
+10 simulations executed. Seed: 1
+Average in-sample multivariate accuracy: 8.848 ± 0.008
+Average test multivariate accuracy: 8.999 ± 0.017
+Average train active leaves: 18.400 ± 1.625
+Average train normalized entropy: 0.706 ± 0.025
+Average test active leaves: 18.600 ± 1.855
+Average test normalized entropy: 0.706 ± 0.024
+
+Best test multivariate accuracy: 8.968
+Average elapsed time: 504.922 ± 119.047

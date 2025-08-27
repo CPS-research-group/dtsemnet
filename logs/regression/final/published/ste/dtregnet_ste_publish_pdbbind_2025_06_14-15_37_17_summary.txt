@@ -1,0 +1,21 @@
+{'dataset': 'pdb_bind', 'model': 'dtregnet_ste', 'simulations': 10, 'output_prefix': 'publish_pdbbind', 'should_normalize_dataset': True, 'verbose': True, 'gpu': True}
+
+python -m reg_dataset_linear.reg_train_linear --dataset pdb_bind --model dtregnet_ste --simulations 10 --output_prefix publish_pdbbind --should_normalize_dataset True --verbose True --gpu True
+
+---
+
+
+--------------------------------------------------
+
+DATASET: PDB Bind
+Num Total Samples: 9013
+10 simulations executed. Seed: 1
+Average in-sample multivariate accuracy: 1.220 ± 0.008
+Average test multivariate accuracy: 1.334 ± 0.018
+Average train active leaves: 3.800 ± 0.400
+Average train normalized entropy: 0.780 ± 0.098
+Average test active leaves: 3.700 ± 0.458
+Average test normalized entropy: 0.780 ± 0.100
+
+Best test multivariate accuracy: 1.306
+Average elapsed time: 11.202 ± 0.079

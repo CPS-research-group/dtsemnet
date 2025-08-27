@@ -1,0 +1,577 @@
+nohup: ignoring input
+===>Training Started for Configuration: Batch Size: 128, Learning Rate: 0.001, 
+LR Scheduler Rate: 0.95<===
+{
+    'code': 'ctslice',
+    'name': 'CT Slice',
+    'filepath': 'datasets/ctslice/',
+    'n_attributes': 384,
+    'attributes': [],
+    'n_classes': 1,
+    'classes': [],
+    'use_L1': True,
+    'lamda_L1': 5e-05,
+    'nseed': 5,
+    'tseed': None,
+    'grad_clip': False,
+    'over_param': [],
+    'reg_hidden': 0,
+    'test_split': 0.2,
+    'val_split': 0.2,
+    'depth': 5,
+    'ste': 'hard_argmax_ste',
+    'bins': array([-2.1 , -1.14, -0.76, -0.49, -0.13,  0.25,  0.75,  1.4 ]),
+    'wt_init': 'none',
+    'smax_temp': 0.5,
+    'epochs': 40,
+    'batch_size': 128,
+    'learning_rate': 0.001,
+    'lr_scheduler': True,
+    'lr_scheduler_gamma': 0.95,
+    'top_k': 4,
+    'epochs_fine_tune': 30,
+    'mix_experts': 2,
+    'learning_rate_tune': 0.0001,
+    'detach': False,
+    'use_pretrained': False
+}
+X_train size: (34240, 384), y_train size: (34240,)
+X_val size: (8560, 384), y_val size: (8560,)
+X_test size: (10700, 384), y_test size: (10700,)
+X_train min: -9.38750611054979
+X_train max: 185.03783396922844
+train size:
+torch.Size([34240, 384])
+test size:
+torch.Size([10700, 384])
+val size:
+torch.Size([8560, 384])
+[-2.1  -1.14 -0.76 -0.49 -0.13  0.25  0.75  1.4 ]
+Max y_train_clf: 7
+Min y_train_clf: 0
+train size:
+torch.Size([34240, 384])
+test size:
+torch.Size([10700, 384])
+val size:
+torch.Size([8560, 384])
+Class Label Distribution:
+Class 0: 4276 samples
+Class 1: 4356 samples
+Class 2: 4238 samples
+Class 3: 4268 samples
+Class 4: 4249 samples
+Class 5: 4299 samples
+Class 6: 4305 samples
+Class 7: 4249 samples
+======================================================================
+Iteration 0/1  Seed 1  (dataset: CT Slice, 0/1):  Num Sample: 34240 
+======================================================================
+DTSemNet(
+  (linear1): Sequential(
+    (0): Linear(in_features=384, out_features=31, bias=True)
+  )
+  (bn): BatchNorm1d(31, eps=1e-05, momentum=0.1, affine=True, 
+track_running_stats=True)
+  (reluP): ReLU()
+  (reluM): ReLU()
+  (linear2): Linear(in_features=62, out_features=32, bias=False)
+  (softmax): Softmax(dim=-1)
+  (mpool): MaxPoolLayer()
+  (experts): ModuleList(
+    (0): Expert(
+      (layer): Linear(in_features=384, out_features=1, bias=True)
+    )
+    (1): Expert(
+      (layer): Linear(in_features=384, out_features=1, bias=True)
+    )
+    (2): Expert(
+      (layer): Linear(in_features=384, out_features=1, bias=True)
+    )
+    (3): Expert(
+      (layer): Linear(in_features=384, out_features=1, bias=True)
+    )
+    (4): Expert(
+      (layer): Linear(in_features=384, out_features=1, bias=True)
+    )
+    (5): Expert(
+      (layer): Linear(in_features=384, out_features=1, bias=True)
+    )
+    (6): Expert(
+      (layer): Linear(in_features=384, out_features=1, bias=True)
+    )
+    (7): Expert(
+      (layer): Linear(in_features=384, out_features=1, bias=True)
+    )
+    (8): Expert(
+      (layer): Linear(in_features=384, out_features=1, bias=True)
+    )
+    (9): Expert(
+      (layer): Linear(in_features=384, out_features=1, bias=True)
+    )
+    (10): Expert(
+      (layer): Linear(in_features=384, out_features=1, bias=True)
+    )
+    (11): Expert(
+      (layer): Linear(in_features=384, out_features=1, bias=True)
+    )
+    (12): Expert(
+      (layer): Linear(in_features=384, out_features=1, bias=True)
+    )
+    (13): Expert(
+      (layer): Linear(in_features=384, out_features=1, bias=True)
+    )
+    (14): Expert(
+      (layer): Linear(in_features=384, out_features=1, bias=True)
+    )
+    (15): Expert(
+      (layer): Linear(in_features=384, out_features=1, bias=True)
+    )
+    (16): Expert(
+      (layer): Linear(in_features=384, out_features=1, bias=True)
+    )
+    (17): Expert(
+      (layer): Linear(in_features=384, out_features=1, bias=True)
+    )
+    (18): Expert(
+      (layer): Linear(in_features=384, out_features=1, bias=True)
+    )
+    (19): Expert(
+      (layer): Linear(in_features=384, out_features=1, bias=True)
+    )
+    (20): Expert(
+      (layer): Linear(in_features=384, out_features=1, bias=True)
+    )
+    (21): Expert(
+      (layer): Linear(in_features=384, out_features=1, bias=True)
+    )
+    (22): Expert(
+      (layer): Linear(in_features=384, out_features=1, bias=True)
+    )
+    (23): Expert(
+      (layer): Linear(in_features=384, out_features=1, bias=True)
+    )
+    (24): Expert(
+      (layer): Linear(in_features=384, out_features=1, bias=True)
+    )
+    (25): Expert(
+      (layer): Linear(in_features=384, out_features=1, bias=True)
+    )
+    (26): Expert(
+      (layer): Linear(in_features=384, out_features=1, bias=True)
+    )
+    (27): Expert(
+      (layer): Linear(in_features=384, out_features=1, bias=True)
+    )
+    (28): Expert(
+      (layer): Linear(in_features=384, out_features=1, bias=True)
+    )
+    (29): Expert(
+      (layer): Linear(in_features=384, out_features=1, bias=True)
+    )
+    (30): Expert(
+      (layer): Linear(in_features=384, out_features=1, bias=True)
+    )
+    (31): Expert(
+      (layer): Linear(in_features=384, out_features=1, bias=True)
+    )
+  )
+)
+Epoch: 0, Leaf Dist: [642.0, 625.0, 525.0, 514.0, 513.0, 447.0, 443.0, 440.0, 
+417.0, 416.0, 414.0, 402.0, 351.0, 348.0, 333.0, 310.0, 296.0, 295.0, 293.0, 
+287.0, 282.0, 270.0, 235.0, 231.0, 207.0, 207.0, 200.0, 188.0, 181.0, 148.0, 
+135.0, 105.0]
+Epoch: 1/40, Average Loss: 63.5513, Train Acc: 7.9719 Test Acc: 8.1581
+Epoch: 1, Leaf Dist: [1501.0, 1461.0, 1223.0, 855.0, 779.0, 668.0, 590.0, 546.0,
+510.0, 449.0, 431.0, 406.0, 221.0, 216.0, 216.0, 184.0, 92.0, 64.0, 60.0, 53.0, 
+51.0, 29.0, 28.0, 21.0, 17.0, 11.0, 8.0, 5.0, 2.0, 2.0, 1.0, 0.0]
+Epoch: 2/40, Average Loss: 54.7009, Train Acc: 7.3960 Test Acc: 7.6431
+Epoch: 2, Leaf Dist: [1502.0, 1462.0, 1424.0, 997.0, 790.0, 701.0, 541.0, 522.0,
+494.0, 394.0, 342.0, 294.0, 259.0, 198.0, 152.0, 137.0, 117.0, 105.0, 63.0, 
+50.0, 37.0, 30.0, 28.0, 25.0, 19.0, 7.0, 4.0, 4.0, 1.0, 1.0, 0.0, 0.0]
+Epoch: 3/40, Average Loss: 44.3113, Train Acc: 6.6567 Test Acc: 6.8571
+Epoch: 4/40, Average Loss: 33.9112, Train Acc: 5.8233 Test Acc: 5.9662
+Epoch: 5/40, Average Loss: 30.0033, Train Acc: 5.4775 Test Acc: 5.5895
+Epoch: 5, Leaf Dist: [1684.0, 1539.0, 1007.0, 874.0, 847.0, 814.0, 646.0, 526.0,
+489.0, 460.0, 373.0, 266.0, 266.0, 156.0, 137.0, 96.0, 87.0, 81.0, 73.0, 60.0, 
+53.0, 50.0, 43.0, 38.0, 11.0, 10.0, 4.0, 3.0, 3.0, 3.0, 1.0, 0.0]
+Epoch: 6/40, Average Loss: 33.0722, Train Acc: 5.7508 Test Acc: 5.8990
+Epoch: 7/40, Average Loss: 44.6306, Train Acc: 6.6806 Test Acc: 6.8333
+Epoch: 8/40, Average Loss: 33.0184, Train Acc: 5.7462 Test Acc: 5.9301
+Epoch: 9/40, Average Loss: 27.4555, Train Acc: 5.2398 Test Acc: 5.3127
+Epoch: 10/40, Average Loss: 30.3431, Train Acc: 5.5085 Test Acc: 5.5431
+Epoch: 10, Leaf Dist: [1246.0, 1180.0, 1169.0, 1108.0, 1084.0, 825.0, 668.0, 
+561.0, 494.0, 428.0, 350.0, 349.0, 209.0, 207.0, 160.0, 132.0, 110.0, 102.0, 
+81.0, 79.0, 63.0, 35.0, 22.0, 17.0, 7.0, 7.0, 3.0, 2.0, 1.0, 1.0, 0.0, 0.0]
+Epoch: 11/40, Average Loss: 20.1235, Train Acc: 4.4859 Test Acc: 4.5972
+Epoch: 12/40, Average Loss: 21.2172, Train Acc: 4.6062 Test Acc: 4.6585
+Epoch: 13/40, Average Loss: 19.4438, Train Acc: 4.4095 Test Acc: 4.4185
+Epoch: 14/40, Average Loss: 35.3457, Train Acc: 5.9452 Test Acc: 5.9678
+Epoch: 15/40, Average Loss: 21.6333, Train Acc: 4.6512 Test Acc: 4.6887
+Epoch: 16/40, Average Loss: 19.5024, Train Acc: 4.4162 Test Acc: 4.3390
+Epoch: 17/40, Average Loss: 20.7218, Train Acc: 4.5521 Test Acc: 4.5375
+Epoch: 18/40, Average Loss: 21.1937, Train Acc: 4.6037 Test Acc: 4.5685
+Epoch: 19/40, Average Loss: 20.1360, Train Acc: 4.4873 Test Acc: 4.4612
+Epoch: 20/40, Average Loss: 17.1959, Train Acc: 4.1468 Test Acc: 4.1570
+Epoch: 21/40, Average Loss: 19.0353, Train Acc: 4.3630 Test Acc: 4.3398
+Epoch: 22/40, Average Loss: 15.4166, Train Acc: 3.9264 Test Acc: 4.0028
+Epoch: 23/40, Average Loss: 16.0228, Train Acc: 4.0029 Test Acc: 3.9468
+Epoch: 24/40, Average Loss: 16.6362, Train Acc: 4.0788 Test Acc: 4.0493
+Epoch: 25/40, Average Loss: 17.0091, Train Acc: 4.1242 Test Acc: 4.1341
+Epoch: 26/40, Average Loss: 17.5598, Train Acc: 4.1904 Test Acc: 4.1900
+Epoch: 27/40, Average Loss: 15.0221, Train Acc: 3.8758 Test Acc: 3.8735
+Epoch: 28/40, Average Loss: 18.0757, Train Acc: 4.2515 Test Acc: 4.2260
+Epoch: 29/40, Average Loss: 16.5608, Train Acc: 4.0695 Test Acc: 4.0481
+Epoch: 30/40, Average Loss: 15.4824, Train Acc: 3.9348 Test Acc: 3.9126
+Epoch: 31/40, Average Loss: 14.7805, Train Acc: 3.8445 Test Acc: 3.8444
+Epoch: 32/40, Average Loss: 16.7812, Train Acc: 4.0965 Test Acc: 4.1227
+Epoch: 33/40, Average Loss: 16.6714, Train Acc: 4.0831 Test Acc: 4.1379
+Epoch: 34/40, Average Loss: 14.5103, Train Acc: 3.8092 Test Acc: 3.8098
+Epoch: 35/40, Average Loss: 13.6909, Train Acc: 3.7001 Test Acc: 3.7029
+Epoch: 36/40, Average Loss: 15.2390, Train Acc: 3.9037 Test Acc: 3.9279
+Epoch: 37/40, Average Loss: 12.4487, Train Acc: 3.5283 Test Acc: 3.5630
+Epoch: 38/40, Average Loss: 13.1735, Train Acc: 3.6295 Test Acc: 3.6379
+Epoch: 39/40, Average Loss: 12.9699, Train Acc: 3.6014 Test Acc: 3.5864
+Epoch: 40/40, Average Loss: 12.4937, Train Acc: 3.5346 Test Acc: 3.5398
+Epoch: Final 100%, Leaf Dist: [1281.0, 1155.0, 1142.0, 1121.0, 983.0, 811.0, 
+770.0, 557.0, 542.0, 492.0, 407.0, 288.0, 226.0, 195.0, 192.0, 167.0, 140.0, 
+89.0, 66.0, 27.0, 20.0, 11.0, 8.0, 8.0, 1.0, 1.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0]
+Before Retraining Each Leaf (Top1): Train RMSE: 3.5346, Test RMSE: 3.5398
+Training Stage 2: Regression Layer
+=========== 0 =========== 0
+Leaf 0: 5343 samples
+Stage2 | Leaf: 0/32, Average Loss: 11.8422, Train Acc: 3.4412 Test Acc: 3.4471
+=========== 1 =========== 1
+Leaf 1: 5803 samples
+Stage2 | Leaf: 1/32, Average Loss: 11.4486, Train Acc: 3.3836 Test Acc: 3.3917
+=========== 2 =========== 2
+Leaf 2: 3437 samples
+Stage2 | Leaf: 2/32, Average Loss: 11.0194, Train Acc: 3.3195 Test Acc: 3.3269
+=========== 3 =========== 3
+Leaf 3: 2692 samples
+Stage2 | Leaf: 3/32, Average Loss: 10.5955, Train Acc: 3.2551 Test Acc: 3.2702
+=========== 4 =========== 4
+Leaf 4: 423 samples
+Stage2 | Leaf: 4/32, Average Loss: 10.5955, Train Acc: 3.2551 Test Acc: 3.2702
+=========== 5 =========== 5
+Leaf 5: 1045 samples
+Stage2 | Leaf: 5/32, Average Loss: 10.3303, Train Acc: 3.2141 Test Acc: 3.2277
+=========== 6 =========== 6
+Leaf 6: 0 samples
+=========== 7 =========== 7
+Leaf 7: 42 samples
+Stage2 | Leaf: 7/32, Average Loss: 10.3303, Train Acc: 3.2141 Test Acc: 3.2277
+=========== 8 =========== 8
+Leaf 8: 3761 samples
+Stage2 | Leaf: 8/32, Average Loss: 9.8956, Train Acc: 3.1457 Test Acc: 3.1446
+=========== 9 =========== 9
+Leaf 9: 5193 samples
+Stage2 | Leaf: 9/32, Average Loss: 9.3753, Train Acc: 3.0619 Test Acc: 3.0631
+=========== 10 =========== 10
+Leaf 10: 592 samples
+Stage2 | Leaf: 10/32, Average Loss: 9.3519, Train Acc: 3.0581 Test Acc: 3.0598
+=========== 11 =========== 11
+Leaf 11: 1794 samples
+Stage2 | Leaf: 11/32, Average Loss: 9.1226, Train Acc: 3.0204 Test Acc: 3.0163
+=========== 12 =========== 12
+Leaf 12: 5135 samples
+Stage2 | Leaf: 12/32, Average Loss: 8.4358, Train Acc: 2.9044 Test Acc: 2.9137
+=========== 13 =========== 13
+Leaf 13: 1387 samples
+Stage2 | Leaf: 13/32, Average Loss: 8.4238, Train Acc: 2.9024 Test Acc: 2.9117
+=========== 14 =========== 14
+Leaf 14: 2418 samples
+Stage2 | Leaf: 14/32, Average Loss: 8.2662, Train Acc: 2.8751 Test Acc: 2.8853
+=========== 15 =========== 15
+Leaf 15: 95 samples
+Stage2 | Leaf: 15/32, Average Loss: 8.2527, Train Acc: 2.8728 Test Acc: 2.8769
+=========== 16 =========== 16
+Leaf 16: 3136 samples
+Stage2 | Leaf: 16/32, Average Loss: 6.8653, Train Acc: 2.6202 Test Acc: 2.6510
+=========== 17 =========== 17
+Leaf 17: 4632 samples
+Stage2 | Leaf: 17/32, Average Loss: 6.7412, Train Acc: 2.5964 Test Acc: 2.6259
+=========== 18 =========== 18
+Leaf 18: 4707 samples
+Stage2 | Leaf: 18/32, Average Loss: 5.9643, Train Acc: 2.4422 Test Acc: 2.4710
+=========== 19 =========== 19
+Leaf 19: 428 samples
+Stage2 | Leaf: 19/32, Average Loss: 5.9643, Train Acc: 2.4422 Test Acc: 2.4710
+=========== 20 =========== 20
+Leaf 20: 2805 samples
+Stage2 | Leaf: 20/32, Average Loss: 5.3284, Train Acc: 2.3083 Test Acc: 2.3786
+=========== 21 =========== 21
+Leaf 21: 4908 samples
+Stage2 | Leaf: 21/32, Average Loss: 4.0184, Train Acc: 2.0046 Test Acc: 2.0908
+=========== 22 =========== 22
+Leaf 22: 1742 samples
+Stage2 | Leaf: 22/32, Average Loss: 3.1099, Train Acc: 1.7635 Test Acc: 1.8667
+=========== 23 =========== 23
+Leaf 23: 747 samples
+/home/subratpp/miniconda3/envs/dprl/lib/python3.8/site-packages/sklearn/linear_model/_coordinate_descent.py:628: ConvergenceWarning: Objective did not converge. You might want to increase the number of iterations, check the scale of the features or consider increasing regularisation. Duality gap: 7.427e-04, tolerance: 3.758e-04
+  model = cd_fast.enet_coordinate_descent(
+/home/subratpp/miniconda3/envs/dprl/lib/python3.8/site-packages/sklearn/linear_model/_coordinate_descent.py:614: ConvergenceWarning: Objective did not converge. You might want to increase the number of iterations. Duality gap: 0.009953477786529247, tolerance: 0.0013605776402081107
+  model = cd_fast.enet_coordinate_descent_gram(
+/home/subratpp/miniconda3/envs/dprl/lib/python3.8/site-packages/sklearn/linear_model/_coordinate_descent.py:614: ConvergenceWarning: Objective did not converge. You might want to increase the number of iterations. Duality gap: 0.007184416799334098, tolerance: 0.0012885665211882598
+  model = cd_fast.enet_coordinate_descent_gram(
+/home/subratpp/miniconda3/envs/dprl/lib/python3.8/site-packages/sklearn/linear_model/_coordinate_descent.py:628: ConvergenceWarning: Objective did not converge. You might want to increase the number of iterations, check the scale of the features or consider increasing regularisation. Duality gap: 3.860e-03, tolerance: 1.534e-03
+  model = cd_fast.enet_coordinate_descent(
+/home/subratpp/miniconda3/envs/dprl/lib/python3.8/site-packages/sklearn/linear_model/_coordinate_descent.py:628: ConvergenceWarning: Objective did not converge. You might want to increase the number of iterations, check the scale of the features or consider increasing regularisation. Duality gap: 2.445e-03, tolerance: 1.666e-03
+  model = cd_fast.enet_coordinate_descent(
+/home/subratpp/miniconda3/envs/dprl/lib/python3.8/site-packages/sklearn/linear_model/_coordinate_descent.py:628: ConvergenceWarning: Objective did not converge. You might want to increase the number of iterations, check the scale of the features or consider increasing regularisation. Duality gap: 2.545e-03, tolerance: 1.666e-03
+  model = cd_fast.enet_coordinate_descent(
+/home/subratpp/miniconda3/envs/dprl/lib/python3.8/site-packages/sklearn/linear_model/_coordinate_descent.py:628: ConvergenceWarning: Objective did not converge. You might want to increase the number of iterations, check the scale of the features or consider increasing regularisation. Duality gap: 1.229e-02, tolerance: 2.157e-03
+  model = cd_fast.enet_coordinate_descent(
+/home/subratpp/miniconda3/envs/dprl/lib/python3.8/site-packages/sklearn/linear_model/_coordinate_descent.py:628: ConvergenceWarning: Objective did not converge. You might want to increase the number of iterations, check the scale of the features or consider increasing regularisation. Duality gap: 2.856e-03, tolerance: 7.493e-04
+  model = cd_fast.enet_coordinate_descent(
+/home/subratpp/miniconda3/envs/dprl/lib/python3.8/site-packages/sklearn/linear_model/_coordinate_descent.py:628: ConvergenceWarning: Objective did not converge. You might want to increase the number of iterations, check the scale of the features or consider increasing regularisation. Duality gap: 2.552e-03, tolerance: 7.502e-04
+  model = cd_fast.enet_coordinate_descent(
+/home/subratpp/miniconda3/envs/dprl/lib/python3.8/site-packages/sklearn/linear_model/_coordinate_descent.py:628: ConvergenceWarning: Objective did not converge. You might want to increase the number of iterations, check the scale of the features or consider increasing regularisation. Duality gap: 1.695e-03, tolerance: 7.429e-04
+  model = cd_fast.enet_coordinate_descent(
+/home/subratpp/miniconda3/envs/dprl/lib/python3.8/site-packages/sklearn/linear_model/_coordinate_descent.py:628: ConvergenceWarning: Objective did not converge. You might want to increase the number of iterations, check the scale of the features or consider increasing regularisation. Duality gap: 9.951e-04, tolerance: 6.800e-04
+  model = cd_fast.enet_coordinate_descent(
+/home/subratpp/miniconda3/envs/dprl/lib/python3.8/site-packages/sklearn/linear_model/_coordinate_descent.py:628: ConvergenceWarning: Objective did not converge. You might want to increase the number of iterations, check the scale of the features or consider increasing regularisation. Duality gap: 1.575e-03, tolerance: 7.345e-04
+  model = cd_fast.enet_coordinate_descent(
+/home/subratpp/miniconda3/envs/dprl/lib/python3.8/site-packages/sklearn/linear_model/_coordinate_descent.py:628: ConvergenceWarning: Objective did not converge. You might want to increase the number of iterations, check the scale of the features or consider increasing regularisation. Duality gap: 4.982e-03, tolerance: 9.145e-04
+  model = cd_fast.enet_coordinate_descent(
+/home/subratpp/miniconda3/envs/dprl/lib/python3.8/site-packages/sklearn/linear_model/_coordinate_descent.py:614: ConvergenceWarning: Objective did not converge. You might want to increase the number of iterations. Duality gap: 0.005549746119854593, tolerance: 0.0036262144251598544
+  model = cd_fast.enet_coordinate_descent_gram(
+/home/subratpp/miniconda3/envs/dprl/lib/python3.8/site-packages/sklearn/linear_model/_coordinate_descent.py:614: ConvergenceWarning: Objective did not converge. You might want to increase the number of iterations. Duality gap: 0.006108000834155192, tolerance: 0.0059245953905899
+  model = cd_fast.enet_coordinate_descent_gram(
+/home/subratpp/miniconda3/envs/dprl/lib/python3.8/site-packages/sklearn/linear_model/_coordinate_descent.py:614: ConvergenceWarning: Objective did not converge. You might want to increase the number of iterations. Duality gap: 0.0018727109803731157, tolerance: 0.001819533654591826
+  model = cd_fast.enet_coordinate_descent_gram(
+/home/subratpp/miniconda3/envs/dprl/lib/python3.8/site-packages/sklearn/linear_model/_coordinate_descent.py:628: ConvergenceWarning: Objective did not converge. You might want to increase the number of iterations, check the scale of the features or consider increasing regularisation. Duality gap: 4.765e-03, tolerance: 2.244e-03
+  model = cd_fast.enet_coordinate_descent(
+/home/subratpp/miniconda3/envs/dprl/lib/python3.8/site-packages/sklearn/linear_model/_coordinate_descent.py:614: ConvergenceWarning: Objective did not converge. You might want to increase the number of iterations. Duality gap: 0.3361875606373963, tolerance: 0.0034625133557865057
+  model = cd_fast.enet_coordinate_descent_gram(
+/home/subratpp/miniconda3/envs/dprl/lib/python3.8/site-packages/sklearn/linear_model/_coordinate_descent.py:614: ConvergenceWarning: Objective did not converge. You might want to increase the number of iterations. Duality gap: 0.03701528118762987, tolerance: 0.004349393327494696
+  model = cd_fast.enet_coordinate_descent_gram(
+/home/subratpp/miniconda3/envs/dprl/lib/python3.8/site-packages/sklearn/linear_model/_coordinate_descent.py:614: ConvergenceWarning: Objective did not converge. You might want to increase the number of iterations. Duality gap: 0.8178579970163686, tolerance: 0.004349393327494696
+  model = cd_fast.enet_coordinate_descent_gram(
+/home/subratpp/miniconda3/envs/dprl/lib/python3.8/site-packages/sklearn/linear_model/_coordinate_descent.py:614: ConvergenceWarning: Objective did not converge. You might want to increase the number of iterations. Duality gap: 0.018834319969201374, tolerance: 0.004364247133849165
+  model = cd_fast.enet_coordinate_descent_gram(
+/home/subratpp/miniconda3/envs/dprl/lib/python3.8/site-packages/sklearn/linear_model/_coordinate_descent.py:614: ConvergenceWarning: Objective did not converge. You might want to increase the number of iterations. Duality gap: 0.029409880392602616, tolerance: 0.004364247133849165
+  model = cd_fast.enet_coordinate_descent_gram(
+/home/subratpp/miniconda3/envs/dprl/lib/python3.8/site-packages/sklearn/linear_model/_coordinate_descent.py:614: ConvergenceWarning: Objective did not converge. You might want to increase the number of iterations. Duality gap: 1.4660734874593029, tolerance: 0.004364247133849165
+  model = cd_fast.enet_coordinate_descent_gram(
+Stage2 | Leaf: 23/32, Average Loss: 2.1764, Train Acc: 1.4753 Test Acc: 1.5956
+=========== 24 =========== 24
+Leaf 24: 93 samples
+Stage2 | Leaf: 24/32, Average Loss: 2.1764, Train Acc: 1.4753 Test Acc: 1.5986
+=========== 25 =========== 25
+Leaf 25: 9 samples
+Stage2 | Leaf: 25/32, Average Loss: 2.1763, Train Acc: 1.4752 Test Acc: 1.5986
+=========== 26 =========== 26
+Leaf 26: 438 samples
+Stage2 | Leaf: 26/32, Average Loss: 2.1503, Train Acc: 1.4664 Test Acc: 1.5910
+=========== 27 =========== 27
+Leaf 27: 1891 samples
+Stage2 | Leaf: 27/32, Average Loss: 1.7799, Train Acc: 1.3341 Test Acc: 1.4606
+=========== 28 =========== 28
+Leaf 28: 81 samples
+Stage2 | Leaf: 28/32, Average Loss: 1.6941, Train Acc: 1.3016 Test Acc: 1.4101
+=========== 29 =========== 29
+Leaf 29: 3643 samples
+Stage2 | Leaf: 29/32, Average Loss: 1.4951, Train Acc: 1.2228 Test Acc: 1.3427
+=========== 30 =========== 30
+Leaf 30: 2 samples
+only <4 samples
+Stage2 | Leaf: 30/32, Average Loss: 1.4910, Train Acc: 1.2211 Test Acc: 1.3427
+=========== 31 =========== 31
+Leaf 31: 58 samples
+Stage2 | Leaf: 31/32, Average Loss: 1.4908, Train Acc: 1.2210 Test Acc: 1.3424
+After retraining each leaf (Top1): Train RMSE: 1.2210, Test RMSE: 1.3424
+Epoch: 1/30, Average Loss: 1.2572, Train Acc: 1.1213 Test Acc: 1.2644
+Epoch: 2/30, Average Loss: 1.1578, Train Acc: 1.0760 Test Acc: 1.2143
+Epoch: 3/30, Average Loss: 1.1103, Train Acc: 1.0537 Test Acc: 1.1952
+Epoch: 4/30, Average Loss: 1.0599, Train Acc: 1.0295 Test Acc: 1.1718
+Epoch: 5/30, Average Loss: 1.0144, Train Acc: 1.0072 Test Acc: 1.1525
+Epoch: 6/30, Average Loss: 1.0061, Train Acc: 1.0030 Test Acc: 1.1479
+Epoch: 7/30, Average Loss: 0.9437, Train Acc: 0.9715 Test Acc: 1.1184
+Epoch: 8/30, Average Loss: 0.9633, Train Acc: 0.9815 Test Acc: 1.1254
+Epoch: 9/30, Average Loss: 0.9454, Train Acc: 0.9723 Test Acc: 1.1116
+Epoch: 10/30, Average Loss: 0.9140, Train Acc: 0.9560 Test Acc: 1.1039
+Epoch: 11/30, Average Loss: 0.9016, Train Acc: 0.9495 Test Acc: 1.0989
+Epoch: 12/30, Average Loss: 0.8993, Train Acc: 0.9483 Test Acc: 1.0978
+Epoch: 13/30, Average Loss: 0.9053, Train Acc: 0.9515 Test Acc: 1.0947
+Epoch: 14/30, Average Loss: 0.8835, Train Acc: 0.9400 Test Acc: 1.0879
+Epoch: 15/30, Average Loss: 0.8679, Train Acc: 0.9316 Test Acc: 1.0859
+Epoch: 16/30, Average Loss: 0.8792, Train Acc: 0.9377 Test Acc: 1.0806
+Epoch: 17/30, Average Loss: 0.8839, Train Acc: 0.9401 Test Acc: 1.0960
+Epoch: 18/30, Average Loss: 0.9069, Train Acc: 0.9523 Test Acc: 1.1087
+Epoch: 19/30, Average Loss: 0.8671, Train Acc: 0.9312 Test Acc: 1.0805
+Epoch: 20/30, Average Loss: 0.8543, Train Acc: 0.9243 Test Acc: 1.0760
+Epoch: 21/30, Average Loss: 0.8822, Train Acc: 0.9392 Test Acc: 1.0925
+Epoch: 22/30, Average Loss: 0.9025, Train Acc: 0.9500 Test Acc: 1.0921
+Epoch: 23/30, Average Loss: 0.8576, Train Acc: 0.9261 Test Acc: 1.0897
+Epoch: 24/30, Average Loss: 0.8525, Train Acc: 0.9233 Test Acc: 1.0826
+Epoch: 25/30, Average Loss: 0.8283, Train Acc: 0.9101 Test Acc: 1.0775
+Epoch: 26/30, Average Loss: 0.8174, Train Acc: 0.9041 Test Acc: 1.0651
+Epoch: 27/30, Average Loss: 0.8527, Train Acc: 0.9234 Test Acc: 1.0858
+Epoch: 28/30, Average Loss: 0.8491, Train Acc: 0.9214 Test Acc: 1.0956
+Epoch: 29/30, Average Loss: 0.8237, Train Acc: 0.9076 Test Acc: 1.0780
+Epoch: 30/30, Average Loss: 0.8371, Train Acc: 0.9149 Test Acc: 1.0777
+==================== Final Evaluation ====================
+Train RMSE: 0.9149, Test RMSE: 1.0777
+Elapsed time: 331.68 seconds
+Saved summary to 
+'logs/regression/dtregnet_topk_top1_modified_ct_2025_08_19-21_03_33_summary.txt'
+.
+Saved full data to 
+'logs/regression/dtregnet_topk_top1_modified_ct_2025_08_19-21_03_33_full.txt'.
+X_train size: (34240, 384), y_train size: (34240,)
+X_val size: (8560, 384), y_val size: (8560,)
+X_test size: (10700, 384), y_test size: (10700,)
+X_train min: -9.845989021126508
+X_train max: 185.03783396917208
+train size:
+torch.Size([34240, 384])
+test size:
+torch.Size([10700, 384])
+val size:
+torch.Size([8560, 384])
+[-2.1  -1.14 -0.76 -0.49 -0.13  0.25  0.75  1.4 ]
+Max y_train_clf: 7
+Min y_train_clf: 0
+train size:
+torch.Size([34240, 384])
+test size:
+torch.Size([10700, 384])
+val size:
+torch.Size([8560, 384])
+Class Label Distribution:
+Class 0: 4254 samples
+Class 1: 4454 samples
+Class 2: 4184 samples
+Class 3: 4315 samples
+Class 4: 4161 samples
+Class 5: 4326 samples
+Class 6: 4299 samples
+Class 7: 4247 samples
+======================================================================
+Iteration 0/1  Seed 2  (dataset: CT Slice, 0/1):  Num Sample: 34240 
+======================================================================
+DTSemNet(
+  (linear1): Sequential(
+    (0): Linear(in_features=384, out_features=31, bias=True)
+  )
+  (bn): BatchNorm1d(31, eps=1e-05, momentum=0.1, affine=True, 
+track_running_stats=True)
+  (reluP): ReLU()
+  (reluM): ReLU()
+  (linear2): Linear(in_features=62, out_features=32, bias=False)
+  (softmax): Softmax(dim=-1)
+  (mpool): MaxPoolLayer()
+  (experts): ModuleList(
+    (0): Expert(
+      (layer): Linear(in_features=384, out_features=1, bias=True)
+    )
+    (1): Expert(
+      (layer): Linear(in_features=384, out_features=1, bias=True)
+    )
+    (2): Expert(
+      (layer): Linear(in_features=384, out_features=1, bias=True)
+    )
+    (3): Expert(
+      (layer): Linear(in_features=384, out_features=1, bias=True)
+    )
+    (4): Expert(
+      (layer): Linear(in_features=384, out_features=1, bias=True)
+    )
+    (5): Expert(
+      (layer): Linear(in_features=384, out_features=1, bias=True)
+    )
+    (6): Expert(
+      (layer): Linear(in_features=384, out_features=1, bias=True)
+    )
+    (7): Expert(
+      (layer): Linear(in_features=384, out_features=1, bias=True)
+    )
+    (8): Expert(
+      (layer): Linear(in_features=384, out_features=1, bias=True)
+    )
+    (9): Expert(
+      (layer): Linear(in_features=384, out_features=1, bias=True)
+    )
+    (10): Expert(
+      (layer): Linear(in_features=384, out_features=1, bias=True)
+    )
+    (11): Expert(
+      (layer): Linear(in_features=384, out_features=1, bias=True)
+    )
+    (12): Expert(
+      (layer): Linear(in_features=384, out_features=1, bias=True)
+    )
+    (13): Expert(
+      (layer): Linear(in_features=384, out_features=1, bias=True)
+    )
+    (14): Expert(
+      (layer): Linear(in_features=384, out_features=1, bias=True)
+    )
+    (15): Expert(
+      (layer): Linear(in_features=384, out_features=1, bias=True)
+    )
+    (16): Expert(
+      (layer): Linear(in_features=384, out_features=1, bias=True)
+    )
+    (17): Expert(
+      (layer): Linear(in_features=384, out_features=1, bias=True)
+    )
+    (18): Expert(
+      (layer): Linear(in_features=384, out_features=1, bias=True)
+    )
+    (19): Expert(
+      (layer): Linear(in_features=384, out_features=1, bias=True)
+    )
+    (20): Expert(
+      (layer): Linear(in_features=384, out_features=1, bias=True)
+    )
+    (21): Expert(
+      (layer): Linear(in_features=384, out_features=1, bias=True)
+    )
+    (22): Expert(
+      (layer): Linear(in_features=384, out_features=1, bias=True)
+    )
+    (23): Expert(
+      (layer): Linear(in_features=384, out_features=1, bias=True)
+    )
+    (24): Expert(
+      (layer): Linear(in_features=384, out_features=1, bias=True)
+    )
+    (25): Expert(
+      (layer): Linear(in_features=384, out_features=1, bias=True)
+    )
+    (26): Expert(
+      (layer): Linear(in_features=384, out_features=1, bias=True)
+    )
+    (27): Expert(
+      (layer): Linear(in_features=384, out_features=1, bias=True)
+    )
+    (28): Expert(
+      (layer): Linear(in_features=384, out_features=1, bias=True)
+    )
+    (29): Expert(
+      (layer): Linear(in_features=384, out_features=1, bias=True)
+    )
+    (30): Expert(
+      (layer): Linear(in_features=384, out_features=1, bias=True)
+    )
+    (31): Expert(
+      (layer): Linear(in_features=384, out_features=1, bias=True)
+    )
+  )
+)
+Epoch: 0, Leaf Dist: [666.0, 616.0, 546.0, 510.0, 500.0, 452.0, 450.0, 438.0, 
+432.0, 420.0, 395.0, 376.0, 323.0, 323.0, 323.0, 307.0, 296.0, 286.0, 285.0, 
+280.0, 271.0, 265.0, 252.0, 232.0, 223.0, 199.0, 195.0, 195.0, 192.0, 168.0, 
+156.0, 128.0]
+Epoch: 1/40, Average Loss: 57.6977, Train Acc: 7.5959 Test Acc: 7.7186
+Epoch: 1, Leaf Dist: [2348.0, 1413.0, 795.0, 772.0, 746.0, 536.0, 432.0, 407.0, 
+376.0, 345.0, 345.0, 322.0, 287.0, 232.0, 217.0, 188.0, 179.0, 138.0, 94.0, 
+84.0, 75.0, 75.0, 71.0, 56.0, 49.0, 39.0, 21.0, 20.0, 16.0, 12.0, 7.0, 3.0]
+Epoch: 2/40, Average Loss: 52.0213, Train Acc: 7.2126 Test Acc: 7.2539
+Epoch: 2, Leaf Dist: [2109.0, 1505.0, 908.0, 840.0, 822.0, 572.0, 565.0, 498.0, 
+434.0, 341.0, 307.0, 285.0, 238.0, 191.0, 188.0, 171.0, 143.0, 99.0, 84.0, 69.0,
+69.0, 45.0, 38.0, 37.0, 37.0, 29.0, 28.0, 18.0, 12.0, 8.0, 7.0, 3.0]
+Epoch: 3/40, Average Loss: 37.2576, Train Acc: 6.1039 Test Acc: 6.1765
+Epoch: 4/40, Average Loss: 28.0637, Train Acc: 5.2975 Test Acc: 5.2890

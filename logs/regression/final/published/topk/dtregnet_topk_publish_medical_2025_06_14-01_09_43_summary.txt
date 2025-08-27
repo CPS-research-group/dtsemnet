@@ -1,0 +1,56 @@
+{'dataset': 'medical', 'model': 'dtregnet_topk', 'simulations': 10, 'output_prefix': 'publish_medical', 'should_normalize_dataset': True, 'verbose': True, 'gpu': True}
+
+python -m reg_dataset_linear.reg_train_linear --dataset medical --model dtregnet_topk --simulations 10 --output_prefix publish_medical --should_normalize_dataset True --verbose True --gpu True
+
+---
+
+--- CONFIGURATION ---
+[{'attributes': [],
+  'batch_size': 128,
+  'bins': array([0. , 0.5]),
+  'classes': [],
+  'code': 'medical',
+  'depth': 5,
+  'detach': False,
+  'epochs': 15,
+  'epochs_fine_tune': 5,
+  'filepath': 'datasets/medical/',
+  'grad_clip': True,
+  'lamda_L1': 1e-05,
+  'learning_rate': 0.001,
+  'learning_rate_tune': 0.0001,
+  'lr_scheduler': True,
+  'lr_scheduler_gamma': 0.95,
+  'mix_experts': 2,
+  'n_attributes': 3,
+  'n_classes': 1,
+  'name': 'medical',
+  'nseed': 1,
+  'over_param': [],
+  'reg_hidden': 0,
+  'smax_temp': 0.5,
+  'ste': 'hard_argmax_ste',
+  'test_split': None,
+  'top_k': 4,
+  'tseed': 1,
+  'use_L1': True,
+  'use_pretrained': False,
+  'val_split': 0.2,
+  'wt_init': 'none'}]
+--- END CONFIG ---
+
+
+--------------------------------------------------
+
+DATASET: medical
+Num Total Samples: 114145
+10 simulations executed. Seed: 1
+Average in-sample multivariate accuracy: 0.851 ± 0.012
+Average test multivariate accuracy: 0.843 ± 0.010
+Average train active leaves: 7.800 ± 1.661
+Average train normalized entropy: 0.479 ± 0.059
+Average test active leaves: 7.800 ± 1.661
+Average test normalized entropy: 0.480 ± 0.059
+
+Best test multivariate accuracy: 0.832
+Average elapsed time: 1108.093 ± 346.491
