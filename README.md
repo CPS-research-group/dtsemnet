@@ -11,14 +11,14 @@ conda activate dtsemnet # activates conda environment
 ```
 
 ## Dataset
-One datasets is given with the repo due to size constraint, others needs to downloaded and put into the /dataset directory. Please download it from: ``https://huggingface.co/subratpp/dtsemnet-topk``
+One datasets is given with the repo due to size constraint, others needs to downloaded and put into the /dataset directory. Please download it from [HuggingFace](https://huggingface.co/datasets/subratpp/dtsemnet-topk).
 
 ## Regression
 
 Common flags:
     . --model dtregnet_topk or dtregnet_ste or dgt or cart
     . --dataset name under ./dataset/
-    . -s Number of simulations
+    . -s Number of simulations (different seeds, used 10 seeds for the experiments)
     . --output_prefix prefix for logs
     . --verbose print training logs
     . -g use GPU if available
