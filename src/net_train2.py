@@ -1,3 +1,4 @@
+import os
 import pdb
 import math
 import argparse
@@ -134,6 +135,8 @@ if __name__ == "__main__":
         from src.sup_configs_dtsemnet2 import get_config, load_dataset, real_dataset_list
     elif mname == "dtsemnet":
         from src.sup_configs_dtsemnet2 import get_config, load_dataset, real_dataset_list
+    elif mname == "dgt":
+        from src.sup_configs_dgt2 import get_config, load_dataset, real_dataset_list
     
     
 
@@ -244,7 +247,7 @@ if __name__ == "__main__":
                                 wt_init=data_config["wt_init"],
                             )
             elif mname == "dgt":
-                model = DGT(in_dim=n_attributes, out_dim=n_classes, height=depth, is_regression=True, over_param=[])
+                model = DGT(in_dim=n_attributes, out_dim=n_classes, height=depth, is_regression=False, over_param=data_config["over_param"], linear_control=False, reg_hidden=0)
             else:
                 raise NotImplementedError
             
@@ -364,6 +367,11 @@ if __name__ == "__main__":
                 print(f"Saved summary to '{output_path_summ}'.")
                 print(f"Saved full data to '{output_path_full}'.")
         
+            # store the model for the last simulation at output path
+            output_path_model = f"stored_models/{mname}/{data_config['name']}/"
+            # create directory if it does not exist
+            os.makedirs(output_path_model, exist_ok=True)
+            torch.save(model.state_dict(), f"{output_path_model}/model_s{simulation}.pth")
         # Open the file in read mode
         with open(output_path_summ, 'r') as file:
             # Read and print the contents
