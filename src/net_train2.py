@@ -252,6 +252,9 @@ if __name__ == "__main__":
                 raise NotImplementedError
             
             print(model)
+            # print number of trainable parameters in the model
+            num_trainable_params = sum(p.numel() for p in model.parameters() if p.requires_grad)   
+            print(f"Number of trainable parameters: {num_trainable_params}")
             
             
             if use_gpu:
