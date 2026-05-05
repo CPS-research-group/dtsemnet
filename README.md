@@ -93,15 +93,21 @@ python -m src.reg_train_linear --model dtregnet --dataset ailerons -s 1 --output
 
     - Use `--model dtregnet` for for DTSemNet-regression
 
+
+## DTSemNet-Topk Experiments (for JMLR paper)
+- Please switch to branch `topk' for the proposed topk method which avoids STE in regression setting
+- The branch is standalone, so you have to follow the README file in that branch for installation and evaluation.
+
 ## RL Experiments
 - Please switch to branch rl_d (discrete action: PPO) or rl_c (continuous action: SAC) for the RL experiments.
 - The branches are standalone, so you have to follow respective README files and do the environment installation for RL experiment.
 
-
-##
+---
 
 If you find DTSemNet useful in your research, please cite our work:
 
 > **Subrat Panda, Blaise Genest, Arvind Easwaran, and Ponnuthurai Suganthan**, *"Vanilla Gradient Descent for Oblique Decision Trees,"* European Conference on Artificial Intelligence (ECAI), 2024. [Link to paper](https://arxiv.org/pdf/2408.09135)
+
+> **Subrat Panda, Blaise Genest, and Arvind Easwaran**, *"Approximation-Free Differenitable Oblique Decision Trees,"* Journal of Machine Learning Research (JMLR), 2026.
 
 
