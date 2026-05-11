@@ -1,9 +1,10 @@
-DTSemNet <img width="150" alt="portfolio_view" align="right" src="docs/resources/descartes_logo.jpg">
+DTSemNet <img width="110" alt="portfolio_view" align="right" src="docs/resources/descartes_logo.jpg">
 ========
 
-Welcome to the official implementation of the DTSemNet architecture, as proposed in the paper:
-“Vanilla Gradient Descent for Oblique Decision Trees,” ECAI-2024.
-[[Paper]](https://arxiv.org/pdf/2408.09135) [[Website]](https://cps-research-group.github.io/dtsemnet)
+Welcome to the official implementation of the [DTSemNet](https://cps-research-group.github.io/dtsemnet) architecture, as proposed in the paper:
+1. “[Vanilla Gradient Descent for Oblique Decision Trees](https://arxiv.org/pdf/2408.09135),” ECAI-2024.
+2. "[Approximation-Free Differenitable Oblique Decision Trees](https://arxiv.org/pdf/2605.07837)," JMLR-2026.
+
 
 ![High Level](docs/resources/arch.png)
 
@@ -108,6 +109,6 @@ If you find DTSemNet useful in your research, please cite our work:
 
 > **Subrat Panda, Blaise Genest, Arvind Easwaran, and Ponnuthurai Suganthan**, *"Vanilla Gradient Descent for Oblique Decision Trees,"* European Conference on Artificial Intelligence (ECAI), 2024. [Link to paper](https://arxiv.org/pdf/2408.09135)
 
-> **Subrat Panda, Blaise Genest, and Arvind Easwaran**, *"Approximation-Free Differenitable Oblique Decision Trees,"* Journal of Machine Learning Research (JMLR), 2026.
+> **Subrat Panda, Blaise Genest, and Arvind Easwaran**, *"Approximation-Free Differenitable Oblique Decision Trees,"* Journal of Machine Learning Research (JMLR), 2026. [Link to paper](https://arxiv.org/pdf/2605.07837)
 
 
